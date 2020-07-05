@@ -1,0 +1,1 @@
+{"version":3,"sources":["global/footer.scss"],"names":[],"mappings":"AAAA,mBACI,iBAAkB","file":"footer-min.css","sourcesContent":[".footer__copyright {\r\n    text-align: center;\r\n}"]}
