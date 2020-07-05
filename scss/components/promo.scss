@@ -1,17 +1,14 @@
-$bg-main-color: #ffffff;
-$bg-second-color: #f3f3f3;
-
-$text-main-color: #81868e;
-$text-second-color: #ffffff;
-$text-title-color: #333b46;
-
-$tiffany-color: #19bd9a;
-
 .promo {
+    padding-top: 250px;
+    padding-bottom: 47px;
     background-color: $text-main-color;
+    background-image: url("../img/bg-sea.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .promo__title {
+    margin-bottom: 43px;
     text-transform: uppercase;
     text-align: center;
     color: $text-second-color;
@@ -21,6 +18,7 @@ $tiffany-color: #19bd9a;
 }
 
 .promo__text {
+    margin-bottom: 220px;
     text-align: center;
     color: $text-second-color;
     font-size: 16px;
