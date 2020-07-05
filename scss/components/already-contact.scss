@@ -1,0 +1,15 @@
+.already-contact__text {
+    text-align: center;
+    color: $text-second-color;
+    font-size: 20px;
+
+    &--capitalize {
+        text-transform: capitalize;
+    }
+}
+
+.already-contact__button {
+    text-transform: capitalize;
+    color: $text-second-color;
+    font-size: 16px;
+}

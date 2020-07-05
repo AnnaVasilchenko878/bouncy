@@ -1,0 +1,13 @@
+.start-project__text {
+    color: $text-second-color;
+    font-size: 20px;
+
+    &--bold {
+        font-weight: 700;
+    }
+}
+
+.start-project__link {
+    text-transform: capitalize;
+    color: $text-second-color;
+}

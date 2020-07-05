@@ -1,0 +1,26 @@
+.subscribe__title {
+    text-align: center;
+    text-transform: uppercase;
+    color: $text-second-color;
+    font-family: "Source Sans Pro", "Arial", sans-serif;
+    font-weight: 300;
+}
+
+.subscribe__text {
+    text-align: center;
+}
+
+.subscribe__input {
+
+    &::placeholder {
+        text-transform: capitalize;
+        color: $text-placeholder-color;
+    }
+}
+
+.subscribe__button {
+    text-transform: uppercase;
+    border: none;
+    color: $text-second-color;
+    background-color: $tiffany-color;
+}

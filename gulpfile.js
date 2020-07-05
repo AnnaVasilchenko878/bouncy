@@ -17,7 +17,9 @@ function transferToCss(done) {
         .pipe(autoprefixer({
             cascade: false
         }))
-        .pipe(rename({ suffix: '-min' }))
+        .pipe(rename({
+            suffix: '-min'
+        }))
         .pipe(sourcemaps.write('./'))
         .pipe(browserSync.stream())
         .pipe(gulp.dest('./css/'))

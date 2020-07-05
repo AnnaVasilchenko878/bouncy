@@ -1,0 +1,29 @@
+.impressed__title {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: $text-second-color;
+    font-family: "Source Sans Pro", "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 12px;
+}
+
+.impressed__quote {
+    color: $grey-color;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.impressed__autor {
+    text-transform: uppercase;
+    color: $grey-color;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.impressed__position {
+    text-transform: uppercase;
+}
+
+.impressed__location {
+    color: $tiffany-color;
+}

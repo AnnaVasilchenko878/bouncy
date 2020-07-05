@@ -1,0 +1,23 @@
+.news__title {
+    text-transform: capitalize;
+    color: $light-grey-color;
+    font-size: 20px;
+}
+
+.news__autor {
+    font-family: "Source Sans Pro", "Arial", sans-serif;
+    font-style: italic;
+
+    &--name {
+        color: $tiffany-color;
+    }
+}
+
+.news__statistics {
+    color: $text-subtitle-color;
+}
+
+.news__link {
+    text-transform: capitalize;
+    color: $grey-color;
+}

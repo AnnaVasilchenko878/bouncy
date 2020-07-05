@@ -1,0 +1,28 @@
+$bg-main-color: #ffffff;
+$bg-second-color: #f3f3f3;
+
+$text-main-color: #81868e;
+$text-second-color: #ffffff;
+$text-title-color: #333b46;
+
+$tiffany-color: #19bd9a;
+
+.promo {
+    background-color: $text-main-color;
+}
+
+.promo__title {
+    text-transform: uppercase;
+    text-align: center;
+    color: $text-second-color;
+    font-family: "Source Sans Pro", "Arial", sans-serif;
+    font-size: 35px;
+    line-height: 70px;
+}
+
+.promo__text {
+    text-align: center;
+    color: $text-second-color;
+    font-size: 16px;
+    line-height: 28px;
+}

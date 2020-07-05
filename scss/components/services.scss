@@ -1,0 +1,14 @@
+.services__title {
+    text-transform: capitalize;
+    color: $text-subtitle-color;
+    font-size: 20px;
+}
+
+.services__text {
+    font-size: 16px;
+    line-height: 28px;
+
+    &--tiffany {
+        color: $tiffany-color;
+    }
+}

@@ -1,0 +1,11 @@
+.latest-news__title {
+    text-transform: uppercase;
+    color: $text-second-color;
+    letter-spacing: 4px;
+    font-family: "Source Sans Pro", "Arial", sans-serif;
+    font-size: 20px;
+}
+
+.latest-news__text {
+    color: $grey-color;
+}

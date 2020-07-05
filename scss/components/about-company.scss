@@ -1,0 +1,18 @@
+.about-company__title {
+    text-transform: uppercase;
+    color: $text-title-color;
+    font-family: "Source Sans Pro", "Arial", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 4px;
+    line-height: 12px;
+}
+
+.about-company__text {
+    font-family: "Open Sans", "Arial", sans-serif;
+}
+
+.about-company__link {
+    text-transform: capitalize;
+    color: $text-title-color;
+}
