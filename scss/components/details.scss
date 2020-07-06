@@ -4,8 +4,22 @@
     font-weight: 400;
 }
 
+.details__wrapper {
+    display: flex;
+}
+
 .details__text {
     font-size: 16px;
+
+    &--first {
+        width: 321px;
+        margin-right: 129px;
+        font-size: 16px;
+    }
+
+    &--second {
+        width: 515px;
+    }
 
     &--tiffany-color {
         color: $tiffany-color;
