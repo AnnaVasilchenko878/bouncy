@@ -1,0 +1,16 @@
+.project {
+    display: flex;
+}
+
+.project__image {
+    width: 333px;
+    height: 286px;
+
+    &--brand {
+        width: 700px;
+    }
+
+    &--book {
+        width: 334px;
+    }
+}
