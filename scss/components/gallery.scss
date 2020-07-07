@@ -1,0 +1,47 @@
+.gallery {
+    padding-left: 141px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery_item {
+    width: 270px;
+    height: 361px;
+
+    &--blue-book {
+        height: 229px;
+    }
+
+    &--yellow-book {
+        height: 301px;
+    }
+
+    &--bottle {
+        height: 334px;
+    }
+
+    &--drawer {
+        height: 371px;
+    }
+
+    &--gift-bag {
+        height: 269px;
+    }
+
+    &--gift-bottle {
+        height: 209px;
+    }
+
+    &--autograph {
+        height: 357px;
+    }
+
+    &--chair {
+        height: 255px;
+    }
+
+    &--tablet {
+        height: 301px;
+    }
+
+}
