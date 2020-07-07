@@ -1,5 +1,10 @@
 .skills {
     width: 250px;
+    display: flex;
+}
+
+.skills__item {
+    width: 120px;
 }
 
 .skills__percent {
