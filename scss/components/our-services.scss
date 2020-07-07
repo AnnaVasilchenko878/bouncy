@@ -1,6 +1,7 @@
 .our-services {
     padding-top: 81px;
     padding-bottom: 137px;
+    background-color: $bg-second-color;
 }
 
 .our-services__title {
@@ -14,4 +15,9 @@
 
 .our-services__text {
     text-align: center;
+}
+
+.our-services__wrapper {
+    display: flex;
+    padding-left: 182px;
 }
