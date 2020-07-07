@@ -1,3 +1,19 @@
+.impressed {
+    position: relative;
+    padding-top: 81px;
+    padding-left: 98px;
+    padding-bottom: 100px;
+    background-color: $bg-dark-color;
+    background-image: url("../img/img-people.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.impressed__wrapper {
+    width: 596px;
+}
+
 .impressed__title {
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -26,4 +42,11 @@
 
 .impressed__location {
     color: $tiffany-color;
+}
+
+.impressed__image {
+    position: absolute;
+    top: -150px;
+    left: 766px;
+    z-index: 1;
 }
