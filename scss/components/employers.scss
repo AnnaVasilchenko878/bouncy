@@ -1,3 +1,18 @@
+.employers__item {
+    display: flex;
+    padding-left: 181px;
+}
+
+.employers__img {
+    width: 285px;
+    height: 364px;
+    margin-right: 330px;
+}
+
+.employers__wrapper {
+    width: 370px;
+}
+
 .employers__title {
     color: $text-subtitle-color;
 }
