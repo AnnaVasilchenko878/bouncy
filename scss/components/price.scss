@@ -1,6 +1,18 @@
+.price {
+    display: flex;
+    padding-left: 279px;
+}
+
+.price__item {
+    width: 234px;
+    margin-right: 66px;
+    background-color: $bg-main-color;
+}
+
 .price__title {
     text-transform: uppercase;
     color: $text-second-color;
+    background-color: $tiffany-color;
     font-weight: 700;
 }
 
