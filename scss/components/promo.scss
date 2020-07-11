@@ -1,6 +1,6 @@
 .promo {
-    padding-top: 250px;
-    padding-bottom: 47px;
+    padding-top: 246px;
+    padding-bottom: 77px;
     background-color: $text-main-color;
     background-image: url("../img/bg-sea.jpg");
     background-repeat: no-repeat;
@@ -23,4 +23,8 @@
     color: $text-second-color;
     font-size: 16px;
     line-height: 28px;
+}
+
+.promo__wrapper {
+    padding-left: 665px;
 }
