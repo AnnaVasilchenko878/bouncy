@@ -4,6 +4,7 @@
 }
 
 .featured-projects__title {
+    margin-bottom: 41px;
     text-transform: uppercase;
     text-align: center;
     color: $text-title-color;
@@ -15,5 +16,8 @@
 }
 
 .featured-projects__text {
+    width: 451px;
+    margin: 0 auto;
+    margin-bottom: 61px;
     text-align: center;
 }
