@@ -1,20 +1,22 @@
 .impressed {
     position: relative;
-    padding-top: 81px;
+    padding-top: 43px;
     padding-left: 98px;
-    padding-bottom: 100px;
+    padding-bottom: 96px;
     background-color: $bg-dark-color;
     background-image: url("../img/img-people.png");
     background-repeat: no-repeat;
     background-position: center;
+    margin-bottom: -16px;
 
 }
 
 .impressed__wrapper {
-    width: 596px;
+    width: 587px;
 }
 
 .impressed__title {
+    margin-bottom: 59px;
     text-transform: uppercase;
     letter-spacing: 4px;
     color: $text-second-color;
@@ -24,12 +26,15 @@
 }
 
 .impressed__quote {
+    margin-left: -5px;
+    margin-bottom: 34px;
     color: $grey-color;
     font-size: 16px;
     line-height: 28px;
 }
 
 .impressed__autor {
+    display: block;
     text-transform: uppercase;
     color: $grey-color;
     font-weight: 700;
