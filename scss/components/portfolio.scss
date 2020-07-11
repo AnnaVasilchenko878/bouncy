@@ -1,8 +1,11 @@
 .portfolio {
+    padding-top: 80px;
+    padding-bottom: 40px;
     background-color: $bg-second-color;
 }
 
 .portfolio__title {
+    margin-bottom: 41px;
     text-align: center;
     text-transform: uppercase;
     color: $text-title-color;
@@ -12,5 +15,8 @@
 }
 
 .portfolio__text {
+    width: 451px;
+    margin: 0 auto;
+    margin-bottom: 81px;
     text-align: center;
 }
