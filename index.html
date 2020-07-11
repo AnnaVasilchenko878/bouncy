@@ -847,11 +847,23 @@
         <section class="question">
             <h2 class="visually-hidden">Questions</h2>
             <form class="question__form" action="#" method="post">
-                <input class="question__input" type="text" name="user-name" placeholder="Your name">
-                <input class="question__input" type="email" name="user-email" placeholder="Email address">
-                <input class="question__input" type="text" name="user-theme" placeholder="Your name">
-                <textarea class="question__input" cols="10" rows="10"></textarea>
-                <button class="question__button" type="submit">Submit now</button>
+                <ul class="question__list form">
+                    <li class="form__item">
+                        <input class="form__input" type="text" name="user-name" placeholder="Your name">
+                    </li>
+                    <li class="form__item">
+                        <input class="form__input" type="email" name="user-email" placeholder="Email address">
+                    </li>
+                    <li class="form__item">
+                        <input class="form__input" type="text" name="user-theme" placeholder="Your name">
+                    </li>
+                    <li class="form__item form__item--textarea">
+                        <textarea class="form__input" cols="10" rows="10"></textarea>
+                    </li>
+                    <li class="form__item form__item--button">
+                        <button class="form__button" type="submit">Submit now</button>
+                    </li>
+                </ul>
             </form>
         </section>
         <section class="map">

@@ -1,0 +1,28 @@
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 226px;
+}
+
+.form__item {
+    width: 287px;
+
+    &--textarea,
+    &--button {
+        width: 939px;
+    }
+}
+
+.form__input {
+    &::placeholder {
+        text-transform: capitalize;
+        color: $text-placeholder-second;
+    }
+}
+
+.form__button {
+    text-transform: uppercase;
+    border: none;
+    color: $text-second-color;
+    background-color: $tiffany-color;
+}
