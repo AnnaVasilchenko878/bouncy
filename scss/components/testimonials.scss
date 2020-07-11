@@ -1,4 +1,9 @@
 .testimonials {
+    position: relative;
+    padding-top: 80px;
+    padding-right: 113px;
+    padding-left: 106px;
+    padding-bottom: 100px;
     background-color: $bg-second-color;
 }
 
@@ -31,4 +36,22 @@
 .testimonials__position {
     color: $text-subtitle-color;
     line-height: 20px;
+}
+
+.testimonials__item {
+    display: flex;
+    padding-top: 52px;
+    padding-left: 101px;
+    padding-bottom: 60px;
+    background-color: $bg-main-color;
+}
+
+.testimonials__img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+.testimonials__wrapper {
+    width: 754px;
 }

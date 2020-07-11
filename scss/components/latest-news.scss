@@ -1,3 +1,13 @@
+.latest-news {
+    padding-top: 80px;
+    padding-left: 100px;
+    padding-bottom: 104px;
+    background-color: $bg-dark-color;
+    background-image: url("../img/bg-clothes.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .latest-news__title {
     text-transform: uppercase;
     color: $text-second-color;
