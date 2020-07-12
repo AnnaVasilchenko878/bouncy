@@ -8,6 +8,7 @@
 }
 
 .testimonials__title {
+    margin-bottom: 41px;
     text-align: center;
     text-transform: uppercase;
     color: $text-title-color;
@@ -17,6 +18,9 @@
 }
 
 .testimonials__text {
+    width: 457px;
+    margin: 0 auto;
+    margin-bottom: 60px;
     text-align: center;
 }
 
@@ -26,14 +30,17 @@
 }
 
 .testimonials__autor {
+    display: block;
+    margin-left: 40px;
     text-transform: uppercase;
     color: $tiffany-color;
     font-weight: bold;
-    font-style: italic;
+    font-style: normal;
     line-height: 20px;
 }
 
 .testimonials__position {
+    margin-left: 40px;
     color: $text-subtitle-color;
     line-height: 20px;
 }
