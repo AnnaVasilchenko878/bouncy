@@ -1,6 +1,6 @@
 .start-project {
-    padding-left: 111px;
     padding-bottom: 100px;
+    padding-left: 25px;
     background-color: $bg-second-color;
 }
 
@@ -14,6 +14,7 @@
 }
 
 .start-project__text {
+    margin-left: -187px;
     text-align: center;
     color: $text-second-color;
     font-size: 20px;
@@ -21,6 +22,10 @@
     &--bold {
         font-weight: 700;
     }
+}
+
+.start-project__wrapper-inner {
+    margin-left: 410px;
 }
 
 .start-project__link {
