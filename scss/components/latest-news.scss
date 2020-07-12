@@ -1,7 +1,6 @@
 .latest-news {
     padding-top: 80px;
     padding-left: 100px;
-    padding-bottom: 104px;
     background-color: $bg-dark-color;
     background-image: url("../img/bg-clothes.png");
     background-repeat: no-repeat;
@@ -9,6 +8,7 @@
 }
 
 .latest-news__title {
+    margin-bottom: 41px;
     text-transform: uppercase;
     color: $text-second-color;
     letter-spacing: 4px;
@@ -17,5 +17,7 @@
 }
 
 .latest-news__text {
+    width: 457px;
+    margin-bottom: 103px;
     color: $grey-color;
 }
