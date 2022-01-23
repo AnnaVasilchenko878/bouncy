@@ -1,0 +1,34 @@
+.start-project {
+    padding-bottom: 100px;
+    padding-left: 25px;
+    background-color: $bg-second-color;
+}
+
+.start-project__wrapper {
+    padding-top: 58px;
+    padding-left: 182px;
+    padding-bottom: 57px;
+    background-image: url("../img/img-bg-start.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.start-project__text {
+    margin-left: -187px;
+    text-align: center;
+    color: $text-second-color;
+    font-size: 20px;
+
+    &--bold {
+        font-weight: 700;
+    }
+}
+
+.start-project__wrapper-inner {
+    margin-left: 410px;
+}
+
+.start-project__link {
+    text-transform: capitalize;
+    color: $text-second-color;
+}

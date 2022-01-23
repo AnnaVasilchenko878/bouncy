@@ -1,0 +1,33 @@
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 226px;
+}
+
+.form__item {
+    width: 324px;
+    margin-bottom: 29px;
+
+    &--textarea,
+    &--button {
+        width: 939px;
+    }
+}
+
+.form__input {
+    padding: 16px 112px 16px 20px;
+    margin-right: 39px;
+
+    &::placeholder {
+        text-transform: capitalize;
+        color: $text-placeholder-second;
+    }
+}
+
+.form__button {
+    padding: 20px 418px;
+    text-transform: uppercase;
+    border: none;
+    color: $text-second-color;
+    background-color: $tiffany-color;
+}

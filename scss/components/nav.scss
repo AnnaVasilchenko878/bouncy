@@ -1,0 +1,14 @@
+.nav {
+    width: 530px;
+    display: flex;
+}
+
+.nav__item {
+    width: 150px;
+}
+
+.nav__link {
+    color: $text-second-color;
+    font-size: 16px;
+    line-height: 12px;
+}

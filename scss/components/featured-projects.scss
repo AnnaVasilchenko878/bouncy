@@ -1,0 +1,23 @@
+.featured-projects {
+    background-color: $bg-second-color;
+    padding-top: 91px;
+}
+
+.featured-projects__title {
+    margin-bottom: 41px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $text-title-color;
+    font-family: "Source Sans Pro", "Arial", sans-serif;
+    letter-spacing: 14px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 12px;
+}
+
+.featured-projects__text {
+    width: 451px;
+    margin: 0 auto;
+    margin-bottom: 61px;
+    text-align: center;
+}

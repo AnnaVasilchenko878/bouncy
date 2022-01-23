@@ -1,0 +1,36 @@
+.price {
+    display: flex;
+    padding-left: 279px;
+}
+
+.price__item {
+    width: 234px;
+    margin-right: 66px;
+    padding-bottom: 107px;
+    background-color: $bg-main-color;
+}
+
+.price__title {
+    margin-top: 0px;
+    margin-bottom: 67px;
+    padding: 27px 73px 26px 62px;
+    text-transform: uppercase;
+    color: $text-second-color;
+    background-color: $tiffany-color;
+    font-weight: 700;
+}
+
+.price__cost {
+    padding-left: 81px;
+    color: $tiffany-color;
+    font-family: "Source Sans Pro", "Arial", sans-serif;
+    font-weight: 900;
+    font-size: 42px;
+}
+
+.price__time {
+    padding-left: 66px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    line-height: 28px;
+}

@@ -1,0 +1,23 @@
+.latest-news {
+    padding-top: 80px;
+    padding-left: 100px;
+    background-color: $bg-dark-color;
+    background-image: url("../img/bg-clothes.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.latest-news__title {
+    margin-bottom: 41px;
+    text-transform: uppercase;
+    color: $text-second-color;
+    letter-spacing: 4px;
+    font-family: "Source Sans Pro", "Arial", sans-serif;
+    font-size: 20px;
+}
+
+.latest-news__text {
+    width: 457px;
+    margin-bottom: 103px;
+    color: $grey-color;
+}

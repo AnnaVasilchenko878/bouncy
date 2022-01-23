@@ -1,0 +1,57 @@
+.impressed {
+    position: relative;
+    padding-top: 43px;
+    padding-left: 98px;
+    padding-bottom: 96px;
+    background-color: $bg-dark-color;
+    background-image: url("../img/img-people.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: -16px;
+
+}
+
+.impressed__wrapper {
+    width: 587px;
+}
+
+.impressed__title {
+    margin-bottom: 59px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: $text-second-color;
+    font-family: "Source Sans Pro", "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 12px;
+}
+
+.impressed__quote {
+    margin-left: -5px;
+    margin-bottom: 34px;
+    color: $grey-color;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.impressed__autor {
+    display: block;
+    text-transform: uppercase;
+    color: $grey-color;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.impressed__position {
+    text-transform: uppercase;
+}
+
+.impressed__location {
+    color: $tiffany-color;
+}
+
+.impressed__image {
+    position: absolute;
+    top: -150px;
+    left: 766px;
+    z-index: 1;
+}

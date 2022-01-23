@@ -1,0 +1,21 @@
+.skills {
+    width: 250px;
+    display: flex;
+}
+
+.skills__item {
+    width: 120px;
+}
+
+.skills__percent {
+    font-size: 25px;
+
+    &--symbol {
+        font-size: 14px;
+    }
+}
+
+.skills__name {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 25px;
+}

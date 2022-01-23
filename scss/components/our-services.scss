@@ -1,0 +1,27 @@
+.our-services {
+    padding-top: 81px;
+    padding-bottom: 137px;
+    background-color: $bg-second-color;
+}
+
+.our-services__title {
+    margin-bottom: 41px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-family: "Source Sans Pro", "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 12px;
+}
+
+.our-services__text {
+    width: 457px;
+    margin: 0 auto;
+    margin-bottom: 61px;
+    text-align: center;
+}
+
+.our-services__wrapper {
+    display: flex;
+    padding-left: 182px;
+}

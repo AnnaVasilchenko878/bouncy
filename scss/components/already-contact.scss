@@ -1,0 +1,31 @@
+.already-contact {
+    padding-top: 32px;
+    padding-bottom: 71px;
+    background-color: $bg-dark-color;
+    background-image: url("../img/bg-testimonals.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.already-contact__text {
+    text-align: center;
+    margin-bottom: 29px;
+    color: $text-second-color;
+    font-size: 20px;
+
+    &--capitalize {
+        text-transform: capitalize;
+    }
+}
+
+.already-contact__wrapper {
+    padding-left: 613px;
+}
+
+.already-contact__button {
+    border: none;
+    background-color: transparent;
+    text-transform: capitalize;
+    color: $text-second-color;
+    font-size: 16px;
+}

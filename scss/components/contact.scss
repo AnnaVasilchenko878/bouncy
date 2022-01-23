@@ -1,0 +1,38 @@
+.contact {
+    display: flex;
+    padding-left: 226px;
+}
+
+.contact__item {
+    width: 287px;
+    margin-left: 40px;
+    padding-top: 30px;
+    padding-left: 42px;
+    padding-right: 43px;
+    padding-bottom: 29px;
+    text-align: center;
+    background-color: $bg-main-color;
+}
+
+.contact__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.contact__link {
+    margin: 0 auto;
+    text-transform: uppercase;
+    line-height: 20px;
+    color: $text-main-color;
+}
+
+.contact__address {
+    text-transform: uppercase;
+    line-height: 20px;
+}
+
+.contact__phone {
+    text-transform: uppercase;
+    line-height: 20px;
+}

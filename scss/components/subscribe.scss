@@ -1,0 +1,43 @@
+.subscribe {
+    padding-top: 58px;
+    padding-bottom: 100px;
+    background-color: $bg-dark-color;
+    background-image: url("../img/bg-cloud.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.subscribe__title {
+    margin-bottom: 43px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $text-second-color;
+    font-family: "Source Sans Pro", "Arial", sans-serif;
+    font-weight: 300;
+}
+
+.subscribe__text {
+    width: 457px;
+    margin: 0 auto;
+    margin-bottom: 61px;
+    text-align: center;
+}
+
+.subscribe__form {
+    padding-left: 426px;
+}
+
+.subscribe__input {
+
+    &::placeholder {
+        text-transform: capitalize;
+        color: $text-placeholder-color;
+    }
+}
+
+.subscribe__button {
+    text-transform: uppercase;
+    border: none;
+    color: $text-second-color;
+    background-color: $tiffany-color;
+}
