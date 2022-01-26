@@ -3,34 +3,37 @@
     padding-left: 265px;
     padding-top: 144px;
     padding-bottom: 57px;
-}
 
-.about-company__wrapper {
-    width: 466px;
-    margin-right: 166px;
-}
+    &__wrapper {
+        width: 466px;
+        margin-right: 166px;
+    }
 
-.about-company__title {
-    margin-bottom: 49px;
-    text-transform: uppercase;
-    color: $text-title-color;
-    font-family: "Source Sans Pro", "Arial", sans-serif;
-    font-size: 20px;
-    font-weight: 300;
-    letter-spacing: 4px;
-    line-height: 12px;
-}
+    &__title {
+        margin-bottom: 49px;
+        text-transform: uppercase;
+        color: $text-title-color;
+        font-family: "Source Sans Pro", "Arial", sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        letter-spacing: 4px;
+        line-height: 12px;
+    }
 
-.about-company__text {
-    margin-bottom: 33px;
-    font-family: "Open Sans", "Arial", sans-serif;
-}
+    &__text {
+        margin-bottom: 33px;
+        font-family: "Open Sans", "Arial", sans-serif;
+    }
 
-.about-company__link {
-    text-transform: capitalize;
-    color: $text-title-color;
-}
+    &__link {
+        text-transform: capitalize;
+        color: $text-title-color;
+        border: 1px solid $text-title-color;
+        padding: 12px 30px;
+        border-radius: 25px;
+    }
 
-.about-company__img {
-    width: 215px;
+    &__img {
+        width: 215px;
+    }
 }
