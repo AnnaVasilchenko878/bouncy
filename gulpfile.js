@@ -36,5 +36,12 @@ function autoUpdates(done) {
     done();
 };
 
-exports.default = test;
-exports.autoUpdates = autoUpdates;
+function watchAll(done) {
+    gulp.watch('./scss/**/*', test);
+    gulp.watch('./**/*.html', browserReload);
+    gulp.watch('./**/*.js', browserReload);
+    gulp.watch('./**/*.php', browserReload);
+    done();
+}
+
+exports.default = gulp.parallel(autoUpdates, watchAll);
