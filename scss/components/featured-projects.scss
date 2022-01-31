@@ -1,23 +1,48 @@
 .featured-projects {
     background-color: $bg-second-color;
     padding-top: 91px;
+
+    &__title {
+        margin-bottom: 41px;
+        text-transform: uppercase;
+        text-align: center;
+        color: $text-title-color;
+        font-family: "Source Sans Pro", "Arial", sans-serif;
+        letter-spacing: 14px;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 12px;
+    }
+
+    &__text {
+        width: 451px;
+        margin: 0 auto;
+        margin-bottom: 61px;
+        text-align: center;
+    }
+    &__wrapper {
+        background-image: url(../../img/bg-sneakers.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        padding: 37px 168px 37px 170px;
+    }
+    &__description {
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: 0,8px;
+        color: $text-second-color;
+        margin-right: 141px;
+    }
+    &__button {
+        border: 1px solid $text-second-color;
+        text-transform: capitalize;
+        color: $text-second-color;
+        font-size: 16px;
+        line-height: 12px;
+        background-color: transparent;
+        padding: 12px 37px;
+        border-radius: 40px;
+    }
 }
 
-.featured-projects__title {
-    margin-bottom: 41px;
-    text-transform: uppercase;
-    text-align: center;
-    color: $text-title-color;
-    font-family: "Source Sans Pro", "Arial", sans-serif;
-    letter-spacing: 14px;
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 12px;
-}
-
-.featured-projects__text {
-    width: 451px;
-    margin: 0 auto;
-    margin-bottom: 61px;
-    text-align: center;
-}

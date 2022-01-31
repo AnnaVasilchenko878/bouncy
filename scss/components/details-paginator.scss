@@ -18,14 +18,28 @@
             content: "";
             position: absolute;
             top: 15px;
-            left: 13px;
-            width: 20px;
+            left: 12px;
+            width: 29px;
             height: 30px;
-            // background-image: url(../../img/icon-like.svg);
-            // background-image: url(../../img/icon-mouse.svg);
+            background-image: url(../../img/icon-heart.svg);
+
+        }
+
+        &--mouse::before {
+            background-image: url(../../img/icon-mouse.svg);
+            top: 13px;
+            left: 15px;
+            width: 22px;
+            height: 29px;
+
+        }
+
+        &--bulb::before {
             background-image: url(../../img/icon-bulb.svg);
-
-
+            top: 13px;
+            left: 16px;
+            width: 20px;
+            height: 29px;
         }
     }
 }

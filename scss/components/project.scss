@@ -1,5 +1,6 @@
 .project {
     display: flex;
+    margin-bottom: -21px;
 }
 
 .project__image {
@@ -11,6 +12,6 @@
     }
 
     &--book {
-        width: 334px;
+        width: 333px;
     }
 }
