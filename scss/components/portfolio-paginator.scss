@@ -1,11 +1,11 @@
 .portfolio-paginator {
     display: flex;
-    padding-left: 193px;
+    padding-left: 357px;
     margin-bottom: 73px;
-}
 
-.portfolio-paginator__item {
-    width: 150px;
-    color: $text-subtitle-color;
-    font-size: 16px;
+    .portfolio-paginator__item {
+        width: 100px;
+        color: $text-subtitle-color;
+        font-size: 16px;
+    }
 }

@@ -1,21 +1,22 @@
 .team {
     padding-top: 80px;
     padding-bottom: 80px;
-}
 
-.team__title {
-    margin-bottom: 41px;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-family: "Source Sans Pro", "Arial", sans-serif;
-    font-size: 20px;
-    line-height: 12px;
-}
+    &__title {
+        margin-bottom: 41px;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-family: "Source Sans Pro", "Arial", sans-serif;
+        font-size: 20px;
+        line-height: 12px;
+        font-weight: 400;
+    }
 
-.team__text {
-    width: 457px;
-    margin: 0 auto;
-    margin-bottom: 62px;
-    text-align: center;
+    &__text {
+        width: 457px;
+        margin: 0 auto;
+        margin-bottom: 62px;
+        text-align: center;
+    }
 }

@@ -2,12 +2,46 @@
     width: 53px;
     margin-right: 44px;
     margin-top: 18px;
+    
+    &__item {
+        margin-bottom: 17px;
+    }
+
+    &__button {
+        border: none;
+        width: 53px;
+        height: 53px;
+        background-color: $btn-grey;
+        border-radius: 50%;
+        cursor: pointer;
+        position: relative;
+
+            &::before {
+                content: "";
+                width: 28px;
+                height: 28px;
+                position: absolute;
+                top: 13px;
+                left: 13px;
+                background-image: url('../../img/icon-tools.svg');
+
+            }
+        &--roller::before {
+            background-image: url('../../img/icon-roller.svg');
+            top: 15px;
+
+        }
+        &--gamepad::before {
+            background-image: url('../../img/icon-gamepad.svg');
+            height: 26px;
+            top: 16px;
+        }
+
+        &--plug::before {
+            background-image: url('../../img/icon-plug.svg');
+            width: 22px;
+            left: 16px;
+        }
+    }
 }
 
-.services-paginator__item {
-    margin-bottom: 17px;
-}
-
-.services-paginator__button {
-    border: none;
-}

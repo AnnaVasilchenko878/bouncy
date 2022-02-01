@@ -1,23 +1,23 @@
 .services {
     width: 400px;
-    margin-right: 88px;
+    margin-right: 137px;
+
+    &__title {
+        text-transform: capitalize;
+        color: $text-subtitle-color;
+        font-size: 20px;
 }
 
-.services__title {
-    text-transform: capitalize;
-    color: $text-subtitle-color;
-    font-size: 20px;
-}
+    &__text {
+        font-size: 16px;
+        line-height: 28px;
 
-.services__text {
-    font-size: 16px;
-    line-height: 28px;
-
-    &--first-text {
-        margin-bottom: 42px;
-    }
-
-    &--tiffany {
-        color: $tiffany-color;
+            &--first-text {
+                margin-bottom: 42px;
+        }
+        &--tiffany {
+            color: $tiffany-color;
+            font-weight: 700;
+        }
     }
 }
