@@ -1,31 +1,40 @@
-.news__title {
-    margin-bottom: 12px;
-    text-transform: capitalize;
-    color: $light-grey-color;
-    font-size: 20px;
-}
+.news {
 
-.news__autor {
-    margin-bottom: 20px;
-    font-family: "Source Sans Pro", "Arial", sans-serif;
-    font-style: italic;
-
-    &--name {
-        color: $tiffany-color;
+    &__item {
+        margin-left: 61px;
     }
-}
+    &__title {
+        margin-bottom: 12px;
+        text-transform: capitalize;
+        color: $light-grey-color;
+        font-size: 20px;
+    }
 
-.news__statistics {
-    margin-bottom: 60px;
-    color: $text-subtitle-color;
-}
+    &__autor {
+        margin-bottom: 8px;
+        font-family: "Source Sans Pro", "Arial", sans-serif;
+        font-style: italic;
+        text-transform: uppercase;
 
-.news__text {
-    width: 580px;
-    margin-bottom: 51px;
-}
+        &--name {
+            color: $tiffany-color;
+        }
+    }
 
-.news__link {
-    text-transform: capitalize;
-    color: $grey-color;
+    &__statistics {
+        margin-bottom: 60px;
+        color: $text-subtitle-color;
+    }
+
+    &__text {
+        width: 580px;
+        margin-bottom: 51px;
+    }
+
+    &__link {
+        text-transform: capitalize;
+        color: $grey-color;
+    }
+
+
 }
