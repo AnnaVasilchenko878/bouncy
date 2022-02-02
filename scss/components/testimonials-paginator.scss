@@ -1,0 +1,14 @@
+.testimonials-paginator {
+    display: flex;
+    position: absolute;
+    top: 493px;
+    left: 660px;
+
+    &__item {
+        width: 10px;
+        height: 10px;
+        border: 1px solid $tiffany-color;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+}
