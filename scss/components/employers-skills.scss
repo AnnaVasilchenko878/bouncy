@@ -1,17 +1,41 @@
 .employers-skills {
-    margin-left: 150px;
-}
+    margin-left: 67px;
 
-.employers-skills__wrapper {
-    display: flex;
-}
+    &__wrapper {
+        display: flex;
+    }
 
-.employers-skills__name {
-    width: 131px;
-    margin-right: 72px;
-}
+    &__name {
+        width: 131px;
+        margin-right: 142px;
+        text-transform: uppercase;
+        margin-bottom: -20px;
+    }
 
-.employers-skills__percent {
-    width: 36px;
-    margin-top: 14px;
+    &__percent {
+        width: 36px;
+        margin-top: 14px;
+    }
+
+    &__progress {
+        height: 4px;
+        width: 304px;
+        background-color: $light-grey-color;
+        position: relative;
+        &::before {
+            content: "";
+            width: 243px;
+            height: 4px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background-color: $tiffany-color;
+        }
+        &--web::before {
+            width: 198px;
+        }
+        &--ui::before {
+            width: 238px;
+        }
+    }
 }

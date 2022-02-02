@@ -1,8 +1,13 @@
 .team-paginator {
     display: flex;
     padding-left: 670px;
+
+    &__item {
+        width: 10px;
+        height: 10px;
+        border: 1px solid $tiffany-color;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
 }
 
-.team-paginator__item {
-    width: 10px;
-}
