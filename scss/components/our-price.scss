@@ -2,21 +2,22 @@
     padding-top: 80px;
     padding-bottom: 101px;
     background-color: $bg-second-color;
-}
 
-.our-price__title {
-    margin-bottom: 41px;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-family: "Source Sans Pro", "Arial", sans-serif;
-    font-size: 20px;
-    line-height: 12px;
-}
+    &__title {
+        margin-bottom: 41px;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-family: "Source Sans Pro", "Arial", sans-serif;
+        font-size: 20px;
+        line-height: 12px;
+        font-weight: 300;
+    }
 
-.our-price__text {
-    width: 457px;
-    margin: 0 auto;
-    margin-bottom: 61px;
-    text-align: center;
+    &__text {
+        width: 457px;
+        margin: 0 auto;
+        margin-bottom: 61px;
+        text-align: center;
+    }
 }
