@@ -2,20 +2,21 @@
     position: absolute;
     top: -22px;
     left: -11px;
+
+    &__wrapper {
+        display: flex;
+        padding-left: 98px;
+        padding-top: 40px;
+    }
+
 }
 
-.header__wrapper {
-    display: flex;
-    padding-left: 98px;
-    padding-top: 40px;
-}
-
-.header__logo {
-    width: 115px;
-    margin-right: 508px;
-    font-family: "Big John", "Arial", sans-serif;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 12px;
-    color: $text-second-color;
-}
+.logo {
+        width: 115px;
+        margin-right: 508px;
+        font-family: "Big John", "Arial", sans-serif;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 12px;
+        color: $text-second-color;
+    }

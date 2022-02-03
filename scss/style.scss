@@ -3,6 +3,7 @@
 @import "base/fonts.scss";
 @import "base/defaultstyles.scss";
 @import "global/header.scss";
+@import "global/logo.scss";
 @import "components/nav.scss";
 @import "components/promo.scss";
 @import "components/about-company.scss";
@@ -36,6 +37,6 @@
 @import "components/contact.scss";
 @import "components/question.scss";
 @import "components/form.scss";
-// добавить секцию map
+@import "components/map.scss";
 @import "global/footer.scss";
-@import "components/social";
+@import "components/social.scss";

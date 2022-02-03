@@ -1,9 +1,30 @@
 .social {
     display: flex;
-    padding-left: 611px;
-}
+    padding-left: 579px;
 
-.social__item {
-    width: 26px;
-    margin-left: 15px;
+    &__item {
+        width: 26px;
+        height: 26px;
+        margin-left: 15px;
+        border-radius: 50%;
+        background-color: $facebook-color;
+
+        &--linkedn {
+        background-color: $linkedn-color;
+        }
+        &--instagram {
+            background-color: $instagram-color;
+        }
+        &--vimeo {
+            background-color: $vimeo-color;
+        }
+    }
+    &__link {
+        position: relative;
+    }
+    &__icon {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+    }
 }
