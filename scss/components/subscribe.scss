@@ -1,43 +1,51 @@
 .subscribe {
-    padding-top: 58px;
-    padding-bottom: 100px;
+    padding-top: 37px;
+    padding-bottom: 99px;
     background-color: $bg-dark-color;
     background-image: url("../img/bg-cloud.png");
     background-repeat: no-repeat;
     background-position: center;
-}
 
-.subscribe__title {
-    margin-bottom: 43px;
-    text-align: center;
-    text-transform: uppercase;
-    color: $text-second-color;
-    font-family: "Source Sans Pro", "Arial", sans-serif;
-    font-weight: 300;
-}
-
-.subscribe__text {
-    width: 457px;
-    margin: 0 auto;
-    margin-bottom: 61px;
-    text-align: center;
-}
-
-.subscribe__form {
-    padding-left: 426px;
-}
-
-.subscribe__input {
-
-    &::placeholder {
-        text-transform: capitalize;
-        color: $text-placeholder-color;
+    &__title {
+        margin-bottom: 43px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $text-second-color;
+        font-family: "Source Sans Pro", "Arial", sans-serif;
+        font-weight: 300;
+        letter-spacing: 4px;
     }
-}
 
-.subscribe__button {
-    text-transform: uppercase;
-    border: none;
-    color: $text-second-color;
-    background-color: $tiffany-color;
+    &__text {
+        width: 457px;
+        margin: 0 auto;
+        margin-bottom: 61px;
+        text-align: center;
+    }
+
+    &__form {
+        padding-left: 426px;
+    }
+
+    &__input {
+        width: 358px;
+        padding: 15px 242px 15px 23px;
+        background-color: transparent;
+        border: 1px solid $text-main-color;
+        margin-right: 9px;
+
+        &::placeholder {
+            text-transform: capitalize;
+            color: $text-placeholder-color;
+        }
+    }
+
+    &__button {
+        text-transform: uppercase;
+        border: none;
+        color: $text-second-color;
+        background-color: $tiffany-color;
+        padding: 16px 50px;
+        cursor: pointer;
+    }
 }
