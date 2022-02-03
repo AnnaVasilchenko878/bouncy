@@ -12,7 +12,7 @@ function test(done) {
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))  
         .pipe(rename('style-min.css'))
         .pipe(autoprefixer({
-            browsers: ['last 5 versions'],
+            browsers: ['last 10 versions'],
             cascade: false
         }))
         .pipe(sourcemaps.write())

@@ -28,3 +28,8 @@
         left: 5px;
     }
 }
+@-moz-document url-prefix(){
+    .social__icon {
+        top: 20px;
+    }
+}

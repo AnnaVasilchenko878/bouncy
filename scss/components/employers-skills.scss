@@ -10,6 +10,25 @@
         margin-right: 142px;
         text-transform: uppercase;
         margin-bottom: -20px;
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 243px;
+            height: 4px;
+            position: absolute;
+            top: 39px;
+            left: 0px;
+            background-color: $tiffany-color;
+                }
+
+                &--web::before {
+                    width: 198px;
+                }
+
+                &--ui::before {
+                    width: 238px;
+                }
     }
 
     &__percent {
@@ -21,21 +40,5 @@
         height: 4px;
         width: 304px;
         background-color: $light-grey-color;
-        position: relative;
-        &::before {
-            content: "";
-            width: 243px;
-            height: 4px;
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            background-color: $tiffany-color;
-        }
-        &--web::before {
-            width: 198px;
-        }
-        &--ui::before {
-            width: 238px;
-        }
     }
 }
