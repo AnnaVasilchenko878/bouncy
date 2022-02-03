@@ -1,15 +1,35 @@
 .nav {
-    width: 530px;
+    width: 713px;
     display: flex;
-}
 
-.nav__item {
-    width: 150px;
-    margin-right: 33px;
-}
+    &__item {
+        width: 86px;
+        margin-right: 13px;
+        padding: 7px 22px;
+        border-radius: 25px;
+        &--services {
+            padding: 8px 13px;
+        }
+        &--portfolio {
+            padding: 7px 12px;
+        }
 
-.nav__link {
-    color: $text-second-color;
-    font-size: 16px;
-    line-height: 12px;
+        &--blog {
+            padding: 7px 23px;
+        }
+        &--contact {
+            padding: 7px 13px;
+        }
+        &:hover,
+        &:focus {
+            border: 1px solid $text-second-color;
+                }
+        
+    }
+
+    &__link {
+        color: $text-second-color;
+        font-size: 16px;
+        line-height: 12px;
+    }
 }
