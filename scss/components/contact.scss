@@ -1,6 +1,6 @@
 .contact {
     display: flex;
-    padding-left: 226px;
+    padding-left: 174px;
 }
 
 .contact__item {
@@ -12,6 +12,30 @@
     padding-bottom: 29px;
     text-align: center;
     background-color: $bg-main-color;
+    position: relative;
+    box-shadow: 0.7px 0.7px 0 0 rgba(0, 0, 0, 0.05);
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -147px;
+        left: 0px;
+        width: 287px;
+        height: 145px;
+        background-image: url("../../img/icon-envelope.svg"),
+        url("../../img/bg-envelope.png");
+        background-repeat: no-repeat, no-repeat;
+        background-position: center, center;
+        background-size: 62px 46px, 287px 145px;
+    }
+    &--office::before {
+        background-image: url("../../img/icon-mark.svg"),
+        url("../../img/bg-office.png");
+    }
+    &--phone::before {
+        background-image: url("../../img/icon-phone.svg"),
+            url("../../img/bg-laptop.png");
+    }
 }
 
 .contact__title {
