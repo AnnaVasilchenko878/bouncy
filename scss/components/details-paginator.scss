@@ -14,6 +14,14 @@
         height: 53px;
         background-color: $btn-grey;
         border-radius: 50%;
+        cursor: pointer;
+        &:hover,
+        &:focus {
+            background-color: $tiffany-color;
+        }
+        &:active {
+            background-color: $tiffany-color;
+        }
         &::before {
             content: "";
             position: absolute;
