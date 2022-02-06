@@ -2,6 +2,62 @@
     padding-left: 141px;
     display: flex;
     flex-wrap: wrap;
+    
+        &-description {
+            padding: 108px 12px 55px 30px;
+            position: absolute;
+            background-color: rgba(0,0,0, 0.7);
+            display: none;
+
+            &__title {
+                font-size: 20px;
+                line-height: 12px;
+                letter-spacing: 4px;
+                text-align: left;
+                color: $tiffany-color;
+                text-transform: uppercase;
+                margin-bottom: 52px;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 29px;
+                    left: 3px;
+                    width: 23px;
+                    height: 1px;
+                    background-color: $tiffany-color;
+                }
+            }
+            &__text {
+                font-style: 12px;
+                color: $grey-color;
+            }
+            &__wrapper {
+                position: relative;
+            }
+            &__button {
+                border: none;
+                background-color: $shadows-color;
+                width: 29px;
+                height: 28px;
+                border-radius: 50%;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 11px;
+                    left: 8px;
+                    width: 13px;
+                    height: 13px;
+                    background-image: url("../../img/icon-link.svg");
+                }
+                &--like::before {
+                    background-image: url("../../img/icon-heart.svg");
+                    left: 40px;
+                }
+            }
+        }
+
 }
 
 .gallery__item {
