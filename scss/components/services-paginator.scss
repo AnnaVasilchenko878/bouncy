@@ -42,6 +42,11 @@
             width: 22px;
             left: 16px;
         }
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: $tiffany-color;
+    } 
     }
 }
 

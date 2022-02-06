@@ -3,9 +3,55 @@
     padding-left: 357px;
     margin-bottom: 73px;
 
-    .portfolio-paginator__item {
+    &__item {
         width: 100px;
         color: $text-subtitle-color;
         font-size: 16px;
+        position: relative;
+        margin-right: 11px;
+
+        &:nth-child(2),
+        &:nth-child(5),
+        &:nth-child(6) {
+            margin-right: -12px;
+        }
+        }
+    &__button {
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        &::before {
+            content: "";
+            display: none;
+            position: absolute;
+            top: 28px;
+            left: 24px;
+            width: 38px;
+            height: 2px;
+            background-color: $tiffany-color;
+        }
+        &--print::before {
+            left: 6px;
+        }
+        &--identity::before {
+            left: 14px;
+        }
+        &--branding::before {
+            left: 19px;
+        }
+        &--html::before {
+            left: 7px;
+        }
+        &--web::before {
+            left: 5px;
+        }
+        &--wordpress::before {
+            left: 29px;
+        }
+        &:hover::before,
+        &:focus::before,
+        &:active::before {
+            display: block;
+        }
     }
 }

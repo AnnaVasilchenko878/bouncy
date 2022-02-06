@@ -44,6 +44,11 @@
         padding: 12px 37px;
         border-radius: 40px;
         cursor: pointer;
+        &:hover,
+        &:focus {
+            background-color: $text-second-color;
+            color: $shadows-color;
+        }
     }
 }
 

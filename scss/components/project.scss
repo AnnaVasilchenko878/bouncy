@@ -13,18 +13,45 @@
             left: 0px;
             background-color: rgba(0, 0, 0, 0.6);
             }
+        &::after {
+            content: "Develop";
+            font-size: 20px;
+            line-height: 12px;
+            text-align: center;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: $bg-second-color;
+            font-weight: 300;
+            width: 150px;
+            height: 50px;
+            top: 143px;
+            left: 256px; 
+            position: absolute;
+        }
         &--paper::before {
             width: 333px;
             height: 286px;
             left: 700px;
         } 
+        &--paper::after {
+            content: "Vintage";
+            left: 779px;
+        }
         &--book::before {
             width: 333px;
             left: 1033px;
+        }
+        &--book::after {
+            content: "Branding";
+            left: 1120px;
         } 
         &:hover:before,
         &:focus:before {
             background-color: transparent;
+        }
+        &:hover:after,
+        &:focus:after {
+            display: none;
         }
     }
     
