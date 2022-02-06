@@ -1,17 +1,44 @@
 .project {
     display: flex;
     margin-bottom: -21px;
-}
+    position: relative;
 
-.project__image {
-    width: 333px;
-    height: 286px;
-
-    &--brand {
-        width: 700px;
+    &__item {
+        &::before {
+            content: "";
+            width: 700px;
+            height: 286px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background-color: rgba(0, 0, 0, 0.6);
+            }
+        &--paper::before {
+            width: 333px;
+            height: 286px;
+            left: 700px;
+        } 
+        &--book::before {
+            width: 333px;
+            left: 1033px;
+        } 
+        &:hover:before,
+        &:focus:before {
+            background-color: transparent;
+        }
     }
-
-    &--book {
+    
+    &__image {
         width: 333px;
+        height: 286px;
+
+
+            &--brand {
+            width: 700px;
+             }
+
+        &--book {
+        width: 333px;
+        }
     }
 }
