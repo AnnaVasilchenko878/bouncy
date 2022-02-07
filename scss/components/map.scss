@@ -1,6 +1,7 @@
 .map {
   margin-bottom: -7px;
   position: relative;
+
   &__wrapper {
     position: absolute;
     top: -1px;
@@ -26,17 +27,27 @@
       background-color: $tiffany-color;
       margin-top: 20px;
       position: relative;
-      &:before {
-        content: "";
-        position: absolute;
-        top: 2px;
-        left: 5px;
-        width: 8px;
-        height: 8px;
-        border: 1px solid $text-second-color;
-        border-top-color: transparent;
-        border-right-color: transparent;
-        transform: rotate(-48deg);
+      cursor: pointer;
+        &:before {
+          content: "";
+          position: absolute;
+          top: 2px;
+          left: 5px;
+          width: 8px;
+          height: 8px;
+          border: 1px solid $text-second-color;
+          border-top-color: transparent;
+          border-right-color: transparent;
+          transform: rotate(-48deg);
+        }
+        &:hover,
+        &:focus {
+          background-color: $text-second-color;
+        }
+        &:hover::before,
+        &:focus::before{
+          border-bottom-color: $shadows-color;
+          border-left-color: $shadows-color;
       }
     }
 }

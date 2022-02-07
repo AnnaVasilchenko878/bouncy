@@ -18,6 +18,11 @@
         &--vimeo {
             background-color: $vimeo-color;
         }
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: $tiffany-color;
+        }
     }
     &__link {
         position: relative;
