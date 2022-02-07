@@ -37,5 +37,11 @@
         color: $text-second-color;
         background-color: $tiffany-color;
         cursor: pointer;
+                &:hover,
+                &:focus,
+                &:active {
+                    background-color: $text-main-color;
+                    color: $shadows-color;
+                }
     }
 }

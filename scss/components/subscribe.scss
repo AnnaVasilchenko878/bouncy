@@ -47,6 +47,12 @@
         background-color: $tiffany-color;
         padding: 16px 50px;
         cursor: pointer;
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: $text-second-color;
+            color: $shadows-color;
+        }
     }
 }
 @-moz-document url-prefix() {

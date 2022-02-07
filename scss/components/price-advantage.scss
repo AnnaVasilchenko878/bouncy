@@ -1,0 +1,32 @@
+.price-advantage {
+  padding: 35px 51px 36px 33px;
+  line-height: 30px;
+  letter-spacing: 0,7px;
+  text-align: left;
+  color: $text-main-color;
+  
+  &__wrapper {
+    background-color: $tiffany-color;
+    padding: 26px 63px 29px 71px; 
+  }
+  &__link {
+    font-size: 16px;
+    line-height: 12px;
+    text-align: center;
+    color: $text-second-color;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 9px;
+      height: 9px;
+      border: 2px solid $text-second-color;
+      transform: rotate(-44deg);
+      border-top-color: transparent;
+      border-left-color: transparent;
+      position: absolute;
+      top: 7px;
+      left: 81px;
+    }
+  }
+}

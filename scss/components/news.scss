@@ -34,6 +34,12 @@
     &__link {
         text-transform: capitalize;
         color: $grey-color;
+                &:hover,
+                &:focus,
+                &:active {
+                font-weight: 700;
+                color: $text-second-color;
+                }
     }
 
 

@@ -31,6 +31,12 @@
         padding: 14px 30px;
         border-radius: 45px;
         cursor: pointer;
+            &:hover,
+            &:focus,
+            &:active {
+                background-color: $text-second-color;
+                color: $shadows-color;
+                }
     }
 }
 

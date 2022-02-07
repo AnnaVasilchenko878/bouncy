@@ -5,8 +5,16 @@
     &__item {
         width: 234px;
         margin-right: 66px;
-        padding-bottom: 63px;
         background-color: $bg-main-color;
+        padding-bottom: 65px;
+        &--description {
+            display: none;
+        }
+        &:hover,
+        &:focus,
+        &:active {
+            padding-bottom: 0px;
+        }
     }
 
     &__title {

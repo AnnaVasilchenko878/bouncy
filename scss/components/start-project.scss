@@ -34,6 +34,12 @@
         border: 1px solid $text-second-color;
         border-radius: 35px;
         padding: 11px 24px;
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: $text-second-color;
+            color: $shadows-color;
+        }
     }
 }
 
