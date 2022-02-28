@@ -1,58 +1,95 @@
-.promo {
-    padding-top: 207px;
-    padding-bottom: 77px;
-    background-color: $text-main-color;
-    background-image: url("../img/bg-sea.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
+@media(min-width: $mobile-width) {
+    .promo {
+        background-image: url("../img/bg-sea-mobile.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
 
-    &__title {
-        margin-bottom: 43px;
-        text-transform: uppercase;
-        text-align: center;
-        color: $text-second-color;
-        font-family: "Source Sans Pro", "Arial", sans-serif;
-        font-size: 35px;
-        line-height: 70px;
-        font-weight: 300;
-        letter-spacing: 7px;
-    }
+        padding: 103px 42px 114px 23px;
 
-    &__text {
-        width: 615px;
-        margin: 0 auto;
-        margin-bottom: 220px;
-        text-align: center;
-        color: $text-second-color;
-        font-size: 16px;
-        line-height: 28px;
-        letter-spacing: 0.8px;
+        &__title {
+            margin-bottom: 43px;
+            text-transform: uppercase;
+            text-align: center;
+            color: $text-second-color;
+            font-family: "Source Sans Pro", "Arial", sans-serif;
+            font-size: 26px;
+            line-height: 23px;
+            font-weight: 300;
+            letter-spacing: 2px;
+        } 
+        &__text {
+            display: none;
+        }
+        &__wrapper {
+            display: none;
+        }
     }
+}
 
-    &__wrapper {
-        padding-left: 665px;
+@media(min-width: $tablet-width) {
+    .promo {
+        background-image: url("../img/bg-sea-tablet.jpg");
+        padding: 240px 64px 312px 51px;
+        &__title {
+            font-size: 55px;
+        }
     }
-    &__button {
-        border: none;
-        background-color: $tiffany-color;
-        width: 36px;
-        height: 36px;
-        position: relative;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-    &__button:before {
-        content: "";
-        position: absolute;
-        width: 13px;
-        height: 13px;
-        background-color: transparent;
-        border: 2px solid $text-second-color;
-        top: 9px;
-        left: 11px;
-        transform: rotate(44deg);
-        border-left-color: transparent;
-        border-top-color: transparent;
-    }
+}
+@media(min-width: $desktop-width) {
+    .promo {
 
+        padding: 253px 381px 77px 385px;
+        background-color: $text-main-color;
+        background-image: url("../img/bg-sea.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &__title {
+            margin-bottom: 43px;
+            font-size: 35px;
+            letter-spacing: 7px;
+        }
+
+        &__text {
+            display: block;
+            width: 615px;
+            margin: 0 auto;
+            margin-bottom: 220px;
+            text-align: center;
+            color: $text-second-color;
+            font-size: 16px;
+            line-height: 28px;
+            letter-spacing: 0.8px;
+        }
+
+        &__wrapper {
+            display: block;
+            padding-left: 280px;
+        }
+
+        &__button {
+            border: none;
+            background-color: $tiffany-color;
+            width: 36px;
+            height: 36px;
+            position: relative;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        &__button:before {
+            content: "";
+            position: absolute;
+            width: 13px;
+            height: 13px;
+            background-color: transparent;
+            border: 2px solid $text-second-color;
+            top: 9px;
+            left: 11px;
+            transform: rotate(44deg);
+            border-left-color: transparent;
+            border-top-color: transparent;
+        }
+
+    }
 }

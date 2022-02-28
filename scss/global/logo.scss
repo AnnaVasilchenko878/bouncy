@@ -1,15 +1,18 @@
-.logo {
-  width: 115px;
-  margin-right: 444px;
-  font-family: "Big John", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 25px;
-  line-height: 12px;
-  color: $text-second-color;
+@media(min-width: $mobile-width) {
+  .logo {
+    margin-right: 144px;
 
-  &__footer {
-    color: $logo-footer-color;
-    margin: 0 auto;
-    margin-bottom: 24px;
+    &__footer {
+      color: $logo-footer-color;
+      margin: 0 auto;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+@media(min-width: $tablet-width) {
+  .logo {
+    font-size: 36px;
+    margin-right: 450px;
   }
 }

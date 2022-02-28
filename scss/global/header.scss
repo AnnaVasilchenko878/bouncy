@@ -1,17 +1,64 @@
-.header {
-    position: absolute;
-    top: -22px;
-    left: -11px;
-
-    &__wrapper {
+@media(min-width: $mobile-width){
+    .header {
+        position: absolute;
+        top: 35px;
+        left: 94px;
         display: flex;
-        padding-left: 98px;
-        padding-top: 40px;
+
+        &__wrapper {
+            display: flex;
+        }
+        &__btn-wrapper {
+            width: 21px;
+        }
+        &__button {
+            border: none;
+            background-color: transparent;
+            width: 34px;
+            height: 42px;
+        }
     }
 
+    .logo {
+        width: 115px;
+        margin-right: 508px;
+        font-family: "Big John", "Arial", sans-serif;
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 12px;
+        color: $text-second-color;
+    }
+    
 }
+@media(min-width: $tablet-width) {
+ .header {
+     top: 65px;
+     left: 47px;
+     &__button {
+         width: 45px;
+         height: 32px;
+     }
+ }
 
-.logo {
+}
+@media(min-width: $desktop-width) {
+
+    .header {
+        top: -22px;
+        left: 212px;
+
+        &__wrapper {
+            display: flex;
+            padding-left: 98px;
+            padding-top: 40px;
+        }
+        &__btn-wrapper {
+            display: none;
+        }
+
+    }
+
+    .logo {
         width: 115px;
         margin-right: 508px;
         font-family: "Big John", "Arial", sans-serif;
@@ -20,3 +67,4 @@
         line-height: 12px;
         color: $text-second-color;
     }
+}

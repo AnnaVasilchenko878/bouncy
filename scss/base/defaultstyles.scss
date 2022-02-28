@@ -10,7 +10,6 @@ html {
 
     body {
         position: relative;
-        width: 1366px;
         margin: 0 auto;
         padding: 0;
         color: $text-main-color;
@@ -43,6 +42,26 @@ html {
             padding: 0;
             border: 0;
             white-space: nowrap;
+        }
+        @media (min-width: $mobile-width) {
+            .page-container {
+                width: $mobile-width;
+                margin: 0 auto;
+            }
+        }
+
+        @media (min-width: $tablet-width) {
+            .page-container {
+                width: $tablet-width;
+                margin: 0 auto;
+            }
+        }
+
+        @media (min-width: $desktop-width) {
+            .page-container {
+                width: $desktop-width;
+                margin: 0 auto;
+            }
         }
     }
 }
