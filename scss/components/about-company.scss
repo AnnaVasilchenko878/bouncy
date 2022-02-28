@@ -1,39 +1,95 @@
-.about-company {
-    display: flex;
-    padding-left: 265px;
-    padding-top: 144px;
-    padding-bottom: 57px;
+@media(min-width: $mobile-width) {
+    .about-company {
+        margin-left: 30px;
+        padding: 0;
 
-    &__wrapper {
-        width: 466px;
-        margin-right: 166px;
+        &__img {
+            display: none;
+        }
+        &__title {
+            margin-bottom: 26px;
+            text-transform: uppercase;
+            color: $text-title-color;
+            font-family: "Source Sans Pro", "Arial", sans-serif;
+            font-size: 18px;
+            font-weight: 300;
+            letter-spacing: 4px;
+            line-height: 12px;
+            text-align: center;
+
+        }
+        &__text {
+            margin-bottom: 33px;
+            font-family: "Open Sans", "Arial", sans-serif;
+            width: 269px;
+            text-align: justify;
+            font-size: 11px;
+            margin-bottom: 26px;
+        }
+
+        &__link {
+            text-transform: capitalize;
+            color: $text-title-color;
+            border: 1px solid $text-title-color;
+            padding: 12px 30px;
+            border-radius: 25px;
+            margin-left: 70px;
+        }
+    }
+}
+@media(min-width: $tablet-width) {
+
+    .about-company {
+
+        display: flex;
+        padding-left: 16px;
+        padding-top: 64px;
+        padding-bottom: 57px;
+
+        &__wrapper {
+            margin-right: 123px;
+        }
+        &__title {
+            font-size: 24px;
+            margin-bottom: 38px;
+        }
+        &__text {
+            font-size: 18px;
+            width: 313px;
+            margin-bottom: 36px;
+        }
+        &__img {
+            display: block;
+            margin-top: 49px;
+        }
     }
 
-    &__title {
-        margin-bottom: 49px;
-        text-transform: uppercase;
-        color: $text-title-color;
-        font-family: "Source Sans Pro", "Arial", sans-serif;
-        font-size: 20px;
-        font-weight: 300;
-        letter-spacing: 4px;
-        line-height: 12px;
-    }
+}
+@media(min-width: $desktop-width) {
 
-    &__text {
-        margin-bottom: 33px;
-        font-family: "Open Sans", "Arial", sans-serif;
-    }
+    .about-company {
+        padding-left: 265px;
+        padding-top: 144px;
+        padding-bottom: 57px;
 
-    &__link {
-        text-transform: capitalize;
-        color: $text-title-color;
-        border: 1px solid $text-title-color;
-        padding: 12px 30px;
-        border-radius: 25px;
-    }
+        &__wrapper {
+            width: 466px;
+            margin-right: 166px;
+        }
 
-    &__img {
-        width: 215px;
+        &__title {
+            margin-bottom: 49px;
+            font-size: 20px;
+            text-align: left;
+        }
+
+        &__text {
+            margin-bottom: 33px;
+            font-family: "Open Sans", "Arial", sans-serif;
+        }
+
+        &__img {
+            width: 215px;
+        }
     }
 }
