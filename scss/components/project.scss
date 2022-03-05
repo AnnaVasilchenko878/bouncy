@@ -1,71 +1,110 @@
-.project {
-    display: flex;
-    margin-bottom: -21px;
-    position: relative;
-
-    &__item {
-        &::before {
-            content: "";
-            width: 700px;
-            height: 286px;
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            background-color: rgba(0, 0, 0, 0.6);
+@media(min-width: $mobile-width) {
+    .project {
+        display: block;
+        margin-bottom: -21px;
+        &__image {
+            width: 320px;
+            height: 214px;
+            &--paper,
+            &--book {
+                display: none;
             }
-        &::after {
-            content: "Develop";
-            font-size: 20px;
-            line-height: 12px;
-            text-align: center;
-            letter-spacing: 4px;
-            text-transform: uppercase;
-            color: $bg-second-color;
-            font-weight: 300;
-            width: 150px;
-            height: 50px;
-            top: 143px;
-            left: 256px; 
-            position: absolute;
-        }
-        &--paper::before {
-            width: 333px;
-            height: 286px;
-            left: 700px;
-        } 
-        &--paper::after {
-            content: "Vintage";
-            left: 779px;
-        }
-        &--book::before {
-            width: 333px;
-            left: 1033px;
-        }
-        &--book::after {
-            content: "Branding";
-            left: 1120px;
-        } 
-        &:hover:before,
-        &:focus:before {
-            background-color: transparent;
-        }
-        &:hover:after,
-        &:focus:after {
-            display: none;
         }
     }
-    
-    &__image {
-        width: 333px;
-        height: 286px;
+}
+@media(min-width: $tablet-width) {
+    .project {
+        display: flex;
+        &__image {
+            display: block;
+            &--brand {
+                width: 314px;
+            }
+            &--paper {
+                width: 212px;
+            }
+            &--book {
+                width: 224px;
+            }
+        }
+    }
+}
+@media(min-width: $desktop-width) {
+    .project {
+        margin-bottom: -49px;
+        position: relative;
+
+        &__item {
+            &::before {
+                content: "";
+                width: 700px;
+                height: 286px;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                background-color: rgba(0, 0, 0, 0.6);
+            }
+
+            &::after {
+                content: "Develop";
+                font-size: 20px;
+                line-height: 12px;
+                text-align: center;
+                letter-spacing: 4px;
+                text-transform: uppercase;
+                color: $bg-second-color;
+                font-weight: 300;
+                width: 150px;
+                height: 50px;
+                top: 143px;
+                left: 256px;
+                position: absolute;
+            }
+
+            &--paper::before {
+                width: 333px;
+                height: 286px;
+                left: 700px;
+            }
+
+            &--paper::after {
+                content: "Vintage";
+                left: 779px;
+            }
+
+            &--book::before {
+                width: 333px;
+                left: 1033px;
+            }
+
+            &--book::after {
+                content: "Branding";
+                left: 1120px;
+            }
+
+            &:hover:before,
+            &:focus:before {
+                background-color: transparent;
+            }
+
+            &:hover:after,
+            &:focus:after {
+                display: none;
+            }
+        }
+
+        &__image {
+            width: 333px;
+            height: 286px;
 
 
             &--brand {
-            width: 700px;
-             }
+                width: 700px;
+            }
 
-        &--book {
-        width: 333px;
+            &--book {
+                width: 333px;
+            }
         }
     }
 }

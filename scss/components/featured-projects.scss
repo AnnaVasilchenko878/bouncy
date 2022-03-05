@@ -1,54 +1,124 @@
-.featured-projects {
-    background-color: $bg-second-color;
-    padding-top: 91px;
+@media(min-width: $mobile-width) {
+    .featured-projects {
+        margin-top: -79px;
+        background-color: $bg-second-color;
+        padding-top: 57px; 
+        margin-bottom: 30px;
 
-    &__title {
-        margin-bottom: 41px;
-        text-transform: uppercase;
-        text-align: center;
-        color: $text-title-color;
-        font-family: "Source Sans Pro", "Arial", sans-serif;
-        letter-spacing: 14px;
-        font-size: 20px;
-        font-weight: 300;
-        line-height: 12px;
-    }
+        &__title {
+            margin-bottom: 24px;
+            text-transform: uppercase;
+            text-align: center;
+            color: $text-title-color;
+            font-family: "Source Sans Pro", "Arial", sans-serif;
+            letter-spacing: 4px;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 12px;
+        }
+        &__text {
+            width: 204px;
+            margin: 0 auto;
+            margin-bottom: 24px;
+            text-align: center;
+            font-size: 11px;
+            line-height: 15px;
+        }
+        &__wrapper {
+            background-image: url("../../img/bg-featured-mobile.png");
+            padding: 28px 37px 21px 35px;
+        }
+        &__description {
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0,8px;
+            color: $text-second-color;
+            text-align: center;
+            font-weight: 400;
+            margin-bottom: 25px;
+        }
+        &__button {
+            border: 1px solid $text-second-color;
+            text-transform: capitalize;
+            color: $text-second-color;
+            font-size: 16px;
+            line-height: 12px;
+            background-color: transparent;
+            padding: 17px 37px;
+            border-radius: 40px;
+            cursor: pointer;
+            margin-left: 43px;
 
-    &__text {
-        width: 451px;
-        margin: 0 auto;
-        margin-bottom: 61px;
-        text-align: center;
-    }
-    &__wrapper {
-        background-image: url(../../img/bg-sneakers.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        display: flex;
-        padding: 37px 168px 37px 170px;
-    }
-    &__description {
-        font-size: 20px;
-        line-height: 25px;
-        letter-spacing: 0,8px;
-        color: $text-second-color;
-        margin-right: 141px;
-    }
-    &__button {
-        border: 1px solid $text-second-color;
-        text-transform: capitalize;
-        color: $text-second-color;
-        font-size: 16px;
-        line-height: 12px;
-        background-color: transparent;
-        padding: 12px 37px;
-        border-radius: 40px;
-        cursor: pointer;
-        &:hover,
-        &:focus {
-            background-color: $text-second-color;
-            color: $shadows-color;
+            &:hover,
+            &:focus {
+                background-color: $text-second-color;
+                color: $shadows-color;
+            }
         }
     }
 }
+@media(min-width: $tablet-width) {
+    .featured-projects {
 
+        &__title {
+            margin-bottom: 41px;
+            font-size: 24px;
+        }
+        &__text {
+            width: 440px;
+            font-size: 18px;
+            line-height: 21px;
+            margin-bottom: 61px;
+        }
+        &__wrapper {
+            background-image: url("../../img/bg-featured-tablet.png");
+            padding: 64px 222px 31px 290px;
+        }
+        &__description {
+            font-size: 18px;
+            width: 335px;
+            margin-left: -74px;
+            margin-bottom: 46px;
+        }
+        &__button {
+            margin-left: 11px;
+        }
+
+    }
+}
+@media(min-width: $desktop-width) {
+    .featured-projects {
+        padding-top: 91px;
+
+        &__title {
+            margin-bottom: 41px;
+            font-size: 20px;
+        }
+
+        &__text {
+            width: 451px;
+            margin: 0 auto;
+            margin-bottom: 61px;
+            text-align: center;
+        }
+
+        &__wrapper {
+            background-image: url(../../img/bg-featured-desktop.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            padding: 68px 168px 37px 170px;
+        }
+
+        &__description {
+            font-size: 20px;
+            margin-right: 141px;
+            width: 750px;
+        }
+        &__button {
+            height: 49px;
+            margin-top: 8px;
+        }
+    }
+
+}
