@@ -1,20 +1,26 @@
-.services-paginator {
-    width: 53px;
-    margin-right: 44px;
-    margin-top: 18px;
-    
-    &__item {
-        margin-bottom: 17px;
-    }
-
-    &__button {
-        border: none;
+@media (min-width: $mobile-width) {
+    .services-paginator {
         width: 53px;
-        height: 53px;
-        background-color: $btn-grey;
-        border-radius: 50%;
-        cursor: pointer;
-        position: relative;
+        margin-right: 44px;
+        margin-top: 18px;
+        &__item {
+            margin-left: 126px;
+            margin-bottom: 31px;
+
+            &--roller,
+            &--gamepad,
+            &--plug {
+                display: none;
+            }
+        }
+        &__button {
+            border: none;
+            width: 53px;
+            height: 53px;
+            background-color: $btn-grey;
+            border-radius: 50%;
+            cursor: pointer;
+            position: relative;
 
             &::before {
                 content: "";
@@ -26,27 +32,53 @@
                 background-image: url('../../img/icon-tools.svg');
 
             }
-        &--roller::before {
-            background-image: url('../../img/icon-roller.svg');
-            top: 15px;
+            &--roller::before {
+                background-image: url('../../img/icon-roller.svg');
+                top: 15px;
+            }
+            &--gamepad::before {
+                background-image: url('../../img/icon-gamepad.svg');
+                height: 26px;
+                top: 16px;
+            }
 
+            &--plug::before {
+                background-image: url('../../img/icon-plug.svg');
+                width: 22px;
+                left: 16px;
+            }
+            &:hover,
+            &:focus,
+            &:active {
+                background-color: $tiffany-color;
+            }
+            
         }
-        &--gamepad::before {
-            background-image: url('../../img/icon-gamepad.svg');
-            height: 26px;
-            top: 16px;
-        }
+    }
+}
+@media (min-width: $tablet-width) {
+    .services-paginator {
+        margin-right: 201px;
+        &__item {
+            margin-bottom: 32px;
 
-        &--plug::before {
-            background-image: url('../../img/icon-plug.svg');
-            width: 22px;
-            left: 16px;
+            &--roller,
+            &--gamepad,
+            &--plug {
+                display: block;
+            }
         }
-    &:hover,
-    &:focus,
-    &:active {
-        background-color: $tiffany-color;
-    } 
+    }
+}
+@media (min-width: $desktop-width) {
+    .services-paginator {
+        width: 53px;
+        margin-right: 168px;
+        margin-top: 18px;
+
+        &__item {
+            margin-bottom: 17px;
+        }
     }
 }
 
