@@ -9,6 +9,9 @@
             &--book {
                 display: none;
             }
+            &--brand:not(:first-child) {
+                display: none;
+            }
         }
     }
 }
@@ -17,14 +20,26 @@
         display: flex;
         &__image {
             display: block;
+
             &--brand {
-                width: 314px;
+                width: 313px;
+                &--tablet {
+                    display: block;
+                }
             }
             &--paper {
                 width: 212px;
+                &--mobile,
+                &--desktop {
+                    display: none;
+                }
             }
             &--book {
                 width: 224px;
+                &--mobile,
+                &--desktop {
+                    display: none;
+                }
             }
         }
     }

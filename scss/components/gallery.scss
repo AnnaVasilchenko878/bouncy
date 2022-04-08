@@ -1,125 +1,296 @@
-.gallery {
-    padding-left: 141px;
-    display: flex;
-    flex-wrap: wrap;
-    
-        &-description {
-            padding: 108px 12px 55px 30px;
-            position: absolute;
-            background-color: rgba(0,0,0, 0.7);
+@media(min-width: $mobile-width) {
+    .gallery {
+        &__item:not(:first-child) {
             display: none;
+        }
+        &__image {
+            width: 320px;
+            height: 274px;
+        }
+        &__image:not(:first-child) {
+            display: none;
+        }
+    }
+}
+@media(min-width: $tablet-width) {
+    .gallery {
 
-            &__title {
-                font-size: 20px;
-                line-height: 12px;
-                letter-spacing: 4px;
-                text-align: left;
-                color: $tiffany-color;
-                text-transform: uppercase;
-                margin-bottom: 52px;
-                position: relative;
+        padding-left: 66px;
+        display: flex;
+        flex-wrap: wrap;
 
-                &::before {
-                    content: "";
-                    position: absolute;
-                    top: 29px;
-                    left: 3px;
-                    width: 23px;
-                    height: 1px;
-                    background-color: $tiffany-color;
-                }
+        &__image:nth-child(2) {
+            display: block;
+        }
+        &__image {
+
+            &:first-child,
+            &:last-child {
+                display: none;
             }
-            &__text {
-                font-style: 12px;
-                color: $grey-color;
+            &--bag:nth-child(2) {
+                width: 217px;
+                height: 401px;
             }
-            &__wrapper {
-                position: relative;
+            &--blue-book:nth-child(2) {
+                width: 190px;
+                height: 245px;
             }
-            &__button {
-                border: none;
-                background-color: $shadows-color;
-                width: 29px;
-                height: 28px;
-                border-radius: 50%;
-                &::before {
-                    content: "";
-                    position: absolute;
-                    top: 11px;
-                    left: 8px;
-                    width: 13px;
-                    height: 13px;
-                    background-image: url("../../img/icon-link.svg");
-                }
-                &--like::before {
-                    background-image: url("../../img/icon-heart.svg");
-                    left: 40px;
-                }
+            &--yellow-book:nth-child(2) {
+                width: 188px;
+                height: 208px;
+            }
+            &--clothes:nth-child(2) {
+                width: 217px;
+                height: 187px;
+            }
+            &--table:nth-child(2) {
+                width: 190px;
+                height: 196px;
+                margin-top: -154px;
+                margin-left: 12px;
+            }
+            &--bottle:nth-child(2) {
+                width: 190px;
+                height: 221px;
+                margin-left: -3px;
+                margin-top: -64px;
+            }
+            &--drawer:nth-child(2) {
+                width: 217px;
+                height: 245px;
+                margin-top: 50px;
+            }
+            &--gift-bag:nth-child(2) {
+                width: 190px;
+                height: 181px;
+                margin-top: -154px;
+                margin-left: 1px;
+            }
+            &--gift-bottle:nth-child(2) {
+                width: 190px;
+                height: 228px;
+                margin-top: -168px;
+                margin-left: 10px;
+            }
+            &--autograph:nth-child(2) {
+                width: 190px;
+                height: 201px;
+                margin-left: 228px;
+                margin-top: -129px;
+            }
+            &--tablet:nth-child(2) {
+                width: 190px;
+                height: 162px;
+                margin-top: -145px;
             }
         }
 
+    }
+
+    .gallery__item {
+        &:not(:first-child) {
+            display: block;
+        }
+
+        &--bag {
+            margin-right: 12px;
+            margin-bottom: 9px;
+        }
+
+        &--blue-book {
+            margin-right: 10px;
+        }
+
+        &--yellow-book {
+            height: 301px;
+            margin-right: 10px;
+        }
+
+        &--table {
+            margin-right: 12px;
+            margin-bottom: 10px;
+        }
+
+        &--bottle {
+            height: 334px;
+            margin-right: 10px;
+            margin-top: -127px;
+        }
+
+        &--drawer {
+            height: 371px;
+            margin-top: -59px;
+            margin-right: 10px;
+        }
+
+        &--gift-bag {
+            height: 269px;
+        }
+
+        &--gift-bottle {
+            height: 209px;
+            margin-right: 12px;
+        }
+
+        &--autograph {
+            height: 357px;
+            margin-right: 10px;
+            margin-top: -148px;
+        }
+
+        &--chair {
+            height: 255px;
+            margin-top: -47px;
+            margin-right: 10px;
+        }
+
+        &--tablet {
+            height: 301px;
+            margin-top: -94px;
+        }
+
+    }
+    .gallery.gallery-description {
+        display: none;
+    }
 }
+ @media(min-width: $desktop-width) {
+    .gallery {
+        padding-left: 141px;
+        &-description {
+                 padding: 108px 12px 55px 30px;
+                 position: absolute;
+                 background-color: rgba(0, 0, 0, 0.7);
+                 display: none;
 
-.gallery__item {
-    width: 270px;
-    height: 361px;
+                 &__title {
+                     font-size: 20px;
+                     line-height: 12px;
+                     letter-spacing: 4px;
+                     text-align: left;
+                     color: $tiffany-color;
+                     text-transform: uppercase;
+                     margin-bottom: 52px;
+                     position: relative;
 
-    &--bag {
-        margin-right: 12px;
-        margin-bottom: 9px;
+                     &::before {
+                         content: "";
+                         position: absolute;
+                         top: 29px;
+                         left: 3px;
+                         width: 23px;
+                         height: 1px;
+                         background-color: $tiffany-color;
+                     }
+                 }
+
+                 &__text {
+                     font-style: 12px;
+                     color: $grey-color;
+                 }
+
+                 &__wrapper {
+                     position: relative;
+                 }
+
+                 &__button {
+                     border: none;
+                     background-color: $shadows-color;
+                     width: 29px;
+                     height: 28px;
+                     border-radius: 50%;
+
+                     &::before {
+                         content: "";
+                         position: absolute;
+                         top: 11px;
+                         left: 8px;
+                         width: 13px;
+                         height: 13px;
+                         background-image: url("../../img/icon-link.svg");
+                     }
+
+                     &--like::before {
+                         background-image: url("../../img/icon-heart.svg");
+                         left: 40px;
+                     }
+                 }
+        }
+        &__image {
+            &:last-child {
+                display: block;
+            }
+            &:first-child,
+            &:nth-child(2) {
+                display: none;
+            }
+            &--bag:last-child {
+                width: 270px;
+                height: 361px;
+            }
+
+            &--blue-book:last-child {
+                width: 270px;
+                height: 229px;
+            }
+
+            &--yellow-book:last-child {
+                width: 270px;
+                height: 301px;
+            }
+
+            &--clothes:last-child {
+                width: 270px;
+                height: 361px;
+            }
+
+            &--bottle:last-child {
+                width: 270px;
+                height: 334px;
+            }
+
+            &--table:last-child {
+                width: 270px;
+                height: 361px;
+            }
+
+            &--gift-bag:last-child {
+                width: 270px;
+                height: 269px;
+            }
+
+            &--gift-bottle:last-child {
+                width: 270px;
+                height: 209px;
+            }
+            &--autograph:last-child {
+                width: 270px;
+                height: 357px;
+            }
+            &--drawer:last-child {
+                width: 270px;
+                height: 371px;
+            }
+
+            &--tablet:last-child {
+                width: 270px;
+                height: 255px;
+                margin-top: 48px;
+            }
+            &--chair:last-child {
+                width: 270px;
+                height: 296px;
+                margin-left: 10px;
+                margin-top: -40px;
+            }
+
+        }
+
     }
-
-    &--blue-book {
-        height: 229px;
-        margin-right: 10px;
-    }
-
-    &--yellow-book {
-        height: 301px;
-        margin-right: 10px;
-    }
-
-    &--table {
-        margin-right: 12px;
-        margin-bottom: 10px;
-    }
-
-    &--bottle {
-        height: 334px;
-        margin-right: 10px;
-        margin-top: -127px;
-    }
-
-    &--drawer {
-        height: 371px;
-        margin-top: -59px;
-        margin-right: 10px;
-    }
-
-    &--gift-bag {
-        height: 269px;
-    }
-
-    &--gift-bottle {
-        height: 209px;
-        margin-right: 12px;
-    }
-
-    &--autograph {
-        height: 357px;
-        margin-right: 10px;
-        margin-top: -148px;
-    }
-
-    &--chair {
-        height: 255px;
-        margin-top: -47px;
-        margin-right: 10px;
-    }
-
-    &--tablet {
-        height: 301px;
-        margin-top: -94px;
-    }
-
+    .gallery__item {
+        &--blue-book {
+            height: 229px;
+        }
+     }
 }

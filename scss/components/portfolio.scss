@@ -1,24 +1,60 @@
-.portfolio {
-    padding-top: 80px;
-    padding-bottom: 40px;
-    background-color: $bg-second-color;
+@media(min-width: $mobile-width) {
+    .portfolio {
+        padding-top: 13px;
+        background-color: $bg-second-color;
 
-    &__title {
-        margin-bottom: 41px;
-        text-align: center;
-        text-transform: uppercase;
-        color: $text-title-color;
-        font-family: "Source Sans Pro", "Arial", sans-serif;
-        font-size: 20px;
-        line-height: 12px;
-        font-weight: 400;
-        letter-spacing: 4px;
+        &__title {
+            margin-bottom: 18px;
+            text-align: center;
+            text-transform: uppercase;
+            color: $text-title-color;
+            font-family: "Source Sans Pro", "Arial", sans-serif;
+            font-size: 18px;
+            line-height: 21px;
+            font-weight: 400;
+            letter-spacing: 4px;
+        }
+        &__text {
+            width: 253px;
+            margin: 0 auto;
+            margin-bottom: 32px;
+            text-align: center;
+            font-size: 13px;
+            line-height: 19px;
+        }
     }
+}
+@media(min-width: $tablet-width) {
+    .portfolio {
+        padding-top: 69px;
+        &__title {
+            margin-bottom: 33px;
+            font-size: 24px;
+        }
+        &__text {
+            width: 416px;
+            font-size: 18px;
+            margin-bottom: 65px;        
+        }
+    }
+}
+@media(min-width: $desktop-width) {
 
-    &__text {
-        width: 451px;
-        margin: 0 auto;
-        margin-bottom: 81px;
-        text-align: center;
+    .portfolio {
+        padding-top: 80px;
+        padding-bottom: 40px;
+
+        &__title {
+            margin-bottom: 41px;
+            font-size: 20px;
+            line-height: 12px;
+            font-weight: 400;
+            letter-spacing: 4px;
+        }
+
+        &__text {
+            width: 451px;
+            margin-bottom: 81px;
+        }
     }
 }
