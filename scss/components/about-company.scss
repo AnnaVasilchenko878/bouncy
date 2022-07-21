@@ -24,6 +24,7 @@
             font-family: "Open Sans", "Arial", sans-serif;
             width: 269px;
             text-align: justify;
+            font-weight: lighter;
             font-size: 11px;
             margin-bottom: 26px;
         }
@@ -87,10 +88,17 @@
         &__text {
             margin-bottom: 33px;
             font-family: "Open Sans", "Arial", sans-serif;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            width: 439px;
+        }
+        &__link {
+            margin-left: 0;
         }
 
         &__img {
             width: 215px;
+            margin-top: -18px;
         }
     }
 }

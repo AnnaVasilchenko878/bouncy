@@ -1,4 +1,8 @@
-.employers-skills {
+@media(min-width: $mobile-width) {
+
+}
+@media(min-width: $tablet-width) {
+    .employers-skills {
     margin-left: 67px;
 
     &__wrapper {
@@ -41,4 +45,53 @@
         width: 304px;
         background-color: $light-grey-color;
     }
+
+}
+}
+@media(min-width: $desktop-width) {
+    .employers-skills {
+    margin-left: 67px;
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__name {
+        width: 131px;
+        margin-right: 142px;
+        text-transform: uppercase;
+        margin-bottom: -20px;
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 243px;
+            height: 4px;
+            position: absolute;
+            top: 39px;
+            left: 0px;
+            background-color: $tiffany-color;
+                }
+
+                &--web::before {
+                    width: 198px;
+                }
+
+                &--ui::before {
+                    width: 238px;
+                }
+    }
+
+    &__percent {
+        width: 36px;
+        margin-top: 14px;
+    }
+
+    &__progress {
+        height: 4px;
+        width: 304px;
+        background-color: $light-grey-color;
+    }
+
+}
 }

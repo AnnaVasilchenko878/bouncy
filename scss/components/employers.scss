@@ -1,41 +1,68 @@
-.employers {
-
-    &__item {
-    display: flex;
-    padding-left: 181px;
-    }
+@media(min-width: $mobile-width) {
+    .employers {
 
     &__img {
         width: 285px;
         height: 364px;
-        margin-right: 330px;
+        margin-left: 22px;
     }
+    &__title {
+        text-align: center;
+        color: $text-subtitle-color;
+        margin-bottom: -5px;
+    }
+
+    &__position {
+        margin-bottom: 32px;
+        text-transform: uppercase;
+        font-family: "Source Sans Pro", "Arial", sans-serif;
+        font-style: italic;
+        text-align: center;
+        margin-left: 65px;
+
+    }
+
+    &__text {
+        margin: 0 auto;
+        margin-bottom: 26px;
+        text-align: center;
+        width: 245px;
+
+    }
+}
+
+}
+@media(min-width: $tablet-width) {
+    .employers {
+        &__item {
+            display: flex;
+        }
+        &__img {
+            margin-right: 59px;
+        }
 
     &__wrapper {
         width: 370px;
         margin-top: -20px;
     }
-
     &__title {
-        margin-bottom: 15px;
+        margin-bottom: -4px;
         text-align: right;
-        color: $text-subtitle-color;
     }
-
     &__position {
+        text-align: right;
         margin-bottom: 32px;
-        margin-left: 134px;
-        text-transform: uppercase;
-        font-family: "Source Sans Pro", "Arial", sans-serif;
-        font-style: italic;
-        text-align: right;
-        margin-left: 184px;
-
+        margin-left: 181px;
     }
-
     &__text {
-        margin-bottom: 26px;
         text-align: right;
+        margin-top: 12px;
+        margin-left: 116px;
+        width: 252px;
     }
+
+    }
+
 }
+@media(min-width: $desktop-width) {}
 

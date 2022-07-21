@@ -1,5 +1,8 @@
 @media(min-width: $mobile-width) {
     .gallery {
+        &__item {
+            height: 274px;
+        }
         &__item:not(:first-child) {
             display: none;
         }
@@ -43,28 +46,29 @@
             &--clothes:nth-child(2) {
                 width: 217px;
                 height: 187px;
+                margin-top: 108px;
             }
             &--table:nth-child(2) {
                 width: 190px;
                 height: 196px;
-                margin-top: -154px;
+                margin-top: -47px;
                 margin-left: 12px;
             }
             &--bottle:nth-child(2) {
                 width: 190px;
                 height: 221px;
                 margin-left: -3px;
-                margin-top: -64px;
+                margin-top: 44px;
             }
             &--drawer:nth-child(2) {
                 width: 217px;
-                height: 245px;
-                margin-top: 50px;
+                height: 211px;
+                margin-top: 84px;
             }
             &--gift-bag:nth-child(2) {
                 width: 190px;
-                height: 181px;
-                margin-top: -154px;
+                height: 168px;
+                margin-top: -125px;
                 margin-left: 1px;
             }
             &--gift-bottle:nth-child(2) {
@@ -106,7 +110,7 @@
             height: 301px;
             margin-right: 10px;
         }
-
+            
         &--table {
             margin-right: 12px;
             margin-bottom: 10px;
@@ -217,6 +221,37 @@
                      }
                  }
         }
+        &__item {
+            &:not(:first-child),
+            &:not(:nth-child(2)) {
+            display: block;
+            }
+            &--table {
+                margin-top: 68px;
+            }
+            &--bottle {
+                margin-top: -60px;
+            }
+            &--drawer {
+                margin-top: 9px;
+            }
+            &--gift-bag {
+                margin-top: 70px;
+            }
+            &--gift-bottle {
+                margin-top: 63px;
+            }
+            &--autograph {
+                margin-top: -96px;
+            }
+            &--tablet {
+                margin-top: 13px;
+            }
+            &--chair {
+                margin-left: 10px;
+                margin-top: -28px;
+            }
+        } 
         &__image {
             &:last-child {
                 display: block;
@@ -262,11 +297,11 @@
 
             &--gift-bottle:last-child {
                 width: 270px;
-                height: 209px;
+                height: 226px;
             }
             &--autograph:last-child {
                 width: 270px;
-                height: 357px;
+                height: 386px;
             }
             &--drawer:last-child {
                 width: 270px;
@@ -275,22 +310,15 @@
 
             &--tablet:last-child {
                 width: 270px;
-                height: 255px;
-                margin-top: 48px;
+                height: 278px;
             }
             &--chair:last-child {
+                display: block;
                 width: 270px;
-                height: 296px;
-                margin-left: 10px;
-                margin-top: -40px;
+                height: 319px;
             }
 
         }
 
     }
-    .gallery__item {
-        &--blue-book {
-            height: 229px;
-        }
-     }
 }

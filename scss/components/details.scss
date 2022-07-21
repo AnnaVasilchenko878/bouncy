@@ -1,12 +1,15 @@
 @media(min-width: $mobile-width) {
     .details {
         &__title {
+            font-family: "Open Sans", Arial, sans-serif;
             margin-left: 72px;
             margin-bottom: 21px;
             text-transform: capitalize;
             font-size: 17px;
             font-weight: 400;
+            color: $text-subtitle-color;
         }
+
         &__text {
             font-size: 14px;
             text-align: justify;
@@ -14,10 +17,12 @@
 
             &--tiffany-color {
                 color: $tiffany-color;
+                font-weight: 700;
             }
 
             &--dark-grey-color {
                 color: $dark-grey-color;
+                font-weight: 700;
             }
         }
 
@@ -54,16 +59,18 @@
         }
 
         &__text {
-            font-size: 16px;
+            font-size: 14px;
+            text-align: left;
 
             &--first {
-                width: 321px;
+                width: 310px;
                 margin-right: 129px;
-                font-size: 16px;
             }
 
             &--second {
-                width: 515px;
+                width: 483px;
+                text-align: justify;
+                word-spacing: 0.5px;
             }
         }
     }

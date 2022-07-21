@@ -5,6 +5,7 @@
 
         &__title {
             margin-bottom: 17px;
+            color: $text-title-color;
             text-transform: uppercase;
             text-align: center;
             letter-spacing: 4px;
@@ -21,6 +22,7 @@
             text-align: center;
             font-size: 13px;
             line-height: 19px;
+            font-weight: 400;
         }
 
     }
@@ -52,6 +54,7 @@
         }
         &__text {
             width: 457px;
+            font-size: 14px;
         }
 
     }

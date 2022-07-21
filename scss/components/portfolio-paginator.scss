@@ -7,7 +7,7 @@
 
     .portfolio-paginator {
     display: flex;
-    padding-left: 69px;
+    padding-left: 45px;
     margin-bottom: 73px;
 
     &__item {
@@ -24,6 +24,8 @@
         }
         }
     &__button {
+            font-family: "Roboto", Arial, sans-serif;
+            font-style: 18px;
             border: none;
             background-color: transparent;
             cursor: pointer;

@@ -1,21 +1,28 @@
-@font-face {
-    font-family: "Open Sans";
-    font-weight: 400;
-    font-style: normal;
-    src: local("Open Sans"),
-        url("../../fonts/OpenSans-Regular.woff") format("woff"),
-        url("../../fonts/OpenSans-Regular.woff2") format("woff2");
-}
+// @font-face {
+//     font-family: "Open Sans";
+//     font-weight: lighter;
+//     font-style: normal;
+//     src: local("Open Sans"),
+//         url("../../fonts/OpenSans-Light.woff") format("woff"),
+//         url("../../fonts/OpenSans-Light.woff2") format("woff2");
+// }
+// @font-face {
+//     font-family: "Open Sans";
+//     font-weight: normal;
+//     font-style: normal;
+//     src: local("Open Sans"),
+//         url("../../fonts/OpenSans-Regular.woff") format("woff"),
+//         url("../../fonts/OpenSans-Regular.woff2") format("woff2");
+// }
 
-@font-face {
-    font-family: "Open Sans";
-    font-weight: 700;
-    font-style: normal;
-    src: local("Open Sans"),
-        url("../../fonts/OpenSans-Bold.woff") format("woff"),
-        url("../../fonts/OpenSans-Bold.woff2") format("woff2");
-}
-
+// @font-face {
+//     font-family: "Open Sans";
+//     font-weight: 700;
+//     font-style: bold;
+//     src: local("Open Sans"),
+//         url("../../fonts/OpenSans-Bold.woff") format("woff"),
+//         url("../../fonts/OpenSans-Bold.woff2") format("woff2");
+// }
 @font-face {
     font-family: "Roboto";
     font-weight: 300;
@@ -42,6 +49,7 @@
         url("../../fonts/SourceSansPro-Black.woff") format("woff"),
         url("../../fonts/SourceSansPro-Black.woff2") format("woff2");
 }
+
 @font-face {
     font-family: "Big John";
     font-weight: 400;

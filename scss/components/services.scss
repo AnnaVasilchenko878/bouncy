@@ -2,6 +2,7 @@
     .services {
         padding-left: 23px;
         &__title {
+            font-family: "Roboto", Arial, sans-serif;
             text-transform: capitalize;
             color: $text-subtitle-color;
             font-size: 11px;

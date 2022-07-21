@@ -1,10 +1,11 @@
 @media(min-width: $mobile-width) {
     .portfolio {
-        padding-top: 13px;
+        padding-top: 36px;
+        margin-bottom: -25px;
         background-color: $bg-second-color;
 
         &__title {
-            margin-bottom: 18px;
+            margin-bottom: 19px;
             text-align: center;
             text-transform: uppercase;
             color: $text-title-color;
@@ -21,12 +22,14 @@
             text-align: center;
             font-size: 13px;
             line-height: 19px;
+            font-weight: 400;
         }
     }
 }
 @media(min-width: $tablet-width) {
     .portfolio {
         padding-top: 69px;
+        margin-bottom: -290px;
         &__title {
             margin-bottom: 33px;
             font-size: 24px;
@@ -43,6 +46,7 @@
     .portfolio {
         padding-top: 80px;
         padding-bottom: 40px;
+        margin-bottom: -4px;
 
         &__title {
             margin-bottom: 41px;
@@ -55,6 +59,7 @@
         &__text {
             width: 451px;
             margin-bottom: 81px;
+            font-size: 14px;
         }
     }
 }
