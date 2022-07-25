@@ -1,5 +1,6 @@
 @media(min-width: $mobile-width) {
     .team {
+        margin-bottom: 23px;
     &__title {
         margin-bottom: 15px;
         font-size: 18px;
@@ -26,6 +27,8 @@
 }
 @media(min-width: $tablet-width) {
     .team {
+        margin-bottom: 66px;
+
     &__title {
         margin-bottom: 41px;
         text-align: center;

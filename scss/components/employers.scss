@@ -34,6 +34,7 @@
 }
 @media(min-width: $tablet-width) {
     .employers {
+        margin-bottom: 49px;
         &__item {
             display: flex;
         }
@@ -64,5 +65,12 @@
     }
 
 }
-@media(min-width: $desktop-width) {}
-
+@media(min-width: $desktop-width) {
+    .employers {
+        margin-left: 181px;
+        margin-bottom: 61px;
+        &__img {
+            margin-right: 330px;
+        }
+    }
+}

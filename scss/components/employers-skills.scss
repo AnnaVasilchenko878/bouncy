@@ -1,8 +1,11 @@
 @media(min-width: $mobile-width) {
-
+.employers-skills {
+    display: none;
+}
 }
 @media(min-width: $tablet-width) {
     .employers-skills {
+        display: block;
     margin-left: 67px;
 
     &__wrapper {
