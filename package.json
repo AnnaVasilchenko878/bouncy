@@ -18,7 +18,8 @@
   "homepage": "https://github.com/AnnaVasilchenko878/bouncy#readme",
   "devDependencies": {
     "browser-sync": "^2.27.10",
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "node-normalize-scss": "^8.1.2"
   },
   "dependencies": {
     "gulp-autoprefixer": "^8.0.0",
