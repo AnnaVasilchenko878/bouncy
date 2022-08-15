@@ -24,7 +24,8 @@
             }
         }
         &__wrapper-inner {
-            margin-left: 43px;
+            display: flex;
+            justify-content: center;
         }
         &__link {
             text-transform: capitalize;
@@ -68,10 +69,6 @@
                 font-weight: 700;
             }
         }
-
-        &__wrapper-inner {
-            margin-left: 116px;
-        }
     }
 } 
 
@@ -101,10 +98,6 @@
         &--bold {
             font-weight: 700;
         }
-    }
-
-    &__wrapper-inner {
-        margin-left: 410px;
     }
 
 }

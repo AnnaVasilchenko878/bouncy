@@ -2,6 +2,7 @@
     .nav {
         display: none;
     }
+
 }
 @media(min-width: $desktop-width) {
 .nav {
@@ -13,6 +14,7 @@
         margin-right: 13px;
         padding: 15px 22px;
         border-radius: 25px;
+        border: 1px solid transparent;
         &--services {
             padding: 15px 13px;
         }
@@ -29,7 +31,7 @@
         &:hover,
         &:focus {
             border: 1px solid $text-second-color;
-                }
+        }
         
     }
 
@@ -37,6 +39,7 @@
         color: $text-second-color;
         font-size: 16px;
         line-height: 12px;
+
     }
 }
 }
