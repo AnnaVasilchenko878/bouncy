@@ -1,6 +1,5 @@
 @media(min-width: $mobile-width) {
     .about-company {
-        margin-left: 30px;
         padding: 0;
         margin-bottom: 38px;
 
@@ -20,22 +19,23 @@
 
         }
         &__text {
-            margin-bottom: 33px;
             font-family: "Open Sans", "Arial", sans-serif;
-            width: 269px;
             text-align: justify;
             font-weight: lighter;
             font-size: 11px;
             margin-bottom: 26px;
+            padding: 0 32px;
         }
-
+        &__wrapper-link {
+            display: flex;
+            justify-content: center;
+        }
         &__link {
             text-transform: capitalize;
             color: $text-title-color;
             border: 1px solid $text-title-color;
             padding: 12px 30px;
             border-radius: 25px;
-            margin-left: 70px;
         }
     }
 }
@@ -44,8 +44,7 @@
     .about-company {
 
         display: flex;
-        padding-left: 16px;
-        padding-top: 64px;
+        justify-content: center;
         padding-bottom: 57px;
 
         &__wrapper {
@@ -56,7 +55,7 @@
             margin-bottom: 38px;
         }
         &__text {
-            font-size: 18px;
+            font-size: 13px;
             width: 313px;
             margin-bottom: 36px;
         }
@@ -70,8 +69,6 @@
 @media(min-width: $desktop-width) {
 
     .about-company {
-        padding-left: 265px;
-        padding-top: 144px;
         padding-bottom: 57px;
 
         &__wrapper {
@@ -91,6 +88,7 @@
             font-size: 14px;
             letter-spacing: 0.5px;
             width: 439px;
+            padding: 0;
         }
         &__link {
             margin-left: 0;
