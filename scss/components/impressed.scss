@@ -7,8 +7,11 @@
         margin-bottom: -16px;
         color: $grey-color;
 
-        &__wrapper {
-            padding: 47px 0px 30px 6px;
+        &__wrapper{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 30px;
         }
         &__title {
             text-transform: uppercase;
@@ -17,15 +20,14 @@
             font-size: 18px;
             line-height: 22px;
             font-weight: 300;
-            margin-top: -32px;
-            margin-left: 79px;
-            margin-bottom: 31px;
+            margin-bottom: 22px;
         }
         &__quote {
-            margin-bottom: 35px;
+            margin-bottom: 12px;
             font-size: 12px;
             line-height: 16px;
             text-align: justify;
+            padding: 0 64px;
         }
         &__autor {
             display: block;
@@ -34,11 +36,9 @@
             font-weight: 700;
             font-style: normal;
             font-size: 12px;
-            margin-left: 81px;
         }
         &__position {
             text-transform: uppercase;
-            margin-left: 44px;
         }
         &__location {
             color: $tiffany-color;
@@ -54,20 +54,21 @@
         position: relative;
         background-image: url("../img/bg-impressed-tablet.png");
         &__wrapper {
-            padding: 67px 414px 49px 49px; 
+            padding: 10px 25px 54px 84px; 
+            align-items: flex-start;
         }
         &__title {
             font-size: 24px;
-            margin-left: 39px;
             margin-bottom: 27px;
         }
         &__quote {
             font-size: 12px;
             margin-bottom: 44px;
+            padding: 0;
+            padding-right: 341px;
         }
         &__autor {
             font-size: 12px;
-            margin-left: 43px;
         }
         &__image {
             display: block;
@@ -80,53 +81,48 @@
         }
     }
 }
+
 @media(min-width: $desktop-width) {
+    .impressed {
+        position: relative;
+        background-color: $bg-dark-color;
+        background-image: url("../img/bg-impressed-desktop.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: -16px;
 
-.impressed {
-    position: relative;
-    background-color: $bg-dark-color;
-    background-image: url("../img/bg-impressed-desktop.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: -16px;
+        &__wrapper {
+            padding: 75px 25px 54px 112px;
+        }
 
-    &__wrapper {
-        width: 587px;
-        padding: 80px 0px 100px 98px;
-    }
+        &__title {
+            margin-bottom: 59px;
+            font-size: 20px;
+            line-height: 12px;
+        }
 
-    &__title {
-        margin-bottom: 59px;
-        margin-left: -5px;
-        font-size: 20px;
-        line-height: 12px;
-    }
+        &__quote {
+            padding-right: 659px;
+            margin-bottom: 34px;
+            font-size: 16px;
+            line-height: 28px;
+        }
 
-    &__quote {
-        width: 596px;
-        margin-left: -5px;
-        margin-bottom: 34px;
-        font-size: 16px;
-        line-height: 28px;
+        &__autor {
+            font-size: 12px;
+            width: 233px;
+        }
+        &__position {
+            width: 233px;
+        }
+        &__image {
+            position: absolute;
+            width: 550px;
+            height: 411px;
+            top: -138px;
+            left: 797px;
+            z-index: 1;
+        }
     }
-
-    &__autor {
-        font-size: 12px;
-        margin-left: -5px;
-        width: 233px;
-    }
-    &__position {
-        width: 233px;
-        margin-left: -5px;
-    }
-    &__image {
-        position: absolute;
-        width: 550px;
-        height: 411px;
-        top: -138px;
-        left: 797px;
-        z-index: 1;
-    }
-}
 
 }
