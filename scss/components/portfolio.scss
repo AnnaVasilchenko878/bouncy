@@ -3,6 +3,7 @@
         padding-top: 36px;
         margin-bottom: -25px;
         background-color: $bg-second-color;
+        padding-bottom: 1px;
 
         &__title {
             margin-bottom: 19px;
@@ -24,12 +25,56 @@
             line-height: 19px;
             font-weight: 400;
         }
+        &__start {
+            margin-bottom: -37px;
+            display: flex;
+            flex-direction: column;
+            padding: 5px 15px 22px 15px;
+            background-image: url("../img/img-bg-start-mobile.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-bottom: 28px;
+    
+    
+            &__text {
+                text-align: center;
+                padding-left: 15px;
+                color: $text-second-color;
+                font-size: 13px;
+                margin-bottom: 21px;
+    
+                &--bold {
+                    font-weight: 700;
+                }
+            }
+            &__wrapper-inner {
+                display: flex;
+                justify-content: center;
+            }
+            &__link {
+                text-transform: capitalize;
+                color: $text-second-color;
+                border: 1px solid $text-second-color;
+                border-radius: 35px;
+                padding: 11px 24px;
+    
+                &:hover,
+                &:focus,
+                &:active {
+                background-color: $text-second-color;
+                color: $shadows-color;
+                }
+            
+            }
+    
+        }
     }
 }
 @media(min-width: $tablet-width) {
     .portfolio {
         padding-top: 69px;
-        margin-bottom: -290px;
+        // margin-bottom: -290px;
+
         &__title {
             margin-bottom: 33px;
             font-size: 24px;
@@ -38,6 +83,27 @@
             width: 416px;
             font-size: 18px;
             margin-bottom: 65px;        
+        }
+        &__start {
+            padding-bottom: 19px;
+            padding-left: 1px;
+            background-color: $bg-second-color;
+            margin-bottom: 50px;
+            padding-top: 46px;
+            padding-left: 182px;
+            background-image: url("../img/img-bg-start-tablet.png");
+    
+            &__text {
+                font-size: 18px;
+                margin-left: -28px;
+                font-weight: 300;
+                margin-bottom: 29px;
+                width: 445px;
+    
+                &--bold {
+                    font-weight: 700;
+                }
+            }
         }
     }
 }
@@ -60,6 +126,30 @@
             width: 451px;
             margin-bottom: 81px;
             font-size: 14px;
+        }
+        &__start {
+            padding-bottom: 100px;
+            padding-left: 25px;
+            background-color: $bg-second-color;
+            padding-top: 58px;
+            padding-left: 182px;
+            padding-bottom: 57px;
+            background-image: url("../img/img-bg-start.png");
+            background-repeat: no-repeat;
+            background-position: center;
+    
+        &__text {
+            margin-left: 124px;
+            text-align: center;
+            color: $text-second-color;
+            font-size: 20px;
+            margin-bottom: 29px;
+            width: 754px;
+    
+            &--bold {
+                font-weight: 700;
+            }
+        }
         }
     }
 }
