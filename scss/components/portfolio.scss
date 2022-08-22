@@ -1,7 +1,7 @@
 @media(min-width: $mobile-width) {
     .portfolio {
         padding-top: 36px;
-        margin-bottom: -25px;
+        margin-bottom: 29px;
         background-color: $bg-second-color;
         padding-bottom: 1px;
 
@@ -73,7 +73,7 @@
 @media(min-width: $tablet-width) {
     .portfolio {
         padding-top: 69px;
-        // margin-bottom: -290px;
+        margin-bottom: 50px;
 
         &__title {
             margin-bottom: 33px;
@@ -86,19 +86,16 @@
         }
         &__start {
             padding-bottom: 19px;
-            padding-left: 1px;
             background-color: $bg-second-color;
             margin-bottom: 50px;
-            padding-top: 46px;
-            padding-left: 182px;
             background-image: url("../img/img-bg-start-tablet.png");
     
             &__text {
                 font-size: 18px;
-                margin-left: -28px;
+                padding-left: 148px;
+                padding-right: 150px;
                 font-weight: 300;
                 margin-bottom: 29px;
-                width: 445px;
     
                 &--bold {
                     font-weight: 700;
@@ -129,22 +126,18 @@
         }
         &__start {
             padding-bottom: 100px;
-            padding-left: 25px;
             background-color: $bg-second-color;
             padding-top: 58px;
-            padding-left: 182px;
             padding-bottom: 57px;
             background-image: url("../img/img-bg-start.png");
             background-repeat: no-repeat;
             background-position: center;
     
         &__text {
-            margin-left: 124px;
             text-align: center;
             color: $text-second-color;
             font-size: 20px;
             margin-bottom: 29px;
-            width: 754px;
     
             &--bold {
                 font-weight: 700;
