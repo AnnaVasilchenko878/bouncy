@@ -5,25 +5,13 @@
         padding-top: 57px; 
 
         &__title {
-            margin-bottom: 24px;
-            text-transform: uppercase;
-            text-align: center;
-            color: $text-title-color;
-            font-family: "Source Sans Pro", "Arial", sans-serif;
-            letter-spacing: 4px;
-            font-size: 18px;
-            font-weight: 300;
-            line-height: 12px;
+            @include title;
         }
+
         &__text {
-            width: 253px;
-            margin: 0 auto;
-            margin-bottom: 24px;
-            text-align: center;
-            font-size: 13px;
-            line-height: 19px;
-            font-weight: 400;
+            @include subtitle;
         }
+        
         &__wrapper {
             background-image: url("../../img/bg-featured-mobile.png");
             padding: 22px 37px 21px 35px;

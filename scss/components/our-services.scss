@@ -6,24 +6,10 @@
         margin-bottom: -16px;
 
         &__title {
-            margin-bottom: 21px;
-            text-align: center;
-            text-transform: uppercase;
-            letter-spacing: 4px;
-            font-family: "Source Sans Pro", "Arial", sans-serif;
-            color: $text-title-color;
-            font-size: 18px;
-            line-height: 12px;
-            font-weight: 300;
+            @include title;
         }
         &__text {
-            width: 253px;
-            margin: 0 auto;
-            margin-bottom: 41px;
-            text-align: center;
-            font-size: 13px;
-            line-height: 19px;
-            font-weight: 400;
+            @include subtitle;
         }
     }
 }

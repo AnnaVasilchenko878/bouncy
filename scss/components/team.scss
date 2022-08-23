@@ -3,25 +3,11 @@
         margin-bottom: 53px;
         
     &__title {
-        margin-bottom: 15px;
-        font-size: 18px;
-        text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 4px;
-        font-family: "Source Sans Pro", "Arial", sans-serif;
-        font-size: 20px;
-        line-height: 21px;
-        font-weight: 300;
-        color: $text-title-color;
+        @include title;
     }
 
     &__text {
-        width: 253px;
-        font-size: 13px;
-        margin: 0 auto;
-        margin-bottom: 33px;
-        text-align: center;
-        font-weight: 400;
+        @include subtitle;
     }
 }
 

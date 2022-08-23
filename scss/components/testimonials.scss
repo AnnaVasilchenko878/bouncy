@@ -9,22 +9,11 @@
         background-color: $bg-second-color;
     
         &__title {
-            margin-bottom: 41px;
-            text-align: center;
-            text-transform: uppercase;
-            color: $text-title-color;
-            font-family: "Source Sans Pro", "Arial", sans-serif;
-            font-size: 20px;
-            line-height: 12px;
-            letter-spacing: 4px;
-            font-weight: 300;
+            @include title;
         }
     
         &__text {
-            width: 230px;
-            margin: 0 auto;
-            margin-bottom: 23px;
-            text-align: center;
+            @include subtitle;
         }
     
         &__quote {

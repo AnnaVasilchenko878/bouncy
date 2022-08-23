@@ -1,40 +1,117 @@
-.latest-news {
-    padding-top: 80px;
-    padding-left: 100px;
-    padding-bottom: 48px;
-    background-color: $bg-dark-color;
-    background-image: url("../img/bg-clothes.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-
-    &__title {
-        margin-bottom: 41px;
-        text-transform: uppercase;
-        color: $text-second-color;
-        letter-spacing: 4px;
-        font-family: "Source Sans Pro", "Arial", sans-serif;
-        font-size: 20px;
-        font-weight: 300;
-    }
-
-    &__text {
-        width: 457px;
-        margin-bottom: 68px;
-        color: $grey-color;
-    }
-
-    &__paginator {
-        position: absolute;
-        top: 326px;
-        left: 1250px;
-    }
-
-    &__item {
-        width: 10px;
-        height: 10px;
-        border: 1px solid $grey-color;
-        border-radius: 50%;
-        margin-bottom: 10px;
+@media(min-width: $mobile-width) {
+    .latest-news {
+        display: flex;
+        flex-direction: column;
+        background-color: $bg-dark-color;
+        background-image: url("../img/bg-clothes.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        align-items: center;
+        padding-top: 23px;
+    
+        &__title {
+            @include title;
+        }
+    
+        &__text {
+            @include subtitle;
+        }
+    
+        &__paginator {
+            position: absolute;
+            top: 326px;
+            left: 1250px;
+        }
+    
+        &__item {
+            width: 10px;
+            height: 10px;
+            border: 1px solid $grey-color;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
     }
 }
+// @media(min-width: $mobile-width) {
+//     .latest-news {
+//         display: flex;
+//         flex-direction: column;
+//         // padding-top: 31px;
+//         // padding-left: 100px;
+//         // padding-bottom: 48px;
+//         background-color: $bg-dark-color;
+//         background-image: url("../img/bg-clothes.png");
+//         background-repeat: no-repeat;
+//         background-position: center;
+//         justify-content: center;
+    
+//         &__title {
+//             margin-bottom: 41px;
+//             text-transform: uppercase;
+//             color: $text-second-color;
+//             letter-spacing: 4px;
+//             font-family: "Source Sans Pro", "Arial", sans-serif;
+//             font-size: 20px;
+//             font-weight: 300;
+//         }
+    
+//         &__text {
+//             margin-bottom: 68px;
+//             color: $grey-color;
+//         }
+    
+//         &__paginator {
+//             position: absolute;
+//             top: 326px;
+//             left: 1250px;
+//         }
+    
+//         &__item {
+//             width: 10px;
+//             height: 10px;
+//             border: 1px solid $grey-color;
+//             border-radius: 50%;
+//             margin-bottom: 10px;
+//         }
+//     }
+// }
+// .latest-news {
+//     padding-top: 80px;
+//     padding-left: 100px;
+//     padding-bottom: 48px;
+//     background-color: $bg-dark-color;
+//     background-image: url("../img/bg-clothes.png");
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     position: relative;
+
+//     &__title {
+//         margin-bottom: 41px;
+//         text-transform: uppercase;
+//         color: $text-second-color;
+//         letter-spacing: 4px;
+//         font-family: "Source Sans Pro", "Arial", sans-serif;
+//         font-size: 20px;
+//         font-weight: 300;
+//     }
+
+//     &__text {
+//         width: 457px;
+//         margin-bottom: 68px;
+//         color: $grey-color;
+//     }
+
+//     &__paginator {
+//         position: absolute;
+//         top: 326px;
+//         left: 1250px;
+//     }
+
+//     &__item {
+//         width: 10px;
+//         height: 10px;
+//         border: 1px solid $grey-color;
+//         border-radius: 50%;
+//         margin-bottom: 10px;
+//     }
+//  }
