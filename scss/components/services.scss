@@ -1,17 +1,22 @@
 @media(min-width: $mobile-width) {
     .services {
-        padding-left: 23px;
+        padding: 0 43px;
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         &__title {
             font-family: "Roboto", Arial, sans-serif;
             text-transform: capitalize;
             color: $text-subtitle-color;
             font-size: 11px;
-            margin-left: 89px;
         }
         &__text {
             font-size: 11px;
             line-height: 15px;
-            width: 261px;
             font-weight: 300;
             text-align: justify;
 

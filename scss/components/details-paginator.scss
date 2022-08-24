@@ -58,15 +58,14 @@
 @media(min-width: $tablet-width) {
         .details-paginator {
             margin-bottom: 69px;
-            width: 481px;
+            width: 319px;
         }
 
 }
 
 @media(min-width: $desktop-width) {
     .details-paginator {
-        margin-left: 532px;
-        margin-bottom: 39px;
+        margin-bottom: 85px;
 
         &__item {
             margin-right: 27px;

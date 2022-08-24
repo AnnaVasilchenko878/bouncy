@@ -1,10 +1,9 @@
 @media (min-width: $mobile-width) {
     .services-paginator {
-        width: 53px;
-        margin-right: 44px;
+        margin: 0 auto;
         margin-top: 18px;
+
         &__item {
-            margin-left: 126px;
             margin-bottom: 31px;
 
             &--roller,

@@ -1,10 +1,7 @@
 @media(min-width: $mobile-width) {
     .skills {
-        width: 450px;
         display: flex;
         margin-top: 45px;
-        padding-left: 46px;
-        padding-right: 44px;
 
         &__item {
             width: 94px;

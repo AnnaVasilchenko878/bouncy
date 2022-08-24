@@ -5,6 +5,7 @@
             flex-direction: column;
             align-items: center;
             margin-bottom: 78px;
+            padding: 0 36px;
         }
 
         &__title {
@@ -14,9 +15,6 @@
             font-size: 17px;
             font-weight: 400;
             color: $text-subtitle-color;
-        }
-        &__wrapper {
-            padding: 0 36px;
         }
 
         &__text {
@@ -42,28 +40,30 @@
 
 @media(min-width: $tablet-width) {
     .details {
-        padding-left: 68px;
-
+        &__item {
+            padding: 0 119px;
+        }
         &__title {
             font-size: 24px;
-            margin-left: 185px;
             margin-bottom: 39px;
         }
+
         &__text {
             font-size: 18px;
-            width: 602px;
         }
     }
 }
 
 @media(min-width: $desktop-width) {
     .details {
-        padding-left: 182px;
+        &__item {
+            padding: 0 182px;
+        }
 
         &__title {
             font-size: 20px;
-            margin-left: 0px;
             margin-bottom: 39px;
+            align-self: flex-start;
         }
         &__wrapper {
             display: flex;
@@ -74,8 +74,8 @@
             text-align: left;
 
             &--first {
-                width: 310px;
                 margin-right: 129px;
+                width: 261px;
             }
 
             &--second {
