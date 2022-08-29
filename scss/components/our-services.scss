@@ -22,7 +22,6 @@
 }
 @media(min-width: $tablet-width) {
     .our-services {
-        padding: 37px 83px 157px 97px;
 
         &__title {
             font-size: 24px;
@@ -35,15 +34,15 @@
         }
         &__wrapper {
             display: flex;
-            margin-left: -126px;
+            flex-direction: row;
+            padding-left: 69px;
+            width: 100%;
         }
     }
 }
 @media(min-width: $desktop-width) {
 
 .our-services {
-    padding: 81px 180px 104px 137px;
-
         &__title {
             margin-bottom: 41px;
             font-size: 20px;

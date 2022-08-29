@@ -57,7 +57,7 @@
 }
 @media (min-width: $tablet-width) {
     .services-paginator {
-        margin-right: 201px;
+        
         &__item {
             margin-bottom: 32px;
 
@@ -72,7 +72,6 @@
 @media (min-width: $desktop-width) {
     .services-paginator {
         width: 53px;
-        margin-right: 168px;
         margin-top: 18px;
 
         &__item {
