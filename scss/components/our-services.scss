@@ -28,9 +28,9 @@
             margin-bottom: 26px;
         }
         &__text {
-            font-size: 18px;
-            width: 480px;
+            font-size: 14px;
             margin-bottom: 70px;
+            padding: 0 150px;
         }
         &__wrapper {
             display: flex;
@@ -50,6 +50,7 @@
         &__text {
             margin-bottom: 61px;
             font-size: 14px;
+            padding: 0 474px;
         }
     }
 }

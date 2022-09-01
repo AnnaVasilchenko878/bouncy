@@ -6,24 +6,13 @@
         padding-bottom: 1px;
 
         &__title {
+            @include title;
             margin-bottom: 19px;
-            text-align: center;
-            text-transform: uppercase;
-            color: $text-title-color;
-            font-family: "Source Sans Pro", "Arial", sans-serif;
-            font-size: 18px;
-            line-height: 21px;
-            font-weight: 400;
-            letter-spacing: 4px;
         }
         &__text {
-            width: 253px;
-            margin: 0 auto;
+            @include subtitle;
             margin-bottom: 32px;
-            text-align: center;
-            font-size: 13px;
-            line-height: 19px;
-            font-weight: 400;
+            font-size: 14px;
         }
         &__start {
             margin-bottom: -37px;
@@ -80,9 +69,9 @@
             font-size: 24px;
         }
         &__text {
-            width: 416px;
-            font-size: 18px;
-            margin-bottom: 65px;        
+            font-size: 14px;
+            margin-bottom: 65px; 
+            padding: 0 150px;       
         }
         &__start {
             padding-bottom: 19px;
@@ -114,15 +103,12 @@
         &__title {
             margin-bottom: 41px;
             font-size: 20px;
-            line-height: 12px;
-            font-weight: 400;
-            letter-spacing: 4px;
         }
 
         &__text {
-            width: 451px;
             margin-bottom: 81px;
-            font-size: 14px;
+            padding: 0 474px;
+
         }
         &__start {
             padding-bottom: 100px;

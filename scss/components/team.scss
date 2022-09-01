@@ -18,20 +18,13 @@
 
     &__title {
         margin-bottom: 41px;
-        text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 4px;
-        font-family: "Source Sans Pro", "Arial", sans-serif;
         font-size: 20px;
-        line-height: 12px;
     }
 
     &__text {
-        width: 457px;
-        margin: 0 auto;
         margin-bottom: 62px;
-        text-align: center;
-        font-size: 18px;
+        font-size: 14px;
+        padding: 0 150px;
     }
 }
 }
@@ -43,21 +36,11 @@
 
     &__title {
         margin-bottom: 41px;
-        text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 4px;
-        font-family: "Source Sans Pro", "Arial", sans-serif;
-        font-size: 20px;
-        line-height: 12px;
-        font-weight: 400;
     }
 
     &__text {
-        width: 457px;
-        margin: 0 auto;
         margin-bottom: 62px;
-        text-align: center;
-        font-size: 14px;
+        padding: 0 474px;
     }
 }
 }

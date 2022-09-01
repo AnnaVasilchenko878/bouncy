@@ -26,10 +26,10 @@
             margin-bottom: 14px;
         }
         &__text {
-            width: 440px;
-            font-size: 18px;
+            font-size: 14px;
             line-height: 21px;
             margin-bottom: 67px;
+            padding: 0 150px;
         }
     }
 }
@@ -38,12 +38,8 @@
         padding-top: 85px;
         padding-bottom: 90px;
 
-        &__title {
-        font-size: 20px;
-        }
         &__text {
-            width: 457px;
-            font-size: 14px;
+            padding: 0 474px;
         }
 
     }

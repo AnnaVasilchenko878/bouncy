@@ -97,21 +97,13 @@
     
         &__title {
             margin-bottom: 41px;
-            text-align: center;
-            text-transform: uppercase;
-            color: $text-title-color;
-            font-family: "Source Sans Pro", "Arial", sans-serif;
             font-size: 20px;
-            line-height: 12px;
-            letter-spacing: 4px;
-            font-weight: 300;
         }
     
         &__text {
-            width: 457px;
-            margin: 0 auto;
             margin-bottom: 60px;
-            text-align: center;
+            font-size: 14px;
+            padding: 0 48px;
         }
     
         &__quote {
@@ -170,6 +162,9 @@
 }
 @media(min-width: $desktop-width) {
     .testimonials {
+        &__text {
+            padding: 0 474px;
+        }
         &__item {
             padding: 52px 116px 46px 101px;
         }

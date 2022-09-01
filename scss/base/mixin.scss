@@ -9,6 +9,7 @@
     font-weight: 300;
     line-height: 12px;
 }
+// сделать гибкий миксин с font-size
 
 @mixin subtitle {
     padding: 0 20px;
@@ -18,3 +19,4 @@
     line-height: 19px;
     font-weight: 400;
 }
+// padding, font-size
