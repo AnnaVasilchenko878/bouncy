@@ -1,62 +1,113 @@
-.contact {
-    display: flex;
-    padding-left: 174px;
-}
+@media(min-width: $mobile-width) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+        padding-left: 31px;
 
-.contact__item {
-    width: 287px;
-    margin-left: 40px;
-    padding-top: 30px;
-    padding-left: 42px;
-    padding-right: 43px;
-    padding-bottom: 29px;
-    text-align: center;
-    background-color: $bg-main-color;
-    position: relative;
-    box-shadow: 0.7px 0.7px 0 0 rgba(0, 0, 0, 0.05);
+        &__item {
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+        }
 
-    &::before {
-        content: "";
-        position: absolute;
-        top: -147px;
-        left: 0px;
-        width: 287px;
-        height: 145px;
-        background-image: url("../../img/icon-envelope.svg"),
-        url("../../img/bg-envelope.png");
-        background-repeat: no-repeat, no-repeat;
-        background-position: center, center;
-        background-size: 62px 46px, 287px 145px;
+        &__title {
+            text-transform: uppercase;
+            font-size: 11px;
+            color: $tiffany-color;
+            margin-right: 43px;
+
+            &--office {
+                width: 111px;
+                margin-right: 7px;
+            }
+            &--phone {
+                margin-right: 34px;
+            }
+        }
+        
+        &__link {
+            margin: 0 auto;
+            text-transform: uppercase;
+            line-height: 20px;
+            color: $text-main-color;
+            font-size: 11px;
+        }
+        
+        &__address {
+            text-transform: uppercase;
+            line-height: 20px;
+            padding-right: 59px;
+            font-size: 11px;
+        }
+        
+        &__phone {
+            text-transform: uppercase;
+            line-height: 20px;
+            font-size: 11px;
+        }
     }
-    &--office::before {
-        background-image: url("../../img/icon-mark.svg"),
-        url("../../img/bg-office.png");
+}
+@media(min-width: $tablet-width) {
+    .contact {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+
+        &__item {
+        width: 166px;
+        padding: 5px 13px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: $bg-main-color;
+        position: relative;
+        box-shadow: 0.7px 0.7px 0 0 rgba(0, 0, 0, 0.05);
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: -136px;
+                left: 0px;
+                // width: 287px;
+                width: 166px;
+                // height: 145px;
+                height: 135px;
+                background-image: url("../../img/icon-envelope.svg"),
+                url("../../img/bg-envelope.png");
+                background-repeat: no-repeat, no-repeat;
+                background-position: center, center;
+                background-size: 62px 46px, 287px 145px;
+            }
+            &--office::before {
+                background-image: url("../../img/icon-mark.svg"),
+                url("../../img/bg-office.png");
+            }
+            &--phone::before {
+                background-image: url("../../img/icon-phone.svg"),
+                    url("../../img/bg-laptop.png");
+            }
+        }
+        &__title {
+            &--email,
+            &--phone {
+                margin-right: 0;
+            }
+        }
+        &__address {
+            padding-right: 0;
+        }
+
     }
-    &--phone::before {
-        background-image: url("../../img/icon-phone.svg"),
-            url("../../img/bg-laptop.png");
+}
+
+@media(min-width: $desktop-width) {
+    .contact {
+        &__item {
+            width: 287px;
+            &:before {
+                width: 287px;
+            }
+        }
+
     }
-}
-
-.contact__title {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 16px;
-}
-
-.contact__link {
-    margin: 0 auto;
-    text-transform: uppercase;
-    line-height: 20px;
-    color: $text-main-color;
-}
-
-.contact__address {
-    text-transform: uppercase;
-    line-height: 20px;
-}
-
-.contact__phone {
-    text-transform: uppercase;
-    line-height: 20px;
 }
