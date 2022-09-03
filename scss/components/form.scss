@@ -1,47 +1,87 @@
-.form {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 226px;
+@media(min-width: $mobile-width) {
 
-    &__item {
-        width: 324px;
-        margin-bottom: 29px;
-
-        &--textarea,
-        &--button {
-            width: 948px;
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    
+        &__item {
+            margin-bottom: 29px;
+            margin-left: -10px;
+        }
+    
+        &__input {
+            padding: 16px 112px 16px 20px;
+            border: 1px solid $border-input;
+            resize: none;
+            margin-left: 11px;
+    
+            &--textarea {
+                width: 299px;
+                // width: 947px;
+                // height: 190px;
+                padding-right: 19px;
+            }
+            
+            &::placeholder {
+                color: $text-placeholder-second;
+            }
+        }
+    
+        &__button {
+            // padding: 20px 429px;
+            padding: 20px 105px;
+            text-transform: uppercase;
+            border: none;
+            color: $text-second-color;
+            background-color: $tiffany-color;
+            cursor: pointer;
+            margin-left: 11px;
+                    &:hover,
+                    &:focus,
+                    &:active {
+                        background-color: $text-main-color;
+                        color: $shadows-color;
+                    }
         }
     }
+}
 
-    &__input {
-        padding: 16px 112px 16px 20px;
-        margin-right: 39px;
-        border: 1px solid $border-input;
-        resize: none;
+@media(min-width: $tablet-width) {
+    .form {
+        justify-content: center;
+        &__input {
+            padding-right: 322px;
 
-        &--textarea {
-            width: 947px;
-            height: 190px;
-            padding-right: 19px;
+            &--textarea {
+                width: 509px;
+            }
         }
-        
-        &::placeholder {
-            color: $text-placeholder-second;
+        &__button {
+            padding: 20px 210px;
         }
     }
+}
 
-    &__button {
-        padding: 20px 429px;
-        text-transform: uppercase;
-        border: none;
-        color: $text-second-color;
-        background-color: $tiffany-color;
-        cursor: pointer;
-                &:hover,
-                &:focus,
-                &:active {
-                    background-color: $text-main-color;
-                    color: $shadows-color;
-                }
+@media(min-width: $desktop-width) {
+    .form {
+        flex-direction: row;
+
+        &__item {
+            margin-right: 39px;
+            margin-left: 0;
+        }
+        &__input {
+            padding-right: 194px;
+            margin-left: 0;
+            
+            &--textarea {
+                width: 1223px;
+            }
+        }
+        &__button {
+            padding: 20px 568px;
+        }
     }
 }
