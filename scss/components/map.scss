@@ -1,53 +1,102 @@
-.map {
-  margin-bottom: -7px;
-  position: relative;
+@media(min-width: $mobile-width) {
 
-  &__wrapper {
-    position: absolute;
-    top: -1px;
-    left: 0px;
-    background-color: rgba(0,0,0, 0.8);
-    padding: 180px 541px 193px 615px;
-    display: flex;
-  }
-    &__text {
-      font-size: 16px;
-      letter-spacing: 0,8px;
-      text-align: center;
-      text-transform: uppercase;
-      color: $text-second-color;
-      width: 174px;
-      margin-right: 17px;
-    }
-    &__button {
-      width: 18px;
-      height: 18px;
-      border: none;
-      border-radius: 50%;
-      background-color: $tiffany-color;
-      margin-top: 20px;
-      position: relative;
-      cursor: pointer;
-        &:before {
-          content: "";
-          position: absolute;
-          top: 2px;
-          left: 5px;
-          width: 8px;
-          height: 8px;
-          border: 1px solid $text-second-color;
-          border-top-color: transparent;
-          border-right-color: transparent;
-          transform: rotate(-48deg);
-        }
-        &:hover,
-        &:focus {
-          background-color: $text-second-color;
-        }
-        &:hover::before,
-        &:focus::before{
-          border-bottom-color: $shadows-color;
-          border-left-color: $shadows-color;
+  .map {
+    margin-bottom: -7px;
+    position: relative;
+    
+    &__image {
+      display: none;
+      &--mobile {
+        display: block;
       }
     }
+
+    &__wrapper {
+      position: absolute;
+      top: -1px;
+      left: 0px;
+      background-color: rgba(0,0,0, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 320px;
+      height: 294px;
+    }
+      &__text {
+        font-size: 16px;
+        letter-spacing: 0,8px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $text-second-color;
+        width: 174px;
+        margin-right: 17px;
+      }
+      &__button {
+        width: 18px;
+        height: 18px;
+        border: none;
+        border-radius: 50%;
+        background-color: $tiffany-color;
+        position: relative;
+        cursor: pointer;
+
+          &:before {
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: 5px;
+            width: 8px;
+            height: 8px;
+            border: 1px solid $text-second-color;
+            border-top-color: transparent;
+            border-right-color: transparent;
+            transform: rotate(-48deg);
+          }
+          &:hover,
+          &:focus {
+            background-color: $text-second-color;
+          }
+          &:hover::before,
+          &:focus::before{
+            border-bottom-color: $shadows-color;
+            border-left-color: $shadows-color;
+        }
+      }
+  }
+}
+
+@media(min-width: $tablet-width) {
+  .map {
+
+    &__image {
+      display: none;
+
+      &--tablet {
+        display: block;
+      }
+    }
+
+    &__wrapper {
+      width: 731px;
+      height: 439px;
+    }
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .map {
+
+    &__image {
+        display: none;
+
+      &--desktop {
+        display: block;
+      }
+    }
+
+    &__wrapper {
+      width: 1366px;
+      height: 439px;
+    }
+  }
 }
