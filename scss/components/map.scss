@@ -1,13 +1,14 @@
 @media(min-width: $mobile-width) {
 
   .map {
-    margin-bottom: -7px;
     position: relative;
     
     &__image {
       display: none;
       &--mobile {
         display: block;
+        width: 320px;
+        height: 294px;
       }
     }
 
@@ -73,12 +74,14 @@
 
       &--tablet {
         display: block;
+        width: 749px;
+        height: 493px;
       }
     }
 
     &__wrapper {
-      width: 731px;
-      height: 439px;
+      width: 749px;
+      height: 496px;
     }
   }
 }
@@ -90,13 +93,15 @@
         display: none;
 
       &--desktop {
+        width: 1366px;
+        height: 496px;
         display: block;
       }
     }
 
     &__wrapper {
       width: 1366px;
-      height: 439px;
+      height: 496px;
     }
   }
 }

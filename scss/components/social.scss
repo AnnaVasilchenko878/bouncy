@@ -1,36 +1,48 @@
-.social {
-    display: flex;
-    padding-left: 579px;
+@media(min-width: $mobile-width) {
+    .social {
 
-    &__item {
-        width: 26px;
-        height: 26px;
-        margin-left: 15px;
-        border-radius: 50%;
-        background-color: $facebook-color;
-
-        &--linkedn {
-        background-color: $linkedn-color;
+        display: flex;
+    
+        &__item {
+            width: 26px;
+            height: 26px;
+            margin-right: 15px;
+            border-radius: 50%;
+            background-color: $facebook-color;
+    
+            &--linkedn {
+            background-color: $linkedn-color;
+            }
+            &--instagram {
+                background-color: $instagram-color;
+            }
+            &--vimeo {
+                background-color: $vimeo-color;
+            }
+            &:hover,
+            &:focus,
+            &:active {
+                background-color: $tiffany-color;
+            }
         }
-        &--instagram {
-            background-color: $instagram-color;
+        &__link {
+            position: relative;
         }
-        &--vimeo {
-            background-color: $vimeo-color;
-        }
-        &:hover,
-        &:focus,
-        &:active {
-            background-color: $tiffany-color;
+        &__icon {
+            position: absolute;
+            top: 5px;
+            left: 5px;
         }
     }
-    &__link {
-        position: relative;
+}
+@media(min-width: $tablet-width) {
+    .social {
+        margin-left: 12px;
     }
-    &__icon {
-        position: absolute;
-        top: 5px;
-        left: 5px;
+}
+@media(min-width: $desktop-width) {
+    .social {
+        margin-left: 20px;
     }
 }
 @-moz-document url-prefix(){

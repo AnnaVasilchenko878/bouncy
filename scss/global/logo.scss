@@ -8,7 +8,6 @@
 
       &__footer {
         color: $logo-footer-color;
-        margin: 0 auto;
         margin-bottom: 24px;
       }
     }
@@ -16,5 +15,6 @@
 @media (min-width: $tablet-width) {
   .logo {
         font-size: 28px;
+        
   }
 }
