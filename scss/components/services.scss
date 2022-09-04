@@ -1,71 +1,71 @@
 @media(min-width: $mobile-width) {
-    .services {
-        padding: 0 43px;
-        margin-bottom: 43px;
+  .services {
+    margin-bottom: 43px;
+    padding: 0 43px;
 
-        &__item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        &__title {
-            font-family: "Roboto", Arial, sans-serif;
-            text-transform: capitalize;
-            color: $text-subtitle-color;
-            font-size: 11px;
-        }
-        &__text {
-            font-size: 11px;
-            line-height: 15px;
-            font-weight: 300;
-            text-align: justify;
-
-            &--tiffany {
-                color: $tiffany-color;
-                font-weight: 700;
-            }
-        }
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
+
+    &__title {
+      font-size: 11px;
+      font-family: "Roboto", Arial, sans-serif;
+      color: $text-subtitle-color;
+      text-transform: capitalize;
+    }
+    &__text {
+      font-weight: 300;
+      font-size: 11px;
+      line-height: 15px;
+      text-align: justify;
+
+      &--tiffany {
+        font-weight: 700;
+        color: $tiffany-color;
+      }
+    }
+  }
 }
 @media(min-width: $tablet-width) {
-    .services {
-        padding: 0 78px;
-        
-        &__title {
-            font-size: 18px;
-            margin-bottom: 48px;
-        }
-        &__text {
-            font-size: 14px;
-            line-height: 23px;
-            
-            &--first-text {
-                margin-bottom: 54px;
-            }
-        }
+  .services {
+    padding: 0 78px;
+
+    &__title {
+      margin-bottom: 48px;
+      font-size: 18px;
     }
+    &__text {
+      font-size: 14px;
+      line-height: 23px;
+
+      &--first-text {
+        margin-bottom: 54px;
+      }
+    }
+  }
 }
 @media(min-width: $desktop-width) {
-    .services {
-        margin-right: 88px;
-        padding: 0;
+  .services {
+    margin-right: 88px;
+    padding: 0;
 
-        &__item {
-            align-items: flex-start;
-        }
-        
-        &__title {
-            font-size: 20px;
-            text-align: left;
-            margin-left: 0;
-            margin-bottom: 34px;
-        }
-
-        &__text {
-            font-size: 16px;
-            line-height: 28px;
-            width: 393px;
-        }
+    &__item {
+      align-items: flex-start;
     }
+
+    &__title {
+      margin-bottom: 34px;
+      margin-left: 0;
+      font-size: 20px;
+      text-align: left;
+    }
+
+    &__text {
+      width: 393px;
+      font-size: 16px;
+      line-height: 28px;
+    }
+  }
 }

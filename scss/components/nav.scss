@@ -1,45 +1,42 @@
 @media(min-width: $mobile-width) {
-    .nav {
-        display: none;
-    }
-
+  .nav {
+    display: none;
+  }
 }
 @media(min-width: $desktop-width) {
-.nav {
-    width: 713px;
+  .nav {
     display: flex;
+    width: 713px;
 
     &__item {
-        width: 86px;
-        margin-right: 13px;
-        padding: 15px 22px;
-        border-radius: 25px;
-        border: 1px solid transparent;
-        &--services {
-            padding: 15px 13px;
-        }
-        &--portfolio {
-            padding: 15px 12px;
-        }
+      width: 86px;
+      margin-right: 13px;
+      padding: 15px 22px;
+      border: 1px solid transparent;
+      border-radius: 25px;
+      &--services {
+        padding: 15px 13px;
+      }
+      &--portfolio {
+        padding: 15px 12px;
+      }
 
-        &--blog {
-            padding: 15px 23px;
-        }
-        &--contact {
-            padding: 15px 13px;
-        }
-        &:hover,
-        &:focus {
-            border: 1px solid $text-second-color;
-        }
-        
+      &--blog {
+        padding: 15px 23px;
+      }
+      &--contact {
+        padding: 15px 13px;
+      }
+      &:hover,
+      &:focus {
+        border: 1px solid $text-second-color;
+      }
     }
 
     &__link {
-        color: $text-second-color;
-        font-size: 16px;
-        line-height: 12px;
-
+      font-size: 16px;
+      line-height: 12px;
+      color: $text-second-color;
     }
-}
+  }
 }

@@ -1,134 +1,132 @@
 @media(min-width: $mobile-width) {
-    .portfolio {
-        padding-top: 36px;
-        margin-bottom: 29px;
-        background-color: $bg-second-color;
-        padding-bottom: 1px;
+  .portfolio {
+    margin-bottom: 29px;
+    padding-top: 36px;
+    padding-bottom: 1px;
+    background-color: $bg-second-color;
 
-        &__title {
-            @include title;
-            margin-bottom: 19px;
-        }
-        &__text {
-            @include subtitle;
-            margin-bottom: 32px;
-            font-size: 14px;
-        }
-        &__start {
-            margin-bottom: -37px;
-            display: flex;
-            flex-direction: column;
-            padding: 5px 15px 22px 15px;
-            background-image: url("../img/img-bg-start-mobile.png");
-            background-repeat: no-repeat;
-            background-position: center;
-            margin-bottom: 28px;
-    
-    
-            &__text {
-                text-align: center;
-                padding-left: 15px;
-                color: $text-second-color;
-                font-size: 13px;
-                margin-bottom: 21px;
-    
-                &--bold {
-                    font-weight: 700;
-                }
-            }
-            &__wrapper-inner {
-                display: flex;
-                justify-content: center;
-            }
-            &__link {
-                text-transform: capitalize;
-                color: $text-second-color;
-                border: 1px solid $text-second-color;
-                border-radius: 35px;
-                padding: 11px 24px;
-    
-                &:hover,
-                &:focus,
-                &:active {
-                background-color: $text-second-color;
-                color: $shadows-color;
-                }
-            
-            }
-    
-        }
+    &__title {
+      margin-bottom: 19px;
+
+      @include title;
     }
+    &__text {
+      margin-bottom: 32px;
+      font-size: 14px;
+
+      @include subtitle;
+    }
+    &__start {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: -37px;
+      margin-bottom: 28px;
+      padding: 5px 15px 22px 15px;
+      background-image: url("../img/img-bg-start-mobile.png");
+      background-repeat: no-repeat;
+      background-position: center;
+
+
+      &__text {
+        margin-bottom: 21px;
+        padding-left: 15px;
+        font-size: 13px;
+        text-align: center;
+        color: $text-second-color;
+
+        &--bold {
+          font-weight: 700;
+        }
+      }
+      &__wrapper-inner {
+        display: flex;
+        justify-content: center;
+      }
+      &__link {
+        padding: 11px 24px;
+        color: $text-second-color;
+        text-transform: capitalize;
+        border: 1px solid $text-second-color;
+        border-radius: 35px;
+
+        &:hover,
+        &:focus,
+        &:active {
+          color: $shadows-color;
+          background-color: $text-second-color;
+        }
+      }
+    }
+  }
 }
 @media(min-width: $tablet-width) {
-    .portfolio {
-        padding-top: 69px;
-        margin-bottom: 50px;
+  .portfolio {
+    margin-bottom: 50px;
+    padding-top: 69px;
 
-        &__title {
-            margin-bottom: 33px;
-            font-size: 24px;
-        }
-        &__text {
-            font-size: 14px;
-            margin-bottom: 65px; 
-            padding: 0 150px;       
-        }
-        &__start {
-            padding-bottom: 19px;
-            background-color: $bg-second-color;
-            margin-bottom: 50px;
-            background-image: url("../img/img-bg-start-tablet.png");
-    
-            &__text {
-                font-size: 18px;
-                padding-left: 148px;
-                padding-right: 150px;
-                font-weight: 300;
-                margin-bottom: 29px;
-    
-                &--bold {
-                    font-weight: 700;
-                }
-            }
-        }
+    &__title {
+      margin-bottom: 33px;
+      font-size: 24px;
     }
+    &__text {
+      margin-bottom: 65px;
+      padding: 0 150px;
+      font-size: 14px;
+    }
+    &__start {
+      margin-bottom: 50px;
+      padding-bottom: 19px;
+      background-color: $bg-second-color;
+      background-image: url("../img/img-bg-start-tablet.png");
+
+      &__text {
+        margin-bottom: 29px;
+        padding-right: 150px;
+        padding-left: 148px;
+        font-weight: 300;
+        font-size: 18px;
+
+        &--bold {
+          font-weight: 700;
+        }
+      }
+    }
+  }
 }
 @media(min-width: $desktop-width) {
+  .portfolio {
+    margin-bottom: -4px;
+    padding-top: 80px;
+    padding-bottom: 40px;
 
-    .portfolio {
-        padding-top: 80px;
-        padding-bottom: 40px;
-        margin-bottom: -4px;
-
-        &__title {
-            margin-bottom: 41px;
-            font-size: 20px;
-        }
-
-        &__text {
-            margin-bottom: 81px;
-            padding: 0 474px;
-
-        }
-        &__start {
-            padding-bottom: 100px;
-            background-color: $bg-second-color;
-            padding-top: 58px;
-            padding-bottom: 57px;
-            background-image: url("../img/img-bg-start.png");
-            background-repeat: no-repeat;
-            background-position: center;
-    
-        &__text {
-            text-align: center;
-            color: $text-second-color;
-            font-size: 20px;
-            margin-bottom: 29px;
-    
-            &--bold {
-                font-weight: 700;
-            }
-        }
-        }
+    &__title {
+      margin-bottom: 41px;
+      font-size: 20px;
     }
+
+    &__text {
+      margin-bottom: 81px;
+      padding: 0 474px;
+    }
+    &__start {
+      padding-top: 58px;
+      padding-bottom: 100px;
+      padding-bottom: 57px;
+      background-color: $bg-second-color;
+      background-image: url("../img/img-bg-start.png");
+      background-repeat: no-repeat;
+      background-position: center;
+
+      &__text {
+        margin-bottom: 29px;
+        font-size: 20px;
+        text-align: center;
+        color: $text-second-color;
+
+        &--bold {
+          font-weight: 700;
+        }
+      }
+    }
+  }
 }

@@ -1,127 +1,127 @@
 @media(min-width: $mobile-width) {
-    .project {
-        display: block;
-        margin-bottom: -21px;
+  .project {
+    display: block;
+    margin-bottom: -21px;
 
-        &__image {
-            width: 320px;
-            height: 214px;
-            &--paper,
-            &--book {
-                display: none;
-            }
-            &--brand:not(:first-child) {
-                display: none;
-            }
-        }
+    &__image {
+      width: 320px;
+      height: 214px;
+      &--paper,
+      &--book {
+        display: none;
+      }
+      &--brand:not(:first-child) {
+        display: none;
+      }
     }
+  }
 }
 @media(min-width: $tablet-width) {
-    .project {
-        display: flex;
-        flex-wrap: nowrap;
-        &__image {
-            display: block;
+  .project {
+    display: flex;
+    flex-wrap: nowrap;
+    &__image {
+      display: block;
 
-            &--brand {
-                width: 313px;
-                &--tablet {
-                    display: block;
-                }
-            }
-            &--paper {
-                width: 212px;
-                &--mobile,
-                &--desktop {
-                    display: none;
-                }
-            }
-            &--book {
-                width: 224px;
-                &--mobile,
-                &--desktop {
-                    display: none;
-                }
-            }
+      &--brand {
+        width: 313px;
+        &--tablet {
+          display: block;
         }
+      }
+      &--paper {
+        width: 212px;
+        &--mobile,
+        &--desktop {
+          display: none;
+        }
+      }
+      &--book {
+        width: 224px;
+        &--mobile,
+        &--desktop {
+          display: none;
+        }
+      }
     }
+  }
 }
 @media(min-width: $desktop-width) {
-    .project {
-        margin-bottom: -49px;
-        position: relative;
+  .project {
+    position: relative;
+    margin-bottom: -49px;
 
-        &__item {
-            &::before {
-                content: "";
-                width: 700px;
-                height: 286px;
-                position: absolute;
-                top: 0px;
-                left: 0px;
-                background-color: rgba(0, 0, 0, 0.6);
-            }
+    &__item {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 700px;
+        height: 286px;
+        background-color: rgba(0, 0, 0, 0.6);
+      }
 
-            &::after {
-                content: "Develop";
-                font-size: 20px;
-                line-height: 12px;
-                text-align: center;
-                letter-spacing: 4px;
-                text-transform: uppercase;
-                color: $bg-second-color;
-                font-weight: 300;
-                width: 150px;
-                height: 50px;
-                top: 143px;
-                left: 256px;
-                position: absolute;
-            }
+      &::after {
+        content: "Develop";
+        position: absolute;
+        top: 143px;
+        left: 256px;
+        width: 150px;
+        height: 50px;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 12px;
+        text-align: center;
+        color: $bg-second-color;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+      }
 
-            &--paper::before {
-                width: 333px;
-                height: 286px;
-                left: 700px;
-            }
+      &--paper::before {
+        left: 700px;
+        width: 333px;
+        height: 286px;
+      }
 
-            &--paper::after {
-                content: "Vintage";
-                left: 779px;
-            }
+      &--paper::after {
+        content: "Vintage";
+        left: 779px;
+      }
 
-            &--book::before {
-                width: 333px;
-                left: 1033px;
-            }
+      &--book::before {
+        left: 1033px;
+        width: 331px;
+      }
 
-            &--book::after {
-                content: "Branding";
-                left: 1120px;
-            }
+      &--book::after {
+        content: "Branding";
+        left: 1120px;
+      }
 
-            &:hover:before,
-            &:focus:before {
-                background-color: transparent;
-            }
+      &:hover:before,
+      &:focus:before {
+        background-color: transparent;
+      }
 
-            &:hover:after,
-            &:focus:after {
-                display: none;
-            }
-        }
-
-        &__image {
-            width: 333px;
-            height: 286px;
-
-
-            &--brand {
-                width: 700px;
-            }
-
-            &--book {
-                width: 333px;
-            }
-        }
+      &:hover:after,
+      &:focus:after {
+        display: none;
+      }
     }
+
+    &__image {
+      width: 333px;
+      height: 286px;
+
+
+      &--brand {
+        width: 700px;
+      }
+
+      &--book {
+        width: 331px;
+      }
+    }
+  }
 }

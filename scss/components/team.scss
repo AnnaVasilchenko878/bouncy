@@ -1,46 +1,45 @@
 @media(min-width: $mobile-width) {
-    .team {
-        margin-bottom: 53px;
-        
+  .team {
+    margin-bottom: 53px;
+
     &__title {
-        @include title;
+      @include title;
     }
 
     &__text {
-        @include subtitle;
+      @include subtitle;
     }
-}
-
+  }
 }
 @media(min-width: $tablet-width) {
-    .team {
-        margin-bottom: 66px;
+  .team {
+    margin-bottom: 66px;
 
     &__title {
-        margin-bottom: 41px;
-        font-size: 20px;
+      margin-bottom: 41px;
+      font-size: 20px;
     }
 
     &__text {
-        margin-bottom: 62px;
-        font-size: 14px;
-        padding: 0 150px;
+      margin-bottom: 62px;
+      padding: 0 150px;
+      font-size: 14px;
     }
-}
+  }
 }
 @media(min-width: $desktop-width) {
-.team {
+  .team {
+    margin-bottom: -21px;
     padding-top: 80px;
     padding-bottom: 80px;
-    margin-bottom: -21px;
 
     &__title {
-        margin-bottom: 41px;
+      margin-bottom: 41px;
     }
 
     &__text {
-        margin-bottom: 62px;
-        padding: 0 474px;
+      margin-bottom: 62px;
+      padding: 0 474px;
     }
-}
+  }
 }

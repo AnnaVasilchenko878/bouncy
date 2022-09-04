@@ -1,68 +1,68 @@
 @media(min-width: $mobile-width) {
-    .price {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    
-        &__item {
-            background-color: $bg-main-color;
-            margin-bottom: 20px;
+  .price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-            &--description {
-                display: none;
-            }
-            &:hover,
-            &:focus,
-            &:active {
-                padding-bottom: 0px;
-            }
-        }
-    
-        &__title {
-            margin-top: 0px;
-            padding: 27px 73px 26px 74px;
-            text-transform: uppercase;
-            color: $text-second-color;
-            background-color: $tiffany-color;
-            font-weight: 700;
-            cursor: pointer;
-        }
-        &__wrapper {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            min-height: 200px;
-        }
+    &__item {
+      margin-bottom: 20px;
+      background-color: $bg-main-color;
 
-        &__cost {
-            color: $tiffany-color;
-            font-family: "Source Sans Pro", "Arial", sans-serif;
-            font-weight: 900;
-            font-size: 42px;
-        }
-    
-        &__time {
-            letter-spacing: 1px;
-            font-size: 20px;
-            line-height: 28px;
-        }
+      &--description {
+        display: none;
+      }
+      &:hover,
+      &:focus,
+      &:active {
+        padding-bottom: 0;
+      }
     }
+
+    &__title {
+      margin-top: 0;
+      padding: 27px 73px 26px 74px;
+      font-weight: 700;
+      color: $text-second-color;
+      text-transform: uppercase;
+      background-color: $tiffany-color;
+      cursor: pointer;
+    }
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 200px;
+    }
+
+    &__cost {
+      font-weight: 900;
+      font-size: 42px;
+      font-family: "Source Sans Pro", "Arial", sans-serif;
+      color: $tiffany-color;
+    }
+
+    &__time {
+      font-size: 20px;
+      line-height: 28px;
+      letter-spacing: 1px;
+    }
+  }
 }
 
 @media(min-width: $tablet-width) {
-    .price {
-        flex-direction: row;
+  .price {
+    flex-direction: row;
 
-        &__item {
-            margin-right: 10px;
-        }
+    &__item {
+      margin-right: 10px;
     }
+  }
 }
 @media(min-width: $desktop-width) {
-    .price {
-        &__item {
-            margin-right: 66px;
-        }
+  .price {
+    &__item {
+      margin-right: 66px;
     }
+  }
 }

@@ -1,82 +1,79 @@
 @media (min-width: $mobile-width) {
-    .services-paginator {
-        margin: 0 auto;
-        margin-top: 18px;
+  .services-paginator {
+    margin: 0 auto;
+    margin-top: 18px;
 
-        &__item {
-            margin-bottom: 31px;
+    &__item {
+      margin-bottom: 31px;
 
-            &--roller,
-            &--gamepad,
-            &--plug {
-                display: none;
-            }
-        }
-        &__button {
-            border: none;
-            width: 53px;
-            height: 53px;
-            background-color: $btn-grey;
-            border-radius: 50%;
-            cursor: pointer;
-            position: relative;
-
-            &::before {
-                content: "";
-                width: 28px;
-                height: 28px;
-                position: absolute;
-                top: 13px;
-                left: 13px;
-                background-image: url('../../img/icon-tools.svg');
-
-            }
-            &--roller::before {
-                background-image: url('../../img/icon-roller.svg');
-                top: 15px;
-            }
-            &--gamepad::before {
-                background-image: url('../../img/icon-gamepad.svg');
-                height: 26px;
-                top: 16px;
-            }
-
-            &--plug::before {
-                background-image: url('../../img/icon-plug.svg');
-                width: 22px;
-                left: 16px;
-            }
-            &:hover,
-            &:focus,
-            &:active {
-                background-color: $tiffany-color;
-            }
-            
-        }
+      &--roller,
+      &--gamepad,
+      &--plug {
+        display: none;
+      }
     }
+    &__button {
+      position: relative;
+      width: 53px;
+      height: 53px;
+      background-color: $btn-grey;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 13px;
+        left: 13px;
+        width: 28px;
+        height: 28px;
+        background-image: url("../../img/icon-tools.svg");
+      }
+      &--roller::before {
+        top: 15px;
+        background-image: url("../../img/icon-roller.svg");
+      }
+      &--gamepad::before {
+        top: 16px;
+        height: 26px;
+        background-image: url("../../img/icon-gamepad.svg");
+      }
+
+      &--plug::before {
+        left: 16px;
+        width: 22px;
+        background-image: url("../../img/icon-plug.svg");
+      }
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: $tiffany-color;
+      }
+    }
+  }
 }
 @media (min-width: $tablet-width) {
-    .services-paginator {
-        
-        &__item {
-            margin-bottom: 32px;
+  .services-paginator {
+    &__item {
+      margin-bottom: 32px;
 
-            &--roller,
-            &--gamepad,
-            &--plug {
-                display: block;
-            }
-        }
+      &--roller,
+      &--gamepad,
+      &--plug {
+        display: block;
+      }
     }
+  }
 }
 @media (min-width: $desktop-width) {
-    .services-paginator {
-        width: 53px;
-        margin-top: 18px;
+  .services-paginator {
+    width: 53px;
+    margin-top: 18px;
 
-        &__item {
-            margin-bottom: 17px;
-        }
+    &__item {
+      margin-bottom: 17px;
     }
+  }
 }
 

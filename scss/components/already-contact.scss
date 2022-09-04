@@ -1,42 +1,42 @@
-@media(min-width: $mobile-width){
-    .already-contact {
-        padding: 31px 37px 23px 38px;
-        background-color: $bg-dark-color;
-        background-image: url("../img/bg-testimonals.png");
-        background-repeat: no-repeat;
-        background-position: center;
+@media(min-width: $mobile-width) {
+  .already-contact {
+    padding: 31px 37px 23px 38px;
+    background-color: $bg-dark-color;
+    background-image: url("../img/bg-testimonals.png");
+    background-repeat: no-repeat;
+    background-position: center;
 
-    
-        &__text {
-            text-align: center;
-            margin-bottom: 29px;
-            color: $text-second-color;
-            font-size: 18px;
-    
-            &--capitalize {
-                text-transform: capitalize;
-            }
-        }
+
+    &__text {
+      margin-bottom: 29px;
+      font-size: 18px;
+      text-align: center;
+      color: $text-second-color;
+
+      &--capitalize {
+        text-transform: capitalize;
+      }
+    }
     &__wrapper {
-        display: flex;
-        justify-content: center;
+      display: flex;
+      justify-content: center;
     }
-        &__button {
-            border: none;
-            background-color: transparent;
-            text-transform: capitalize;
-            color: $text-second-color;
-            font-size: 16px;
-            border: 1px solid $text-second-color;
-            padding: 14px 30px;
-            border-radius: 45px;
-            cursor: pointer;
-                &:hover,
-                &:focus,
-                &:active {
-                    background-color: $text-second-color;
-                    color: $shadows-color;
-                    }
-        }
+    &__button {
+      padding: 14px 30px;
+      font-size: 16px;
+      color: $text-second-color;
+      text-transform: capitalize;
+      background-color: transparent;
+      border: none;
+      border: 1px solid $text-second-color;
+      border-radius: 45px;
+      cursor: pointer;
+      &:hover,
+      &:focus,
+      &:active {
+        color: $shadows-color;
+        background-color: $text-second-color;
+      }
     }
+  }
 }

@@ -1,60 +1,67 @@
 @font-face {
-    font-family: "Open Sans";
-    font-weight: lighter;
-    font-style: normal;
-    src: local("Open Sans"),
-        url("../../fonts/OpenSans-Light.woff") format("woff"),
-        url("../../fonts/OpenSans-Light.woff2") format("woff2");
+  font-style: normal;
+  font-weight: lighter;
+  font-family: "Open Sans";
+
+  src: local("Open Sans"),
+  url("../../fonts/OpenSans-Light.woff") format("woff"),
+  url("../../fonts/OpenSans-Light.woff2") format("woff2");
 }
 @font-face {
-    font-family: "Open Sans";
-    font-weight: normal;
-    font-style: normal;
-    src: local("Open Sans"),
-        url("../../fonts/OpenSans-Regular.woff") format("woff"),
-        url("../../fonts/OpenSans-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+  font-family: "Open Sans";
+
+  src: local("Open Sans"),
+  url("../../fonts/OpenSans-Regular.woff") format("woff"),
+  url("../../fonts/OpenSans-Regular.woff2") format("woff2");
 }
 
 @font-face {
-    font-family: "Open Sans";
-    font-weight: 700;
-    font-style: bold;
-    src: local("Open Sans"),
-        url("../../fonts/OpenSans-Bold.woff") format("woff"),
-        url("../../fonts/OpenSans-Bold.woff2") format("woff2");
+  font-style: bold;
+  font-weight: 700;
+  font-family: "Open Sans";
+
+  src: local("Open Sans"),
+  url("../../fonts/OpenSans-Bold.woff") format("woff"),
+  url("../../fonts/OpenSans-Bold.woff2") format("woff2");
 }
 @font-face {
-    font-family: "Roboto";
-    font-weight: 300;
-    font-style: normal;
-    src: local("Roboto"),
-        url("../../fonts/Roboto-Light.woff") format("woff"),
-        url("../../fonts/Roboto-Light.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 300;
+  font-family: "Roboto";
+
+  src: local("Roboto"),
+  url("../../fonts/Roboto-Light.woff") format("woff"),
+  url("../../fonts/Roboto-Light.woff2") format("woff2");
 }
 
 @font-face {
-    font-family: "Source Sans Pro";
-    font-weight: 300;
-    font-style: normal;
-    src: local("Source Sans Pro"),
-        url("../../fonts/SourceSansPro-Light.woff") format("woff"),
-        url("../../fonts/SourceSansPro-Light.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 300;
+  font-family: "Source Sans Pro";
+
+  src: local("Source Sans Pro"),
+  url("../../fonts/SourceSansPro-Light.woff") format("woff"),
+  url("../../fonts/SourceSansPro-Light.woff2") format("woff2");
 }
 
 @font-face {
-    font-family: "Source Sans Pro";
-    font-weight: 900;
-    font-style: normal;
-    src: local("Source Sans Pro"),
-        url("../../fonts/SourceSansPro-Black.woff") format("woff"),
-        url("../../fonts/SourceSansPro-Black.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 900;
+  font-family: "Source Sans Pro";
+
+  src: local("Source Sans Pro"),
+  url("../../fonts/SourceSansPro-Black.woff") format("woff"),
+  url("../../fonts/SourceSansPro-Black.woff2") format("woff2");
 }
 
 @font-face {
-    font-family: "Big John";
-    font-weight: 400;
-    font-style: normal;
-    src: local("Big John"),
-        url("../../fonts/Big-John.woff") format("woff"),
-        url("../../fonts/Big-John.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Big John";
+
+  src: local("Big John"),
+  url("../../fonts/Big-John.woff") format("woff"),
+  url("../../fonts/Big-John.woff2") format("woff2");
 }

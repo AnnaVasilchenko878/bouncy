@@ -1,102 +1,104 @@
 @media(min-width: $mobile-width) {
-    .about-company {
-        padding: 0;
-        margin-bottom: 38px;
+  .about-company {
+    margin-bottom: 38px;
+    padding: 0;
 
-        &__img {
-            display: none;
-        }
-        &__title {
-            margin-bottom: 26px;
-            text-transform: uppercase;
-            color: $text-title-color;
-            font-family: "Source Sans Pro", "Arial", sans-serif;
-            font-size: 18px;
-            font-weight: 300;
-            letter-spacing: 4px;
-            line-height: 12px;
-            text-align: center;
-
-        }
-        &__text {
-            font-family: "Open Sans", "Arial", sans-serif;
-            text-align: justify;
-            font-weight: lighter;
-            font-size: 11px;
-            margin-bottom: 26px;
-            padding: 0 32px;
-        }
-        &__wrapper-link {
-            display: flex;
-            justify-content: center;
-        }
-        &__link {
-            text-transform: capitalize;
-            color: $text-title-color;
-            border: 1px solid $text-title-color;
-            padding: 12px 30px;
-            border-radius: 25px;
-        }
+    &__img {
+      display: none;
     }
+    &__title {
+      margin-bottom: 26px;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 12px;
+      font-family: "Source Sans Pro", "Arial", sans-serif;
+      text-align: center;
+      color: $text-title-color;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+    }
+    &__text {
+      margin-bottom: 26px;
+      padding: 0 32px;
+      font-weight: lighter;
+      font-size: 11px;
+      font-family: "Open Sans", "Arial", sans-serif;
+      text-align: justify;
+    }
+    &__wrapper-link {
+      display: flex;
+      justify-content: center;
+    }
+    &__link {
+      padding: 12px 30px;
+      color: $text-title-color;
+      text-transform: capitalize;
+      border: 1px solid $text-title-color;
+      border-radius: 25px;
+
+      &:hover,
+      &:focus {
+        color: $bg-main-color;
+        background-color: $tiffany-color;
+        border-color: $tiffany-color;
+      }
+    }
+  }
 }
 @media(min-width: $tablet-width) {
+  .about-company {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 57px;
 
-    .about-company {
-
-        display: flex;
-        justify-content: center;
-        padding-bottom: 57px;
-
-        &__wrapper {
-            margin-right: 123px;
-        }
-        &__title {
-            font-size: 24px;
-            margin-bottom: 38px;
-        }
-        &__text {
-            font-size: 13px;
-            width: 313px;
-            margin-bottom: 36px;
-        }
-        &__img {
-            display: block;
-            margin-top: 49px;
-        }
+    &__wrapper {
+      margin-right: 123px;
     }
-
+    &__title {
+      margin-bottom: 38px;
+      font-size: 24px;
+    }
+    &__text {
+      width: 313px;
+      margin-bottom: 36px;
+      font-size: 13px;
+    }
+    &__img {
+      display: block;
+      margin-top: 49px;
+    }
+  }
 }
 @media(min-width: $desktop-width) {
+  .about-company {
+    padding-bottom: 57px;
 
-    .about-company {
-        padding-bottom: 57px;
-
-        &__wrapper {
-            width: 466px;
-            margin-right: 166px;
-        }
-
-        &__title {
-            margin-bottom: 49px;
-            font-size: 20px;
-            text-align: left;
-        }
-
-        &__text {
-            margin-bottom: 33px;
-            font-family: "Open Sans", "Arial", sans-serif;
-            font-size: 14px;
-            letter-spacing: 0.5px;
-            width: 439px;
-            padding: 0;
-        }
-        &__link {
-            margin-left: 0;
-        }
-
-        &__img {
-            width: 215px;
-            margin-top: -18px;
-        }
+    &__wrapper {
+      width: 466px;
+      margin-right: 166px;
     }
+
+    &__title {
+      margin-bottom: 49px;
+      font-size: 20px;
+      text-align: left;
+    }
+
+    &__text {
+      width: 439px;
+      margin-bottom: 33px;
+      padding: 0;
+      font-size: 14px;
+      font-family: "Open Sans", "Arial", sans-serif;
+      letter-spacing: 0.5px;
+    }
+    &__link {
+      margin-left: 0;
+    }
+
+    &__img {
+      width: 215px;
+      margin-top: -18px;
+    }
+  }
 }

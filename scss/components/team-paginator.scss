@@ -1,14 +1,14 @@
 @media(min-width: $mobile-width) {
-    .team-paginator {
-        display: flex;
-        justify-content: center;
-    
-        &__item {
-            width: 10px;
-            height: 10px;
-            border: 1px solid $tiffany-color;
-            border-radius: 50%;
-            margin-right: 10px;
-        }
+  .team-paginator {
+    display: flex;
+    justify-content: center;
+
+    &__item {
+      width: 10px;
+      height: 10px;
+      margin-right: 10px;
+      border: 1px solid $tiffany-color;
+      border-radius: 50%;
     }
+  }
 }

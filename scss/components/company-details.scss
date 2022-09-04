@@ -1,46 +1,43 @@
 @media(min-width: $mobile-width) {
-    .company-details {
-        padding-top: 23px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: $bg-second-color;
+  .company-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 23px;
+    background-color: $bg-second-color;
 
-        &__title {
-            @include title;
-        }
-
-        &__text {
-            @include subtitle;
-        }
-
+    &__title {
+      @include title;
     }
 
+    &__text {
+      @include subtitle;
+    }
+  }
 }
 @media(min-width: $tablet-width) {
-    .company-details {
-        padding-top: 55px;
+  .company-details {
+    padding-top: 55px;
 
-        &__title {
-            font-size: 24px;
-            margin-bottom: 14px;
-        }
-        &__text {
-            font-size: 14px;
-            line-height: 21px;
-            margin-bottom: 67px;
-            padding: 0 150px;
-        }
+    &__title {
+      margin-bottom: 14px;
+      font-size: 24px;
     }
+    &__text {
+      margin-bottom: 67px;
+      padding: 0 150px;
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
 }
 @media(min-width: $desktop-width) {
-    .company-details {
-        padding-top: 85px;
-        padding-bottom: 90px;
+  .company-details {
+    padding-top: 85px;
+    padding-bottom: 90px;
 
-        &__text {
-            padding: 0 474px;
-        }
-
+    &__text {
+      padding: 0 474px;
     }
+  }
 }

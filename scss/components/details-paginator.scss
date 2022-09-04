@@ -1,75 +1,71 @@
 @media(min-width: $mobile-width) {
-    .details-paginator {
-        display: flex;
-        margin-bottom: 23px;
-        width: 100%;
-        justify-content: space-around;
+  .details-paginator {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 23px;
 
-        &__item {
-            width: 53px;
-        }
-        &__button {
-            position: relative;
-            border: none;
-            width: 53px;
-            height: 53px;
-            background-color: $btn-grey;
-            border-radius: 50%;
-            cursor: pointer;
-            &:hover,
-            &:focus {
-                background-color: $tiffany-color;
-            }
-
-            &:active {
-                background-color: $tiffany-color;
-            }
-
-            &::before {
-                content: "";
-                position: absolute;
-                top: 15px;
-                left: 12px;
-                width: 29px;
-                height: 30px;
-                background-image: url(../../img/icon-heart.svg);
-
-            }
-
-            &--mouse::before {
-                background-image: url(../../img/icon-mouse.svg);
-                top: 13px;
-                left: 15px;
-                width: 22px;
-                height: 29px;
-
-            }
-
-            &--bulb::before {
-                background-image: url(../../img/icon-bulb.svg);
-                top: 13px;
-                left: 16px;
-                width: 20px;
-                height: 29px;
-            }
-        }
+    &__item {
+      width: 53px;
     }
+    &__button {
+      position: relative;
+      width: 53px;
+      height: 53px;
+      background-color: $btn-grey;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      &:hover,
+      &:focus {
+        background-color: $tiffany-color;
+      }
+
+      &:active {
+        background-color: $tiffany-color;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 12px;
+        width: 29px;
+        height: 30px;
+        background-image: url(../../img/icon-heart.svg);
+      }
+
+      &--mouse::before {
+        top: 13px;
+        left: 15px;
+        width: 22px;
+        height: 29px;
+        background-image: url(../../img/icon-mouse.svg);
+      }
+
+      &--bulb::before {
+        top: 13px;
+        left: 16px;
+        width: 20px;
+        height: 29px;
+        background-image: url(../../img/icon-bulb.svg);
+      }
+    }
+  }
 }
 @media(min-width: $tablet-width) {
-        .details-paginator {
-            margin-bottom: 69px;
-            width: 319px;
-        }
-
+  .details-paginator {
+    width: 319px;
+    margin-bottom: 69px;
+  }
 }
 
 @media(min-width: $desktop-width) {
-    .details-paginator {
-        margin-bottom: 85px;
+  .details-paginator {
+    margin-bottom: 85px;
 
-        &__item {
-            margin-right: 27px;
-        }
+    &__item {
+      margin-right: 27px;
     }
-
+  }
 }

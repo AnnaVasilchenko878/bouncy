@@ -1,20 +1,19 @@
 @media (min-width: $mobile-width) {
-.logo {
-      font-family: "Big John", "Arial", sans-serif;
-      font-weight: 400;
-      font-size: 25px;
-      line-height: 12px;
-      color: $text-second-color;
+  .logo {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 12px;
+    font-family: "Big John", "Arial", sans-serif;
+    color: $text-second-color;
 
-      &__footer {
-        color: $logo-footer-color;
-        margin-bottom: 24px;
-      }
+    &__footer {
+      margin-bottom: 24px;
+      color: $logo-footer-color;
     }
+  }
 }
 @media (min-width: $tablet-width) {
   .logo {
-        font-size: 28px;
-        
+    font-size: 28px;
   }
 }

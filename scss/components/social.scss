@@ -1,52 +1,51 @@
 @media(min-width: $mobile-width) {
-    .social {
+  .social {
+    display: flex;
 
-        display: flex;
-    
-        &__item {
-            width: 26px;
-            height: 26px;
-            margin-right: 15px;
-            border-radius: 50%;
-            background-color: $facebook-color;
-    
-            &--linkedn {
-            background-color: $linkedn-color;
-            }
-            &--instagram {
-                background-color: $instagram-color;
-            }
-            &--vimeo {
-                background-color: $vimeo-color;
-            }
-            &:hover,
-            &:focus,
-            &:active {
-                background-color: $tiffany-color;
-            }
-        }
-        &__link {
-            position: relative;
-        }
-        &__icon {
-            position: absolute;
-            top: 5px;
-            left: 5px;
-        }
+    &__item {
+      width: 26px;
+      height: 26px;
+      margin-right: 15px;
+      background-color: $facebook-color;
+      border-radius: 50%;
+
+      &--linkedn {
+        background-color: $linkedn-color;
+      }
+      &--instagram {
+        background-color: $instagram-color;
+      }
+      &--vimeo {
+        background-color: $vimeo-color;
+      }
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: $tiffany-color;
+      }
     }
+    &__link {
+      position: relative;
+    }
+    &__icon {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+    }
+  }
 }
 @media(min-width: $tablet-width) {
-    .social {
-        margin-left: 12px;
-    }
+  .social {
+    margin-left: 12px;
+  }
 }
 @media(min-width: $desktop-width) {
-    .social {
-        margin-left: 20px;
-    }
+  .social {
+    margin-left: 20px;
+  }
 }
-@-moz-document url-prefix(){
-    .social__icon {
-        top: 20px;
-    }
+@-moz-document url-prefix() {
+  .social__icon {
+    top: 20px;
+  }
 }

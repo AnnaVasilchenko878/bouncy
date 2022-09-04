@@ -1,39 +1,39 @@
 @media(min-width: $mobile-width) {
-    .our-price {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 44px;
-        padding-bottom: 101px;
-        background-color: $bg-second-color;
-    
-        &__title {
-            @include title;
-        }
-    
-        &__text {
-            @include subtitle;
-        }
+  .our-price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 44px;
+    padding-bottom: 101px;
+    background-color: $bg-second-color;
+
+    &__title {
+      @include title;
     }
+
+    &__text {
+      @include subtitle;
+    }
+  }
 }
 @media(min-width: $tablet-width) {
-    .our-price {
-        &__title {
-            font-size: 20px;
-        }
-        &__text {
-            font-size: 14px;
-            padding: 0 150px;
-            margin-bottom: 54px;
-        }
+  .our-price {
+    &__title {
+      font-size: 20px;
     }
+    &__text {
+      margin-bottom: 54px;
+      padding: 0 150px;
+      font-size: 14px;
+    }
+  }
 }
 @media(min-width: $desktop-width) {
-    .our-price {
-        &__text {
-        padding: 0 474px;
-        }
+  .our-price {
+    &__text {
+      padding: 0 474px;
     }
+  }
 }
 // .our-price {
 //     padding-top: 80px;

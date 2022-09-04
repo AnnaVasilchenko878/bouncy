@@ -1,100 +1,98 @@
 @media(min-width: $mobile-width) {
-.employers-skills {
+  .employers-skills {
     display: none;
-}
+  }
 }
 @media(min-width: $tablet-width) {
-    .employers-skills {
-        display: block;
+  .employers-skills {
+    display: block;
     margin-left: 67px;
 
     &__wrapper {
-        display: flex;
+      display: flex;
     }
 
     &__name {
-        width: 131px;
-        margin-right: 142px;
-        text-transform: uppercase;
-        margin-bottom: -20px;
-        position: relative;
+      position: relative;
+      width: 131px;
+      margin-right: 142px;
+      margin-bottom: -20px;
+      text-transform: uppercase;
 
-        &::before {
-            content: "";
-            width: 243px;
-            height: 4px;
-            position: absolute;
-            top: 39px;
-            left: 0px;
-            background-color: $tiffany-color;
-                }
+      &::before {
+        content: "";
+        position: absolute;
+        top: 39px;
+        left: 0;
+        width: 243px;
+        height: 4px;
+        background-color: $tiffany-color;
+      }
 
-                &--web::before {
-                    width: 198px;
-                }
+      &--web::before {
+        width: 198px;
+      }
 
-                &--ui::before {
-                    width: 238px;
-                }
+      &--ui::before {
+        width: 238px;
+      }
     }
 
     &__percent {
-        width: 36px;
-        margin-top: 14px;
+      width: 36px;
+      margin-top: 14px;
     }
 
     &__progress {
-        height: 4px;
-        width: 304px;
-        background-color: $light-grey-color;
+      width: 304px;
+      height: 4px;
+      background-color: $light-grey-color;
     }
-
-}
+  }
 }
 @media(min-width: $desktop-width) {
-    .employers-skills {
+  .employers-skills {
     margin-left: 67px;
 
     &__wrapper {
-        display: flex;
+      display: flex;
     }
 
     &__name {
-        width: 131px;
-        margin-right: 142px;
-        text-transform: uppercase;
-        margin-bottom: -20px;
-        position: relative;
+      position: relative;
+      width: 131px;
+      margin-right: 142px;
+      margin-bottom: -20px;
+      text-transform: uppercase;
 
-        &::before {
-            content: "";
-            width: 243px;
-            height: 4px;
-            position: absolute;
-            top: 39px;
-            left: 0px;
-            background-color: $tiffany-color;
-                }
+      &::before {
+        content: "";
+        position: absolute;
+        top: 39px;
+        left: 0;
+        width: 243px;
+        height: 4px;
+        background-color: $tiffany-color;
+      }
 
-                &--web::before {
-                    width: 198px;
-                }
+      &--web::before {
+        width: 198px;
+      }
 
-                &--ui::before {
-                    width: 238px;
-                }
+      &--ui::before {
+        width: 238px;
+      }
     }
 
     &__percent {
-        width: 36px;
-        margin-top: 14px;
+      width: 36px;
+      margin-top: 14px;
     }
 
     &__progress {
-        height: 4px;
-        width: 304px;
-        background-color: $light-grey-color;
+      width: 304px;
+      height: 4px;
+      background-color: $light-grey-color;
     }
-
-}
+  }
 }

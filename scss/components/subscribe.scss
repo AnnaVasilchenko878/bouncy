@@ -1,93 +1,94 @@
 @media(min-width: $mobile-width) {
-    .subscribe {
-        display: flex;
-        flex-direction: column;
-        padding-top: 41px;
-        padding-bottom: 45px;
-        background-color: $bg-dark-color;
-        background-image: url("../img/bg-cloud.png");
-        background-repeat: no-repeat;
-        background-position: center;
-    
-        &__title {
-            @include title;
-            color: $bg-main-color;
-        }
-    
-        &__text {
-            @include subtitle;
-            margin-bottom: 61px;
-        }
-    
-        &__form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+    padding-top: 41px;
+    padding-bottom: 45px;
+    background-color: $bg-dark-color;
+    background-image: url("../img/bg-cloud.png");
+    background-repeat: no-repeat;
+    background-position: center;
 
+    &__title {
+      color: $bg-main-color;
 
-            // padding-left: 426px;
-            // desktop
-
-        }
-    
-        &__input {
-            // width: 358px;
-            padding: 15px 50px 15px 23px;
-            background-color: transparent;
-            border: 1px solid $text-main-color;
-            margin-bottom: 15px;
-
-            &::placeholder {
-                text-transform: capitalize;
-                color: $text-placeholder-color;
-            }
-        }
-    
-        &__button {
-            text-transform: uppercase;
-            border: none;
-            color: $text-second-color;
-            background-color: $tiffany-color;
-            padding: 16px 50px;
-            cursor: pointer;
-            &:hover,
-            &:focus,
-            &:active {
-                background-color: $text-second-color;
-                color: $shadows-color;
-            }
-        }
+      @include title;
     }
+
+    &__text {
+      margin-bottom: 61px;
+
+      @include subtitle;
+    }
+
+    &__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+
+      // padding-left: 426px;
+      // desktop
+    }
+
+    &__input {
+      margin-bottom: 15px;
+      // width: 358px;
+      padding: 15px 50px 15px 23px;
+      background-color: transparent;
+      border: 1px solid $text-main-color;
+
+      &::placeholder {
+        color: $text-placeholder-color;
+        text-transform: capitalize;
+      }
+    }
+
+    &__button {
+      padding: 16px 50px;
+      color: $text-second-color;
+      text-transform: uppercase;
+      background-color: $tiffany-color;
+      border: none;
+      cursor: pointer;
+      &:hover,
+      &:focus,
+      &:active {
+        color: $shadows-color;
+        background-color: $text-second-color;
+      }
+    }
+  }
 }
 @media(min-width: $tablet-width) {
-    .subscribe {
-        &__title {
-            font-size: 20px;
-        }
-        &__text {
-            padding: 0 162px;
-            font-size: 14px;
-        }
-        &__form {
-            flex-direction: row;
-            justify-content: center;
-            align-items: baseline;
-        }
+  .subscribe {
+    &__title {
+      font-size: 20px;
     }
+    &__text {
+      padding: 0 162px;
+      font-size: 14px;
+    }
+    &__form {
+      flex-direction: row;
+      justify-content: center;
+      align-items: baseline;
+    }
+  }
 }
-@media(min-width: $desktop-width){
-    .subscribe {
-        &__text {
-            padding: 0 474px;
-        }
-        &__input {
-            padding-right: 150px;
-        }
+@media(min-width: $desktop-width) {
+  .subscribe {
+    &__text {
+      padding: 0 474px;
     }
+    &__input {
+      padding-right: 150px;
+    }
+  }
 }
 
 @-moz-document url-prefix() {
-    .subscribe__button {
-        padding: 17px 50px
-    }
+  .subscribe__button {
+    padding: 17px 50px;
+  }
 }
