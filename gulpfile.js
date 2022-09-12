@@ -1,4 +1,4 @@
-let gulp = require('gulp');
+const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const rename = require('gulp-rename');
 const autoprefixer = require('gulp-autoprefixer');
@@ -7,7 +7,7 @@ const browserSync = require('browser-sync');
 browserSync.create();
 
 function test(done) {
-    gulp.src('./scss/style.scss')
+    gulp.src('scss/style.scss')
         .pipe(sourcemaps.init())
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(sass({includePaths: ['node_modules']})) 
