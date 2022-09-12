@@ -85,21 +85,21 @@
                     praesentium</p>
                 <ul class="company-details__paginator details-paginator">
                     <li class="details-paginator__item">
-                        <button class="details-paginator__button" type="button">
+                        <button class="details-paginator__button" type="button" data-tab="#tab-heart">
                         </button>
                     </li>
                     <li class="details-paginator__item">
-                        <button class="details-paginator__button details-paginator__button--mouse " type="button">
+                        <button class="details-paginator__button details-paginator__button--mouse " type="button" data-tab="#tab-mouse">
                         </button>
                     </li>
                     <li class="details-paginator__item">
-                        <button class="details-paginator__button details-paginator__button--bulb" type="button">
+                        <button class="details-paginator__button details-paginator__button--bulb" type="button" data-tab="#tab-bulb">
                         </button>
                     </li>
                 </ul>
                 <ul class="company-details__list details">
-                    <li class="details__item">
-                        <h3 class="details__title">Creative Ideas</h3>
+                    <li class="details__item" id="tab-heart">
+                        <h3 class="details__title">Nice design</h3>
                         <div class="details__wrapper">
                             <p class="details__text details__text--first">At <span
                                     class="details__text details__text--tiffany-color">vero</span>
@@ -123,9 +123,8 @@
                                 dolorum fuga. Et harum quidemr</p>
                         </div>
                     </li>
-                    <!-- 
-                <li class="details__item">
-                    <h3 class="details__title">Creative Ideas</h3>
+                <li class="details__item" id="tab-mouse">
+                    <h3 class="details__title">Good code</h3>
                     <div class="details__wrapper">
                     <p class="details__text details__text--first">At 
                         <span class="details__text details__text--tiffany-color">vero</span>eos et accusamus et iusto odio dignissimos
@@ -142,7 +141,7 @@
                         dolorum fuga. Et harum quidemr</p>
                     </div>
                 </li>
-                <li class="details__item">
+                <li class="details__item" id="tab-bulb">
                     <h3 class="details__title">Creative Ideas</h3>
                     <div class="details__wrapper">
                     <p class="details__text details__text--first">At <span class="details__text details__text--tiffany-color">vero</span>
@@ -160,7 +159,7 @@
                         laborum et
                         dolorum fuga. Et harum quidemr</p>
                     </div>
-                </li>-->
+                </li>
                 </ul>
             </section>
             <section class="featured-projects">
@@ -1121,6 +1120,7 @@
             </ul>
         </footer>
     </div>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
