@@ -22,15 +22,13 @@
       justify-content: center;
     }
     &__button {
+      @include btn;
       padding: 14px 30px;
       font-size: 16px;
       color: $text-second-color;
       text-transform: capitalize;
-      background-color: transparent;
-      border: none;
       border: 1px solid $text-second-color;
       border-radius: 45px;
-      cursor: pointer;
       &:hover,
       &:focus,
       &:active {

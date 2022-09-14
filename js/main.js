@@ -1,5 +1,3 @@
-
-
 const tabsBtns = document.querySelectorAll('.details-paginator__button');
 const tabSlides = document.querySelectorAll('.details__item');
 
@@ -33,3 +31,32 @@ function onTabClick(item){
 // делаем первый таб активным
 
 document.querySelector('.details-paginator__button').click();
+
+const tabServicesBtns = document.querySelectorAll('.services-paginator__button');
+const tabServicesSlides = document.querySelectorAll('.services__item');
+
+tabServicesBtns.forEach(onTabServClick);
+
+function onTabServClick(item) {
+    item.addEventListener('click', function(){
+        let activeServBtn = item;
+        let tabServId = activeServBtn.getAttribute('data-tab');
+        let activServTab = document.querySelector(tabServId);
+        if(!activeServBtn.classList.contains('active')) {
+            
+            tabServicesBtns.forEach(function(item){
+                item.classList.remove('active');
+            })
+
+            tabServicesSlides.forEach(function(item){
+                item.classList.remove('active-slide');
+            })
+
+            activeServBtn.classList.add('active');
+            activServTab.classList.add('active-slide');
+
+        }
+    })
+};
+
+document.querySelector('.services-paginator__button').click();

@@ -9,14 +9,9 @@
       width: 53px;
     }
     &__button {
+      @include btn;
+      @include btn-round;
       position: relative;
-      width: 53px;
-      height: 53px;
-      background-color: $btn-grey;
-      border: none;
-      border-radius: 50%;
-      cursor: pointer;
-
       &:hover,
       &:focus {
         background-color: $tiffany-color;
@@ -68,8 +63,4 @@
       margin-right: 27px;
     }
   }
-}
-.active {
-  background-color: $tiffany-color;
-
 }

@@ -17,3 +17,15 @@
   line-height: 19px;
   text-align: center;
 }
+@mixin btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@mixin btn-round {
+  width: 53px;
+  height: 53px;
+  background-color: $btn-grey;
+  border-radius: 50%;
+}

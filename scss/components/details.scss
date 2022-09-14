@@ -6,11 +6,7 @@
       align-items: center;
       margin-bottom: 78px;
       padding: 0 36px;
-      position: absolute;
-      top: -200%;
-      opacity: 0;
-      transform: scale(0.9);
-      transition: 0.4s;
+      display: none;
     }
 
     &__title {
@@ -41,12 +37,7 @@
     }
   }
 }
-.active-slide {
-  top: 0;
-  opacity: 1;
-  transform: scale(1);
-  position: static;
-}
+
 @media(min-width: $tablet-width) {
   .details {
     &__item {

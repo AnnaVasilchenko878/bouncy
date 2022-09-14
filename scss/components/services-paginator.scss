@@ -13,14 +13,9 @@
       }
     }
     &__button {
+      @include btn;
+      @include btn-round;
       position: relative;
-      width: 53px;
-      height: 53px;
-      background-color: $btn-grey;
-      border: none;
-      border-radius: 50%;
-      cursor: pointer;
-
       &::before {
         content: "";
         position: absolute;
@@ -77,3 +72,6 @@
   }
 }
 
+.active {
+  background-color: $tiffany-color;
+}

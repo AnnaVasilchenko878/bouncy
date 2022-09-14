@@ -7,6 +7,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      display: none;
     }
 
     &__title {
@@ -28,6 +29,7 @@
     }
   }
 }
+
 @media(min-width: $tablet-width) {
   .services {
     padding: 0 78px;
@@ -46,6 +48,7 @@
     }
   }
 }
+
 @media(min-width: $desktop-width) {
   .services {
     margin-right: 88px;
@@ -68,4 +71,8 @@
       line-height: 28px;
     }
   }
+}
+
+.active-slide {
+  display: block;      
 }
