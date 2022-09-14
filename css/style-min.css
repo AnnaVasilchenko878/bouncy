@@ -655,12 +655,11 @@ html body .visually-hidden:not(:focus):not(:active), html body input[type=checkb
     width: 53px;
   }
   .details-paginator__button {
-    background-color: rgba(0, 0, 0, 0);
-    border: none;
-    cursor: pointer;
+    position: relative;
     width: 53px;
     height: 53px;
     background-color: #81868e;
+    border: none;
     border-radius: 50%;
     position: relative;
   }
@@ -708,6 +707,10 @@ html body .visually-hidden:not(:focus):not(:active), html body input[type=checkb
     margin-right: 27px;
   }
 }
+.active {
+  background-color: #19bd9a;
+}
+
 @media (min-width: 320px) {
   .details__item {
     display: -webkit-box;
@@ -748,6 +751,15 @@ html body .visually-hidden:not(:focus):not(:active), html body input[type=checkb
     margin-bottom: 43px;
   }
 }
+.active-slide {
+  top: 0;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  position: static;
+}
+
 @media (min-width: 750px) {
   .details__item {
     padding: 0 119px;
@@ -1111,12 +1123,11 @@ html body .visually-hidden:not(:focus):not(:active), html body input[type=checkb
     display: none;
   }
   .services-paginator__button {
-    background-color: rgba(0, 0, 0, 0);
-    border: none;
-    cursor: pointer;
+    position: relative;
     width: 53px;
     height: 53px;
     background-color: #81868e;
+    border: none;
     border-radius: 50%;
     position: relative;
   }
