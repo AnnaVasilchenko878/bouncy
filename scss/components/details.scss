@@ -37,12 +37,7 @@
     }
   }
 }
-.active-slide {
-  top: 0;
-  opacity: 1;
-  transform: scale(1);
-  position: static;
-}
+
 @media(min-width: $tablet-width) {
   .details {
     &__item {
