@@ -1,5 +1,10 @@
 @media(min-width: $mobile-width) {
   .employers {
+    &__item {
+      // display: flex;
+      flex-direction: column;
+      display: none;
+    }
     &__img {
       width: 285px;
       height: 364px;
@@ -32,7 +37,8 @@
   .employers {
     margin-bottom: 49px;
     &__item {
-      display: flex;
+      flex-direction: row;
+
     }
     &__img {
       margin-right: 59px;
@@ -61,10 +67,12 @@
 }
 @media(min-width: $desktop-width) {
   .employers {
-    margin-bottom: 61px;
     margin-left: 181px;
     &__img {
       margin-right: 330px;
     }
   }
+}
+.active-slide-team {
+  display: flex;
 }

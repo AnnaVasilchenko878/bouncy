@@ -9,6 +9,10 @@
       margin-right: 10px;
       border: 1px solid $tiffany-color;
       border-radius: 50%;
+      cursor: pointer;
     }
   }
+}
+.active-paginator {
+  background-color: $tiffany-color;
 }
