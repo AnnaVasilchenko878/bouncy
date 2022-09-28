@@ -1,7 +1,7 @@
 @media(min-width: $mobile-width) {
   .news {
     &__item {
-      display: flex;
+      display: none;
       flex-direction: column;
       align-items: center;
     }
@@ -91,4 +91,7 @@
       margin: 0;
     }
   }
+}
+.active-slide-team {
+  display: flex;
 }

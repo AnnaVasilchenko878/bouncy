@@ -119,3 +119,104 @@ teamPaginators.forEach(function(item, indexDot) {
 
 // Механизм слайдшоу
 setInterval(teamNextSlide, 5000);
+
+// slider testimonials 
+
+const testSlides= document.querySelectorAll('.testimonials__item');
+const testDots = document.querySelectorAll('.testimonials__paginator--item');
+
+let testActiveIndex = 0;
+
+function testActiveSlide(n) {
+    for(slide of testSlides) {
+        slide.classList.remove('active-slide-testimonials');
+    }
+    testSlides[n].classList.add('active-slide-testimonials');
+}
+function testActivePaginator(n) {
+    for(dot of testDots) {
+        dot.classList.remove('active-paginator');
+    }
+    testDots[n].classList.add('active-paginator');
+}
+
+function testCurrentSlide (item) {
+    testActiveSlide(item);
+    testActivePaginator(item)
+}
+
+function testNextSlide() {
+    if (testActiveIndex == testSlides.length-1) {
+        testActiveIndex = 0;
+        testCurrentSlide(testActiveIndex);
+    } else {
+        testActiveIndex++;
+        testCurrentSlide(testActiveIndex);
+    }
+}
+
+function testPrevSide() {
+    if(testActiveIndex == 0){
+        testActiveIndex = testSlides.length-1
+        testCurrentSlide(testActiveIndex);
+    } else {
+        testActiveIndex--;
+        testCurrentSlide(testActiveIndex);
+    }
+}
+// Переоистывание слайдов
+
+testDots.forEach(function(item, indexDot) {
+    item.addEventListener('click', function() {
+         testActiveIndex = indexDot;
+         testCurrentSlide(testActiveIndex);
+    })
+})
+
+setInterval(testNextSlide, 5000);
+
+// Latest news slider
+
+const newsSlides = document.querySelectorAll('.news__item'),
+newsDots  = document.querySelectorAll('.latest-news__item'),
+newsActiveIndex = 0;
+
+function newsActiveSlide(n) {
+    for(slide of newsSlides) {
+        slide.classList.remove('active-slide-team');
+    } 
+    newsSlides[n].classList.add('active-slide-team');
+}
+
+function newsAvctiveDot(n) {
+    for(dot of newsDots) {
+        dot.classList.remove('active-paginator');
+    }
+    newsDots[n].classList.add('active-paginator')
+}
+
+function newsActiveItem(item) {
+    newsActiveSlide(item);
+    newsAvctiveDot(item);
+}
+
+function newsNextSlide() {
+    if( newsActiveIndex == newsSlides.length-1) {
+        newsActiveIndex = 0;
+        newsActiveItem(newsActiveIndex);
+    } else {
+        newsActiveIndex ++;
+        newsActiveItem(newsActiveIndex);
+    }
+}
+
+function newsPrevSlide() {
+    if(newsActiveIndex == 0) {
+        newsActiveIndex = newsSlides.length-1;
+    } else {
+        newsActiveIndex --;
+        newsActiveItem(newsActiveIndex);
+    }
+}
+
+newsDots.forEach(item, )

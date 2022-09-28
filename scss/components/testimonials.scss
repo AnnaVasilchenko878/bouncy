@@ -48,6 +48,7 @@
       padding-bottom: 22px;
       background-color: $bg-main-color;
       box-shadow: 0.7px 0.7px 0 0 rgba(0, 0, 0, 0.05);
+      display: none;
     }
 
     &__img {
@@ -132,7 +133,7 @@
     }
 
     &__item {
-      display: flex;
+      // display: flex;
       flex-direction: column;
       background-color: $bg-main-color;
       box-shadow: 0.7px 0.7px 0 0 rgba(0, 0, 0, 0.05);
@@ -155,6 +156,9 @@
         flex-direction: column;
       }
     }
+    &__paginator {
+      transform: translateY(-26px);
+    }
   }
 }
 @media(min-width: $desktop-width) {
@@ -175,4 +179,7 @@
       line-height: 28px;
     }
   }
+}
+.active-slide-testimonials {
+  display: flex;
 }
