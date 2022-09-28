@@ -71,16 +71,16 @@ let teamActiveSlideIndex = 0;
 // Вешают на элементы классы
 function teamActiveSlide (n) {
     for(slide of teamSlides) {
-        slide.classList.remove('active-slide-team');
+        slide.classList.remove('active-slide');
     }
 
-    teamSlides[n].classList.add('active-slide-team');
+    teamSlides[n].classList.add('active-slide');
 }
 function teamActivePaginator(n) {
     for(dot of teamPaginators) {
-        dot.classList.remove('active-paginator');
+        dot.classList.remove('active-dot');
     }
-    teamPaginators[n].classList.add('active-paginator');
+    teamPaginators[n].classList.add('active-dot');
 }
 
 // Объединение двух функций с навешиванием классов
@@ -129,15 +129,15 @@ let testActiveIndex = 0;
 
 function testActiveSlide(n) {
     for(slide of testSlides) {
-        slide.classList.remove('active-slide-testimonials');
+        slide.classList.remove('active-slide');
     }
-    testSlides[n].classList.add('active-slide-testimonials');
+    testSlides[n].classList.add('active-slide');
 }
 function testActivePaginator(n) {
     for(dot of testDots) {
-        dot.classList.remove('active-paginator');
+        dot.classList.remove('active-dot');
     }
-    testDots[n].classList.add('active-paginator');
+    testDots[n].classList.add('active-dot');
 }
 
 function testCurrentSlide (item) {
@@ -178,21 +178,21 @@ setInterval(testNextSlide, 5000);
 // Latest news slider
 
 const newsSlides = document.querySelectorAll('.news__item'),
-newsDots  = document.querySelectorAll('.latest-news__item'),
-newsActiveIndex = 0;
+newsDots  = document.querySelectorAll('.latest-news__item');
+let newsActiveIndex = 0;
 
 function newsActiveSlide(n) {
     for(slide of newsSlides) {
-        slide.classList.remove('active-slide-team');
+        slide.classList.remove('active-slide');
     } 
-    newsSlides[n].classList.add('active-slide-team');
+    newsSlides[n].classList.add('active-slide');
 }
 
 function newsAvctiveDot(n) {
     for(dot of newsDots) {
-        dot.classList.remove('active-paginator');
+        dot.classList.remove('active-dot-news');
     }
-    newsDots[n].classList.add('active-paginator')
+    newsDots[n].classList.add('active-dot-news')
 }
 
 function newsActiveItem(item) {
@@ -219,4 +219,10 @@ function newsPrevSlide() {
     }
 }
 
-newsDots.forEach(item, )
+newsDots.forEach(function(item, indexDot) {
+    item.addEventListener('click', function(){
+        newsActiveIndex = indexDot;
+        newsActiveItem(newsActiveIndex);
+    })
+})
+setInterval(newsNextSlide, 5000)

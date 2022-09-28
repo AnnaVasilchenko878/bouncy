@@ -1,7 +1,7 @@
 @media(min-width: $mobile-width) {
   .employers {
     &__item {
-      // display: flex;
+      display: flex;
       flex-direction: column;
       display: none;
     }
