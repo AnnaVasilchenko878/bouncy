@@ -226,3 +226,17 @@ newsDots.forEach(function(item, indexDot) {
     })
 })
 setInterval(newsNextSlide, 5000)
+
+// Модальное окно already-contact
+let alreadyModalBtn = document.querySelector(`.already-contact__button`),
+    alreadyModalBtnClose = document.querySelector(`.already-modal__btn--close`),
+    alreadyModalWindow = document.querySelector(`.already-modal`);
+
+alreadyModalBtn.addEventListener('click', function(){
+    alreadyModalWindow.style.display = `flex`;
+})
+alreadyModalBtnClose.addEventListener('click', function(){
+    alreadyModalWindow.style.display = `none`;
+})
+
+// Маска для поле ввода

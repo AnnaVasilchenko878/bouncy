@@ -1,9 +1,22 @@
 @media(min-width: $mobile-width) {
   .nav {
     display: none;
+
+    &__item {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    &__link {
+      font-size: 28px;
+      line-height: 12px;
+      color: $text-second-color;
+    }
   }
 }
+
 @media(min-width: $desktop-width) {
+
   .nav {
     display: flex;
     width: 713px;
