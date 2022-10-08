@@ -848,7 +848,7 @@
                             praesentium</p>
         
                         <form class="already-modal__form" action="#" method="GET">
-                            <input class="already-modal__tel" type="tel" placeholder="+X(XXX) XXX-XX-XX">
+                            <input class="already-modal__tel" data-validate-field="user-email-call" id="tel-mask" type="tel">
                             <div class="already-modal__wrapper-btn">
                                 <button class="already-modal__btn" type="submit">Submit</button>
                                 <button class="already-modal__btn already-modal__btn--close" type="submit">Close</button>
@@ -1160,6 +1160,8 @@
             </ul>
         </footer>
     </div>
+    <script src="js/just-validate.min.js"></script>
+    <script src="js/input-mask.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

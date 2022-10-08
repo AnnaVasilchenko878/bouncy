@@ -1,9 +1,10 @@
-const gulp = require('gulp');
-const sass = require('gulp-sass')(require('sass'));
-const rename = require('gulp-rename');
-const autoprefixer = require('gulp-autoprefixer');
-const sourcemaps = require('gulp-sourcemaps');
-const browserSync = require('browser-sync');
+const gulp = require('gulp'),
+     sass = require('gulp-sass')(require('sass')),
+     rename = require('gulp-rename'),
+     autoprefixer = require('gulp-autoprefixer'),
+     sourcemaps = require('gulp-sourcemaps'),
+     browserSync = require('browser-sync');
+
 browserSync.create();
 
 function test(done) {

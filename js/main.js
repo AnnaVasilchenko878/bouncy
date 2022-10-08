@@ -240,3 +240,8 @@ alreadyModalBtnClose.addEventListener('click', function(){
 })
 
 // Маска для поле ввода
+// Маска
+let alreadyInput = document.querySelector('.already-modal__tel'),
+// new Mask копия объекта из input-mask
+alreadyMask = new Inputmask('+7 (999) 999-99-99');
+alreadyMask.mask(alreadyInput);
