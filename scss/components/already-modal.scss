@@ -1,10 +1,11 @@
 @media(min-width: $mobile-width) {
     .already-modal {
         position: fixed;
-        display: none;
+        // display: none;
+
+        display: flex;
         justify-content: center;
         align-items: center;
-        background-color: black;
         z-index: 1000;
         top: 0;
         left: 0;
@@ -14,17 +15,25 @@
         background-color: rgba(0, 0,0, 0.8);
     
         &__wrapper {
-            background-color: $bg-main-color;
+            background-color: $bd-modal-color;
             width: 290px;
             padding-bottom: 36px;
             box-shadow: 0px 6px 6px 2px $shadows-color;
+            display: flex;
+            flex-direction: column;
         }
         &__header {
             @include title;
             line-height: 25px;
+            color: $text-modal-color;
+            padding: 0 15px;
+            margin-bottom: 5px;
         }
         &__text {
             @include subtitle;
+            color: $text-modal-color;
+            font-size: 15px;
+            font-weight: 300;
         }
         &__form {
             display: flex;
@@ -32,18 +41,20 @@
             align-items: center;
         }
         &__tel {
-            border: 1px solid $border-input;
+            border: 1px solid border-modal-input-color;
             margin-bottom: 31px;
             padding: 9px 53px 9px 15px;
-        }
-        &__wrapper-btn {
-            display: flex;
-            justify-content: space-around;
-            width: 100%;
+            background-color: $bd-modal-color;
+            &:hover,
+            &:focus,
+            &:active {
+                border-color: $tiffany-color;
+            }
         }
         &__btn {
             @include btn;
-            border: 1px solid $text-title-color;
+            border: 1px solid $border-modal-input-color;
+            color: $border-modal-input-color;
             border-radius: 22px;
             padding: 10px 15px;
             &:hover,
@@ -51,6 +62,11 @@
               color: $bg-main-color;
               background-color: $tiffany-color;
               border-color: $tiffany-color;
+            }
+            &--close {
+                border: none;
+                width: 38px;
+                align-self: flex-end;
             }
         }
     }
