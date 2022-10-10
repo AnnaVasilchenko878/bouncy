@@ -1,5 +1,3 @@
-const { default: JustValidate } = require("just-validate");
-
 const tabsBtns = document.querySelectorAll('.details-paginator__button');
 const tabSlides = document.querySelectorAll('.details__item');
 
@@ -232,6 +230,7 @@ setInterval(newsNextSlide, 5000)
 // Модальное окно already-contact
 let alreadyModalBtn = document.querySelector(`.already-contact__button`),
     alreadyModalBtnClose = document.querySelector(`.already-modal__btn--close`),
+    alreadySubmitBtn = document.querySelector(`.already-modal__btn--submit`),
     alreadyModalWindow = document.querySelector(`.already-modal`);
 
 alreadyModalBtn.addEventListener('click', function(){
@@ -240,24 +239,12 @@ alreadyModalBtn.addEventListener('click', function(){
 alreadyModalBtnClose.addEventListener('click', function(){
     alreadyModalWindow.style.display = `none`;
 })
+alreadySubmitBtn.addEventListener('click', function(){
+    alreadyModalWindow.style.display = `none`;
+})
 
-// Маска для поле ввода
 // Маска
 let alreadyInput = document.querySelector('.already-modal__tel'),
 // new Mask копия объекта из input-mask
-alreadyMask = new Inputmask('+7 (999) 999-99-99');
+alreadyMask = new Inputmask('+9 (999) 999-99-99');
 alreadyMask.mask(alreadyInput);
-
-// валидация 
-// Создаем функцию с параметрами селектора и правилами
-function validateForms(selector, rules) {
-    // Создаем экземпляр объекта just validate в который передаем селектор с нужными правилами
-    new window.JustValidate (selector,{
-        // rules: rules значит что правило будем передавать привызове фукции
-        rules: rules,
-        // используем обработчик который есть в плагине
-        submitHandler: function(form, values, ajax) {
-            console.log(form);
-        }
-    });
-}
