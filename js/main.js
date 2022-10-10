@@ -248,3 +248,12 @@ let alreadyInput = document.querySelector('.already-modal__tel'),
 // new Mask копия объекта из input-mask
 alreadyMask = new Inputmask('+9 (999) 999-99-99');
 alreadyMask.mask(alreadyInput);
+
+// Promo 
+let promoBtn = document.querySelector('.promo__button');
+
+promoBtn.addEventListener('click',function(){
+    window.scrollBy(0,750);
+    let windowScroll = window.pageYOffset;
+    console.log(windowScroll);
+})
