@@ -11,7 +11,7 @@ function test(done) {
     gulp.src('scss/style.scss')
         .pipe(sourcemaps.init())
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-        .pipe(sass({includePaths: ['node_modules']})) 
+        // .pipe(sass({includePaths: ['node_modules']})) 
         .pipe(rename('style-min.css'))
         .pipe(autoprefixer({
             browsers: ['last 10 versions'],

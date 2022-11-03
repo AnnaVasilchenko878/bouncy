@@ -257,3 +257,20 @@ promoBtn.addEventListener('click',function(){
     let windowScroll = window.pageYOffset;
     console.log(windowScroll);
 })
+
+// subribe 
+// валидация
+const subscribeForm = document.querySelector('.subscribe__form'),
+emailReg = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
+let subscribeInput = document.querySerector('.subscribe__input'),
+subscribeValue=subscribeInput.value;
+
+if(subscribeValue !==0 && subscribeValue == emailReg) {
+
+}
+// отправка формы
+subscribeForm.addEventListener('submit',formSend);
+
+function formSend(e) {
+    e.preventDefault();
+}
