@@ -262,7 +262,7 @@ promoBtn.addEventListener('click',function(){
 // валидация
 const subscribeForm = document.querySelector('.subscribe__form'),
 emailReg = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
-let subscribeInput = document.querySerector('.subscribe__input'),
+let subscribeInput = document.querySelector('.subscribe__input'),
 subscribeValue=subscribeInput.value;
 
 if(subscribeValue !==0 && subscribeValue == emailReg) {
